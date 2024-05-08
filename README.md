@@ -1,0 +1,1 @@
+# rj-test-seismic-component
