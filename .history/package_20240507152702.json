@@ -1,0 +1,30 @@
+{
+	"name": "@servicenow/rj-test-component",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Raajesh Test Component",
+	"keywords": [
+		"ServiceNow",
+		"Now Experience UI Component",
+		"@servicenow/rj-test-component"
+	],
+	"readme": "./README.md",
+	"engines": {
+		"node": ">=8.6.0",
+		"npm": ">=5.3.0"
+	},
+	"module": "src/index.js",
+	"dependencies": {
+		"@servicenow/ui-core": "24.1.1",
+		"@servicenow/ui-renderer-snabbdom": "24.1.1",
+		"@servicenow/cli-archetype": "24.0.1",
+		"@servicenow/cli-component-archetype": "24.0.1",
+		"@servicenow/sass-theme": "quebec",
+		"@servicenow/sass-kit": "quebec",
+		"@servicenow/library-translate": "19.1.0"
+	},
+	"devDependencies": {
+		"@servicenow/cli-archetype-dev": "24.0.1",
+		"@servicenow/cli-component-archetype-dev": "24.0.1"
+	}
+}
