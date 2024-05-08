@@ -28,7 +28,7 @@
 		"@servicenow/now-tooltip": "quebec",
 		"@servicenow/library-enhanced-element": "quebec",
 		"@servicenow/library-enhanced-utils": "quebec",
-		"@servicenow/behavior-tooltip": "quebec",
+		"@servicenow/behavior-tooltip": "24.3.11-ecdd.2",
 		"@servicenow/behavior-focus": "quebec",
 		"@servicenow/library-schemas": "quebec"
 	},
