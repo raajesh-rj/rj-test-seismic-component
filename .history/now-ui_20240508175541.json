@@ -1,6 +1,6 @@
 {
 	"components": {
-	    "x-1347040-rj-test-component": {
+	    "now-rj-button": {
 			"uiBuilder": {
 				"associatedTypes": [
 					"global.core"
@@ -38,7 +38,7 @@
 				},
 				"description": "Button with a background color",
 				"icon": "button",
-				"label": "RJ Button"
+				"label": "Button"
 			},
 			"properties": [
 				{

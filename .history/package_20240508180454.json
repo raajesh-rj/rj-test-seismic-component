@@ -30,7 +30,6 @@
 		"@servicenow/library-enhanced-utils": "quebec",
 		"@servicenow/behavior-tooltip": "quebec",
 		"@servicenow/behavior-focus": "quebec",
-		"@servicenow/library-schemas": "quebec"
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "24.0.1",

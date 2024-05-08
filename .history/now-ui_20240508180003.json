@@ -38,7 +38,7 @@
 				},
 				"description": "Button with a background color",
 				"icon": "button",
-				"label": "RJ Button"
+				"label": "Button"
 			},
 			"properties": [
 				{

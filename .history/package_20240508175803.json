@@ -25,12 +25,7 @@
 		"@servicenow/now-button": "quebec",
 		"@servicenow/now-heading": "quebec",
 		"@servicenow/now-icon": "quebec",
-		"@servicenow/now-tooltip": "quebec",
-		"@servicenow/library-enhanced-element": "quebec",
-		"@servicenow/library-enhanced-utils": "quebec",
-		"@servicenow/behavior-tooltip": "quebec",
-		"@servicenow/behavior-focus": "quebec",
-		"@servicenow/library-schemas": "quebec"
+		"@servicenow/now-tooltip": "quebec"
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "24.0.1",

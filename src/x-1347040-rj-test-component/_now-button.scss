@@ -1,0 +1,260 @@
+// ServiceNow Design System
+
+// NOW Button
+
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.now-button {
+	@include now-mx-button;
+	margin: 0;
+	border-style: solid;
+	border-start-start-radius: $now-button--border-start-start-radius;
+	border-start-end-radius: $now-button--border-start-end-radius;
+	border-end-start-radius: $now-button--border-end-start-radius;
+	border-end-end-radius: $now-button--border-end-end-radius;
+	font-family: $now-button--font-family;
+	@include now-mx-inherits(
+		$font-style: $now-button--font-style,
+		$font-weight: $now-button--font-weight,
+		$text-transform: $now-button--text-transform
+	);
+
+	&:hover {
+		box-shadow: $now-global-drop-shadow--sm;
+	}
+
+	&:focus {
+		@include now-mx-focus-ring;
+	}
+
+	// <now-button size="sm|md|lg">
+
+	&.-sm {
+		@include now-mx-button-sm;
+		padding-inline-start: now-fn-scale-size(
+			padding-inline-start,
+			$now-global-space--sm,
+			$now-button--scale-size-inline
+		);
+		padding-inline-end: now-fn-scale-size(
+			padding-inline-end,
+			$now-global-space--sm,
+			$now-button--scale-size-inline
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop($now-global-line-height--sm);
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xxs;
+		}
+	}
+
+	&.-md {
+		@include now-mx-button-md;
+		padding-inline-start: now-fn-scale-size(
+			padding-inline-start,
+			$now-global-space--lg,
+			$now-button--scale-size-inline
+		);
+		padding-inline-end: now-fn-scale-size(
+			padding-inline-end,
+			$now-global-space--lg,
+			$now-button--scale-size-inline
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop;
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xxs;
+		}
+	}
+
+	&.-lg {
+		@include now-mx-button-lg;
+		padding-inline-start: now-fn-scale-size(
+			padding-inline-start,
+			$now-global-space--xl,
+			$now-button--scale-size-inline
+		);
+		padding-inline-end: now-fn-scale-size(
+			padding-inline-end,
+			$now-global-space--xl,
+			$now-button--scale-size-inline
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop;
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xs;
+		}
+	}
+
+	// <now-button variant="primary|primary-positive|primary-negative|secondary|secondary-positive|secondary-negative|tertiary">
+
+	&.-primary {
+		@include now-mx-button-primary;
+
+		&.-positive {
+			@include now-mx-button-primary-positive;
+		}
+
+		&.-negative {
+			@include now-mx-button-primary-negative;
+		}
+	}
+
+	&.-secondary {
+		@include now-mx-button-secondary;
+
+		&.-positive {
+			@include now-mx-button-secondary-positive;
+		}
+
+		&.-negative {
+			@include now-mx-button-secondary-negative;
+		}
+	}
+
+	&.-tertiary {
+		@include now-mx-button-tertiary;
+	}
+
+	// <now-button disabled>
+
+	&.is-disabled {
+		@include now-mx-button-is-disabled;
+	}
+
+	// <now-button bare>
+	// Bare is deprecated but we should still support it for theming. We should point users to use now-button-bare instead.
+
+	&.is-bare {
+		@include now-mx-button-is-bare;
+
+		&:focus {
+			@include now-mx-focus-ring--bare;
+		}
+
+		// stylelint-disable servicenow/use-derived-color
+
+		&.only-icon:hover {
+			background-color: RGB($now-color--neutral-9, 0.1);
+		}
+
+		&.only-icon:active {
+			background-color: RGB($now-color--neutral-9, 0.35);
+		}
+
+		// stylelint-enable servicenow/use-derived-color
+
+		&.-inherit {
+			color: inherit;
+
+			&:hover,
+			&:active {
+				color: inherit;
+			}
+		}
+
+		&.-primary {
+			color: RGB($now-button--bare_primary--color);
+
+			&:not(.is-disabled) {
+				&:hover {
+					color: RGB($now-button--bare_primary--color--hover);
+					background-color: RGBA(
+						$now-button--bare_primary--background-color--hover,
+						$now-button--bare_primary--background-color-alpha--hover
+					);
+				}
+
+				&:active {
+					color: RGB($now-button--bare_primary--color--active);
+					background-color: RGBA(
+						$now-button--bare_primary--background-color--active,
+						$now-button--bare_primary--background-color-alpha--active
+					);
+				}
+			}
+		}
+
+		&.-secondary {
+			color: RGB($now-button--bare_secondary--color);
+
+			&:not(.is-disabled) {
+				&:hover {
+					color: RGB($now-button--bare_secondary--color--hover);
+					background-color: RGBA(
+						$now-button--bare_secondary--background-color--hover,
+						$now-button--bare_secondary--background-color-alpha--hover
+					);
+				}
+
+				&:active {
+					color: RGB($now-button--bare_secondary--color--active);
+					background-color: RGBA(
+						$now-button--bare_secondary--background-color--active,
+						$now-button--bare_secondary--background-color-alpha--active
+					);
+				}
+			}
+		}
+
+		&.-tertiary {
+			color: RGB($now-button--bare_tertiary--color);
+
+			&:not(.is-disabled) {
+				&:hover {
+					color: RGB($now-button--bare_tertiary--color--hover);
+					background-color: RGBA(
+						$now-button--bare_tertiary--background-color--hover,
+						$now-button--bare_tertiary--background-color-alpha--hover
+					);
+				}
+
+				&:active {
+					color: RGB($now-button--bare_tertiary--color--active);
+					background-color: RGBA(
+						$now-button--bare_tertiary--background-color--active,
+						$now-button--bare_tertiary--background-color-alpha--active
+					);
+				}
+			}
+		}
+
+		&.is-disabled,
+		&.is-disabled:hover {
+			border-color: transparent;
+			background-color: transparent;
+		}
+	}
+
+	&.only-icon {
+		@include now-mx-button-only-icon;
+	}
+} // end .now-button
+
+@media (forced-colors: active) {
+	.now-button {
+		@include now-mx-button-forced-color;
+
+		.now-line-height-crop {
+			forced-color-adjust: none;
+		}
+
+		::slotted(*) {
+			forced-color-adjust: none;
+		}
+	}
+}
