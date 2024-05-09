@@ -1,0 +1,19 @@
+{
+	"name": "@servicenow/sass-global",
+	"version": "26.0.14-webux.1",
+	"description": "Global variables, functions, and mixins required to build design system styles",
+	"meta": {
+		"release": "N"
+	},
+	"main": "main.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://code.devsnc.com/dev/design-system"
+	},
+	"bugs": "https://tinyurl.com/new-nds-def"
+}

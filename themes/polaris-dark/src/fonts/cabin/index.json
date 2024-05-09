@@ -1,0 +1,14 @@
+[
+	{
+		"font-family": "Cabin",
+		"font-weight": "400 700",
+		"font-style": "normal",
+		"files": ["assets/Cabin-VariableFont_wdth,wght.woff2"]
+	},
+	{
+		"font-family": "Cabin",
+		"font-weight": "400 700",
+		"font-style": "italic",
+		"files": ["assets/Cabin-Italic-VariableFont_wdth,wght.woff2"]
+	}
+]

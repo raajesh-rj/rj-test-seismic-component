@@ -1,0 +1,18 @@
+// ServiceNow Now Design System
+
+// Generics / Root
+
+:root {
+	box-sizing: border-box;
+	line-height: $now-global-line-height;
+	font-family: $now-font-family;
+	color: RGB($now-color_text--primary);
+}
+
+* {
+	&,
+	&:before,
+	&:after {
+		box-sizing: inherit;
+	}
+}

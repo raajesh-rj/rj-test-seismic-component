@@ -1,0 +1,11 @@
+// ServiceNow Now Design System
+
+// Theme / Generic / Type
+
+@mixin now-mx-theme-generic-type {
+	--now-line-height: #{$now-global-line-height};
+	--now-line-height--sm: #{$now-global-line-height--sm};
+	--now-line-height-crop--before: #{$now-global-line-height-crop--before};
+	--now-line-height-crop--after: #{$now-global-line-height-crop--after};
+	--now-font-family: 'Source Sans Pro', arial, sans-serif;
+}

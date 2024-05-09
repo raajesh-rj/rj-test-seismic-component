@@ -1,0 +1,12 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Actionable
+
+@mixin now-mx-theme-category-actionable {
+	--now-actionable--font-style: normal;
+	--now-actionable--font-weight: normal;
+	--now-actionable--font-family: var(--now-font-family);
+	--now-actionable--text-transform: none;
+	--now-actionable--border-width: 1px;
+	--now-actionable--border-radius: 0;
+}

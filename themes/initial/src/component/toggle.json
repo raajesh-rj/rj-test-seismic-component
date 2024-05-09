@@ -1,0 +1,19 @@
+{
+	"--now-toggle_handle--background-color": "--now-color--neutral-0",
+	"--now-toggle_handle--background-color--hover": "--now-color--neutral-3",
+	"--now-toggle_handle--border-color": "--now-color_border--primary",
+	"--now-toggle_handle--border-radius": "--now-form-control_handle--border-radius",
+	"--now-toggle_handle--border-width": "--now-form-control_handle--border-width",
+	"--now-toggle_track--background-color": "--now-color_background--tertiary",
+	"--now-toggle_track--background-color--checked": "--now-color--primary-1",
+	"--now-toggle_track--border-color": "--now-color_border--primary",
+	"--now-toggle_track--border-color--checked": "--now-color--primary-2",
+	"--now-toggle_track--border-radius": "--now-form-control_track--border-radius",
+	"--now-toggle_track--border-width": "--now-form-control_track--border-width",
+	"--now-toggle--opacity--disabled": "--now-opacity--less",
+	"--now-toggle--font-family": "--now-form-control--font-family",
+	"--now-toggle--font-style": "--now-form-control--font-style",
+	"--now-toggle--font-weight": "--now-form-control--font-weight",
+	"--now-toggle--text-transform": "--now-form-control--text-transform",
+	"--now-toggle--scale-size": "1"
+}

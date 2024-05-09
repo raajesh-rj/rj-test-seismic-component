@@ -1,0 +1,10 @@
+// ServiceNow Now Design System
+
+// Global / Category / Indicator
+
+$now-indicator--font-style:     var(--now-indicator--font-style, normal);
+$now-indicator--font-weight:    var(--now-indicator--font-weight, normal);
+$now-indicator--font-family:    var(--now-indicator--font-family, $now-font-family);
+$now-indicator--text-transform: var(--now-indicator--text-transform, none);
+$now-indicator--border-width:   var(--now-indicator--border-width, 0);
+$now-indicator--border-radius:  var(--now-indicator--border-radius, $now-global-border-radius--sm);

@@ -1,0 +1,4 @@
+@import '@servicenow/sass-global/settings';
+@import '@servicenow/sass-global/mixins';
+
+@include now-mx-global-space-sub(m, margin, xs, $now-global-space--xs);

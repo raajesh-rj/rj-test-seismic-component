@@ -1,0 +1,12 @@
+// ServiceNow Now Design System
+
+// Global / Category / Window
+
+$now-window--font-style:        var(--now-window--font-style, normal);
+$now-window--font-weight:       var(--now-window--font-weight, normal);
+$now-window--font-family:       var(--now-window--font-family, $now-font-family);
+$now-window--text-transform:    var(--now-window--text-transform, none);
+$now-window--border-width:      var(--now-window--border-width, 1px);
+$now-window--border-color:      var(--now-window--border-color, $now-color_divider--secondary);
+$now-window--border-radius:     var(--now-window--border-radius, $now-global-border-radius--md);
+$now-window--background-color:  var(--now-window--background-color, $now-color_background--primary);

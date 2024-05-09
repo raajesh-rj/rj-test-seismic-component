@@ -1,0 +1,169 @@
+// NOW Button Iconic Theme
+// DO NOT IMPORT THIS PARTIAL DIRECTLY
+
+$now-button-iconic--border-width: var(--now-button-iconic--border-width, $now-button--border-width);
+$now-button-iconic--border-radius: var(--now-button-iconic--border-radius, $now-button--border-radius);
+
+$now-button-iconic--opacity--disabled: var(--now-button-iconic--opacity--disabled, $now-button--opacity--disabled);
+
+// Bare
+
+$now-button-iconic--bare--border-width: var(--now-button-iconic--bare--border-width, $now-button--bare--border-width);
+$now-button-iconic--bare--border-radius: var(--now-button-iconic--bare--border-radius, $now-button--bare--border-radius);
+
+$now-button-iconic--bare--opacity--disabled: var(--now-button-iconic--bare--opacity--disabled, $now-button-iconic--opacity--disabled);
+
+// Primary
+
+$now-button-iconic--primary--border-width: var(--now-button-iconic--primary--border-width, $now-button-iconic--border-width);
+$now-button-iconic--primary--border-radius: var(--now-button-iconic--primary--border-radius, $now-button-iconic--border-radius);
+
+$now-button-iconic--primary--opacity--disabled: var(--now-button-iconic--primary--opacity--disabled, $now-button-iconic--opacity--disabled);
+
+$now-button-iconic--primary--border-color: var(--now-button-iconic--primary--border-color, $now-button--primary--border-color);
+$now-button-iconic--primary--border-color--hover: var(--now-button-iconic--primary--border-color--hover, $now-button--primary--border-color--hover);
+$now-button-iconic--primary--border-color--active: var(--now-button-iconic--primary--border-color--active, $now-button--primary--border-color--active);
+
+$now-button-iconic--primary--color: var(--now-button-iconic--primary--color, $now-button_icon--primary--color);
+$now-button-iconic--primary--color--hover: var(--now-button-iconic--primary--color--hover, $now-button_icon--primary--color--hover);
+$now-button-iconic--primary--color--active: var(--now-button-iconic--primary--color--active, $now-button_icon--primary--color--active);
+
+$now-button-iconic--primary--background-color: var(--now-button-iconic--primary--background-color, $now-button--primary--background-color);
+$now-button-iconic--primary--background-color--hover: var(--now-button-iconic--primary--background-color--hover, $now-button--primary--background-color--hover);
+$now-button-iconic--primary--background-color--active: var(--now-button-iconic--primary--background-color--active, $now-button--primary--background-color--active);
+
+// Primary Bare
+
+$now-button-iconic--bare_primary--border-width: var(--now-button-iconic--bare_primary--border-width, $now-button-iconic--bare--border-width);
+$now-button-iconic--bare_primary--border-radius: var(--now-button-iconic--bare_primary--border-radius, $now-button-iconic--bare--border-radius);
+
+$now-button-iconic--bare_primary--opacity--disabled: var(--now-button-iconic--bare_primary--opacity--disabled, $now-button-iconic--bare--opacity--disabled);
+
+$now-button-iconic--bare_primary--border-color--hover: var(--now-button-iconic--bare_primary--border-color--hover, $now-button--bare_primary--border-color--hover);
+$now-button-iconic--bare_primary--border-color-alpha--hover: var(--now-button-iconic--bare_primary--border-color-alpha--hover, $now-button--bare_primary--border-color-alpha--hover);
+$now-button-iconic--bare_primary--border-color--active: var(--now-button-iconic--bare_primary--border-color--active, $now-button--bare_primary--border-color--active);
+$now-button-iconic--bare_primary--border-color-alpha--active: var(--now-button-iconic--bare_primary--border-color-alpha--active, $now-button--bare_primary--border-color-alpha--active);
+
+$now-button-iconic--bare_primary--color: var(--now-button-iconic--bare_primary--color, $now-button--bare_primary--color);
+$now-button-iconic--bare_primary--color--hover: var(--now-button-iconic--bare_primary--color--hover, $now-button--bare_primary--color--hover);
+$now-button-iconic--bare_primary--color--active: var(--now-button-iconic--bare_primary--color--active, $now-button--bare_primary--color--active);
+
+$now-button-iconic--bare_primary--background-color--hover: var(--now-button-iconic--bare_primary--background-color--hover, $now-button--bare_primary--background-color--hover);
+$now-button-iconic--bare_primary--background-color-alpha--hover: var(--now-button-iconic--bare_primary--background-color-alpha--hover, $now-button--bare_primary--background-color-alpha--hover);
+$now-button-iconic--bare_primary--background-color--active: var(--now-button-iconic--bare_primary--background-color--active, $now-button--bare_primary--background-color--active);
+$now-button-iconic--bare_primary--background-color-alpha--active: var(--now-button-iconic--bare_primary--background-color-alpha--active, $now-button--bare_primary--background-color-alpha--active);
+
+// Primary Bare High-contrast
+
+$now-button-iconic--bare_primary_high-contrast--color: var(--now-button-iconic--bare_primary_high-contrast--color, $now-color--primary-2);
+$now-button-iconic--bare_primary_high-contrast--color--hover: var(--now-button-iconic--bare_primary_high-contrast--color--hover, $now-color--primary-3);
+$now-button-iconic--bare_primary_high-contrast--color--active: var(--now-button-iconic--bare_primary_high-contrast--color--active, $now-color_text--primary);
+
+// Secondary
+
+$now-button-iconic--secondary--border-width: var(--now-button-iconic--secondary--border-width, $now-button-iconic--border-width);
+$now-button-iconic--secondary--border-radius: var(--now-button-iconic--secondary--border-radius, $now-button-iconic--border-radius);
+
+$now-button-iconic--secondary--opacity--disabled: var(--now-button-iconic--secondary--opacity--disabled, $now-button-iconic--opacity--disabled);
+
+$now-button-iconic--secondary--border-color: var(--now-button-iconic--secondary--border-color, $now-button--secondary--border-color);
+$now-button-iconic--secondary--border-color--hover: var(--now-button-iconic--secondary--border-color--hover, $now-button--secondary--border-color--hover);
+$now-button-iconic--secondary--border-color--active: var(--now-button-iconic--secondary--border-color--active, $now-button--secondary--border-color--active);
+
+$now-button-iconic--secondary--color: var(--now-button-iconic--secondary--color, $now-button_icon--secondary--color);
+$now-button-iconic--secondary--color--hover: var(--now-button-iconic--secondary--color--hover, $now-button_icon--secondary--color--hover);
+$now-button-iconic--secondary--color--active: var(--now-button-iconic--secondary--color--active, $now-button_icon--secondary--color--active);
+
+$now-button-iconic--secondary--background-color: var(--now-button-iconic--secondary--background-color, $now-button--secondary--background-color);
+$now-button-iconic--secondary--background-color-alpha: var(--now-button-iconic--secondary--background-color-alpha, $now-button--secondary--background-color-alpha);
+$now-button-iconic--secondary--background-color--hover: var(--now-button-iconic--secondary--background-color--hover, $now-button--secondary--background-color--hover);
+$now-button-iconic--secondary--background-color-alpha--hover: var(--now-button-iconic--secondary--background-color-alpha--hover, $now-button--secondary--background-color-alpha--hover);
+$now-button-iconic--secondary--background-color--active: var(--now-button-iconic--secondary--background-color--active, $now-button--secondary--background-color--active);
+$now-button-iconic--secondary--background-color-alpha--active: var(--now-button-iconic--secondary--background-color-alpha--active, $now-button--secondary--background-color-alpha--active);
+
+// Secondary Bare
+
+$now-button-iconic--bare_secondary--border-width: var(--now-button-iconic--bare_secondary--border-width, $now-button-iconic--bare--border-width);
+$now-button-iconic--bare_secondary--border-radius: var(--now-button-iconic--bare_secondary--border-radius, $now-button-iconic--bare--border-radius);
+
+$now-button-iconic--bare_secondary--opacity--disabled: var(--now-button-iconic--bare_secondary--opacity--disabled, $now-button-iconic--bare--opacity--disabled);
+
+$now-button-iconic--bare_secondary--border-color--hover: var(--now-button-iconic--bare_secondary--border-color--hover, $now-button--bare_secondary--border-color--hover);
+$now-button-iconic--bare_secondary--border-color-alpha--hover: var(--now-button-iconic--bare_secondary--border-color-alpha--hover, $now-button--bare_secondary--border-color-alpha--hover);
+$now-button-iconic--bare_secondary--border-color--active: var(--now-button-iconic--bare_secondary--border-color--active, $now-button--bare_secondary--border-color--active);
+$now-button-iconic--bare_secondary--border-color-alpha--active: var(--now-button-iconic--bare_secondary--border-color-alpha--active, $now-button--bare_secondary--border-color-alpha--active);
+
+$now-button-iconic--bare_secondary--color: var(--now-button-iconic--bare_secondary--color, $now-button--bare_secondary--color);
+$now-button-iconic--bare_secondary--color--hover: var(--now-button-iconic--bare_secondary--color--hover, $now-button--bare_secondary--color--hover);
+$now-button-iconic--bare_secondary--color--active: var(--now-button-iconic--bare_secondary--color--active, $now-button--bare_secondary--color--active);
+
+$now-button-iconic--bare_secondary--background-color--hover: var(--now-button-iconic--bare_secondary--background-color--hover, $now-button--bare_secondary--background-color--hover);
+$now-button-iconic--bare_secondary--background-color-alpha--hover: var(--now-button-iconic--bare_secondary--background-color-alpha--hover, $now-button--bare_secondary--background-color-alpha--hover);
+$now-button-iconic--bare_secondary--background-color--active: var(--now-button-iconic--bare_secondary--background-color--active, $now-button--bare_secondary--background-color--active);
+$now-button-iconic--bare_secondary--background-color-alpha--active: var(
+	--now-button-iconic--bare_secondary--background-color-alpha--active,
+	$now-button--bare_secondary--background-color-alpha--active
+);
+
+// Secondary Bare High-contrast
+
+$now-button-iconic--bare_secondary_high-contrast--color: var(--now-button-iconic--bare_secondary_high-contrast--color, $now-button--bare_secondary_high-contrast--color);
+$now-button-iconic--bare_secondary_high-contrast--color--hover: var(--now-button-iconic--bare_secondary_high-contrast--color--hover, $now-button--bare_secondary_high-contrast--color--hover);
+$now-button-iconic--bare_secondary_high-contrast--color--active: var(--now-button-iconic--bare_secondary_high-contrast--color--active, $now-button--bare_secondary_high-contrast--color--active);
+
+// Tertiary
+
+$now-button-iconic--tertiary--border-width: var(--now-button-iconic--tertiary--border-width, $now-button-iconic--border-width);
+$now-button-iconic--tertiary--border-radius: var(--now-button-iconic--tertiary--border-radius, $now-button-iconic--border-radius);
+
+$now-button-iconic--tertiary--opacity--disabled: var(--now-button-iconic--tertiary--opacity--disabled, $now-button-iconic--opacity--disabled);
+
+$now-button-iconic--tertiary--border-color: var(--now-button-iconic--tertiary--border-color, $now-button--tertiary--border-color);
+$now-button-iconic--tertiary--border-color-alpha: var(--now-button-iconic--tertiary--border-color-alpha, $now-button--tertiary--border-color-alpha);
+$now-button-iconic--tertiary--border-color--hover: var(--now-button-iconic--tertiary--border-color--hover, $now-button--tertiary--border-color--hover);
+$now-button-iconic--tertiary--border-color-alpha--hover: var(--now-button-iconic--tertiary--border-color-alpha--hover, $now-button--tertiary--border-color-alpha--hover);
+$now-button-iconic--tertiary--border-color--active: var(--now-button-iconic--tertiary--border-color--active, $now-button--tertiary--border-color--active);
+$now-button-iconic--tertiary--border-color-alpha--active: var(--now-button-iconic--tertiary--border-color-alpha--active, $now-button--tertiary--border-color-alpha--active);
+
+$now-button-iconic--tertiary--color: var(--now-button-iconic--tertiary--color, $now-button_icon--tertiary--color);
+$now-button-iconic--tertiary--color--hover: var(--now-button-iconic--tertiary--color--hover, $now-button_icon--tertiary--color--hover);
+$now-button-iconic--tertiary--color--active: var(--now-button-iconic--tertiary--color--active, $now-button_icon--tertiary--color--active);
+
+$now-button-iconic--tertiary--background-color: var(--now-button-iconic--tertiary--background-color, $now-button--tertiary--background-color);
+$now-button-iconic--tertiary--background-color-alpha: var(--now-button-iconic--tertiary--background-color-alpha, $now-button--tertiary--background-color-alpha);
+$now-button-iconic--tertiary--background-color--hover: var(--now-button-iconic--tertiary--background-color--hover, $now-button--tertiary--background-color--hover);
+$now-button-iconic--tertiary--background-color-alpha--hover: var(--now-button-iconic--tertiary--background-color-alpha--hover, $now-button--tertiary--background-color-alpha--hover);
+$now-button-iconic--tertiary--background-color--active: var(--now-button-iconic--tertiary--background-color--active, $now-button--tertiary--background-color--active);
+$now-button-iconic--tertiary--background-color-alpha--active: var(--now-button-iconic--tertiary--background-color-alpha--active, $now-button--tertiary--background-color-alpha--active);
+
+// Tertiary Bare
+
+$now-button-iconic--bare_tertiary--border-width: var(--now-button-iconic--bare_tertiary--border-width, $now-button-iconic--bare--border-width);
+$now-button-iconic--bare_tertiary--border-radius: var(--now-button-iconic--bare_tertiary--border-radius, $now-button-iconic--bare--border-radius);
+
+$now-button-iconic--bare_tertiary--opacity--disabled: var(--now-button-iconic--bare_tertiary--opacity--disabled, $now-button-iconic--bare--opacity--disabled);
+
+$now-button-iconic--bare_tertiary--border-color--hover: var(--now-button-iconic--bare_tertiary--border-color--hover, $now-button--bare_tertiary--border-color--hover);
+$now-button-iconic--bare_tertiary--border-color-alpha--hover: var(--now-button-iconic--bare_tertiary--border-color-alpha--hover, $now-button--bare_tertiary--border-color-alpha--hover);
+$now-button-iconic--bare_tertiary--border-color--active: var(--now-button-iconic--bare_tertiary--border-color--active, $now-button--bare_tertiary--border-color--active);
+$now-button-iconic--bare_tertiary--border-color-alpha--active: var(--now-button-iconic--bare_tertiary--border-color-alpha--active, $now-button--bare_tertiary--border-color-alpha--active);
+
+$now-button-iconic--bare_tertiary--color: var(--now-button-iconic--bare_tertiary--color, $now-button--bare_tertiary--color);
+$now-button-iconic--bare_tertiary--color--hover: var(--now-button-iconic--bare_tertiary--color--hover, $now-button--bare_tertiary--color--hover);
+$now-button-iconic--bare_tertiary--color--active: var(--now-button-iconic--bare_tertiary--color--active, $now-button--bare_tertiary--color--active);
+
+$now-button-iconic--bare_tertiary--background-color--hover: var(--now-button-iconic--bare_tertiary--background-color--hover, $now-button--bare_tertiary--background-color--hover);
+$now-button-iconic--bare_tertiary--background-color-alpha--hover: var(--now-button-iconic--bare_tertiary--background-color-alpha--hover, $now-button--bare_tertiary--background-color-alpha--hover);
+$now-button-iconic--bare_tertiary--background-color--active: var(--now-button-iconic--bare_tertiary--background-color--active, $now-button--bare_tertiary--background-color--active);
+$now-button-iconic--bare_tertiary--background-color-alpha--active: var(--now-button-iconic--bare_tertiary--background-color-alpha--active, $now-button--bare_tertiary--background-color-alpha--active);
+
+// Tertiary Bare High-contrast
+
+$now-button-iconic--bare_tertiary_high-contrast--color: var(--now-button-iconic--bare_tertiary_high-contrast--color, $now-button--bare_tertiary_high-contrast--color);
+$now-button-iconic--bare_tertiary_high-contrast--color--hover: var(--now-button-iconic--bare_tertiary_high-contrast--color--hover, $now-button--bare_tertiary_high-contrast--color--hover);
+$now-button-iconic--bare_tertiary_high-contrast--color-alpha--hover: var(--now-button-iconic--bare_tertiary_high-contrast--color-alpha--hover, $now-button--bare_tertiary_high-contrast--color-alpha--hover);
+$now-button-iconic--bare_tertiary_high-contrast--color--active: var(--now-button-iconic--bare_tertiary_high-contrast--color--active, $now-button--bare_tertiary_high-contrast--color--active);
+$now-button-iconic--bare_tertiary_high-contrast--color-alpha--active: var(
+	--now-button-iconic--bare_tertiary_high-contrast--color-alpha--active,
+	$now-button--bare_tertiary_high-contrast--color-alpha--active
+);

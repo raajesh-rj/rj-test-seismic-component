@@ -1,0 +1,9 @@
+{
+	"--now-actionable--border-radius": "$now-global-border-radius--md",
+	"--now-actionable--border-width": "1px",
+	"--now-actionable--font-family": "--now-font-family",
+	"--now-actionable--font-style": "normal",
+	"--now-actionable--font-weight": "bold",
+	"--now-actionable--text-transform": "none",
+	"--now-actionable--opacity--disabled": "--now-opacity--less"
+}

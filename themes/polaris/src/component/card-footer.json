@@ -1,0 +1,7 @@
+{
+	"--now-card-footer--color": "--now-color_text--tertiary",
+	"--now-card-footer--font-family": "--now-card--font-family",
+	"--now-card-footer--font-style": "--now-card--font-style",
+	"--now-card-footer--font-weight": "--now-card--font-weight",
+	"--now-card-footer--text-transform": "--now-card--text-transform"
+}

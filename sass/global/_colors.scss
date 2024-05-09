@@ -1,0 +1,22 @@
+// ServiceNow Now Design System
+
+// Globals / Colors
+
+// @NOTE: This file is kept around for backwards compatability. We used to 
+// keep a bunch of colors in here together. Then once theming kicked in we
+// broke them into smaller files under `colors/*`. If anyone on another team
+// directly imported this file with one of the following syntaxes we don't
+// want to break them:
+// 
+//    @import '@servicenow/sass-global/_colors';
+//    @import '@servicenow/sass-global/_colors.scss';
+//
+// The recommended way to import colors is to just import the entire sass-global
+// package (1). If you need to import colors directly for some reason then 
+// drop the '_' and/or '.scss':
+//
+//    @import '@servicenow/sass-global'; // (1)
+//    @import '@servicenow/sass-global/colors'; // (2)
+//
+
+@import 'colors/index';

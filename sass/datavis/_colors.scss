@@ -1,0 +1,227 @@
+@import '@servicenow/sass-global/index';
+
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+
+// Blue
+$now-datavis_color--blue-0:                 var(--now-datavis_color--blue-0, now-fn-color2rgb(#d2e5f4));
+$now-datavis_color--blue-1:                 var(--now-datavis_color--blue-1, now-fn-color2rgb(#b6d4ed));
+$now-datavis_color--blue-2:                 var(--now-datavis_color--blue-2, now-fn-color2rgb(#9ec5e6));
+$now-datavis_color--blue-3:                 var(--now-datavis_color--blue-3, now-fn-color2rgb(#81b5df));
+$now-datavis_color--blue-4:                 var(--now-datavis_color--blue-4, now-fn-color2rgb(#69a6d8));
+$now-datavis_color--blue-5:                 var(--now-datavis_color--blue-5, now-fn-color2rgb(#4d95d1));
+$now-datavis_color--blue-6:                 var(--now-datavis_color--blue-6, now-fn-color2rgb(#4283b8));
+$now-datavis_color--blue-7:                 var(--now-datavis_color--blue-7, now-fn-color2rgb(#3a73a1));
+$now-datavis_color--blue-8:                 var(--now-datavis_color--blue-8, now-fn-color2rgb(#325f86));
+$now-datavis_color--blue-9:                 var(--now-datavis_color--blue-9, now-fn-color2rgb(#284d6c));
+$now-datavis_color--blue-10:                var(--now-datavis_color--blue-10, now-fn-color2rgb(#1e3b52));
+
+// Brown
+$now-datavis_color--brown-0:                var(--now-datavis_color--brown-0, now-fn-color2rgb(#ecdbd5));
+$now-datavis_color--brown-1:                var(--now-datavis_color--brown-1, now-fn-color2rgb(#dfc3b9));
+$now-datavis_color--brown-2:                var(--now-datavis_color--brown-2, now-fn-color2rgb(#d4aea1));
+$now-datavis_color--brown-3:                var(--now-datavis_color--brown-3, now-fn-color2rgb(#c69786));
+$now-datavis_color--brown-4:                var(--now-datavis_color--brown-4, now-fn-color2rgb(#ba826d));
+$now-datavis_color--brown-5:                var(--now-datavis_color--brown-5, now-fn-color2rgb(#b06c54));
+$now-datavis_color--brown-6:                var(--now-datavis_color--brown-6, now-fn-color2rgb(#9c5f49));
+$now-datavis_color--brown-7:                var(--now-datavis_color--brown-7, now-fn-color2rgb(#84513e));
+$now-datavis_color--brown-8:                var(--now-datavis_color--brown-8, now-fn-color2rgb(#6f4434));
+$now-datavis_color--brown-9:                var(--now-datavis_color--brown-9, now-fn-color2rgb(#5a372a));
+$now-datavis_color--brown-10:               var(--now-datavis_color--brown-10, now-fn-color2rgb(#452a21));
+
+// Green
+$now-datavis_color--green-0:                var(--now-datavis_color--green-0, now-fn-color2rgb(#d0e7d3));
+$now-datavis_color--green-1:                var(--now-datavis_color--green-1, now-fn-color2rgb(#b5d9b8));
+$now-datavis_color--green-2:                var(--now-datavis_color--green-2, now-fn-color2rgb(#9acb9f));
+$now-datavis_color--green-3:                var(--now-datavis_color--green-3, now-fn-color2rgb(#7fbd85));
+$now-datavis_color--green-4:                var(--now-datavis_color--green-4, now-fn-color2rgb(#64af6c));
+$now-datavis_color--green-5:                var(--now-datavis_color--green-5, now-fn-color2rgb(#49a252));
+$now-datavis_color--green-6:                var(--now-datavis_color--green-6, now-fn-color2rgb(#3e8e46));
+$now-datavis_color--green-7:                var(--now-datavis_color--green-7, now-fn-color2rgb(#377b3e));
+$now-datavis_color--green-8:                var(--now-datavis_color--green-8, now-fn-color2rgb(#2e6633));
+$now-datavis_color--green-9:                var(--now-datavis_color--green-9, now-fn-color2rgb(#25552a));
+$now-datavis_color--green-10:               var(--now-datavis_color--green-10, now-fn-color2rgb(#1c3f1f));
+
+// Orange
+$now-datavis_color--orange-0:               var(--now-datavis_color--orange-0, now-fn-color2rgb(#fae2d1));
+$now-datavis_color--orange-1:               var(--now-datavis_color--orange-1, now-fn-color2rgb(#f7d1b6));
+$now-datavis_color--orange-2:               var(--now-datavis_color--orange-2, now-fn-color2rgb(#f4be99));
+$now-datavis_color--orange-3:               var(--now-datavis_color--orange-3, now-fn-color2rgb(#f1ac7e));
+$now-datavis_color--orange-4:               var(--now-datavis_color--orange-4, now-fn-color2rgb(#ee9a63));
+$now-datavis_color--orange-5:               var(--now-datavis_color--orange-5, now-fn-color2rgb(#eb8947));
+$now-datavis_color--orange-6:               var(--now-datavis_color--orange-6, now-fn-color2rgb(#cf7b3f));
+$now-datavis_color--orange-7:               var(--now-datavis_color--orange-7, now-fn-color2rgb(#b16835));
+$now-datavis_color--orange-8:               var(--now-datavis_color--orange-8, now-fn-color2rgb(#95582d));
+$now-datavis_color--orange-9:               var(--now-datavis_color--orange-9, now-fn-color2rgb(#7a4724));
+$now-datavis_color--orange-10:              var(--now-datavis_color--orange-10, now-fn-color2rgb(#5e381c));
+
+// Olive
+$now-datavis_color--olive-0:                var(--now-datavis_color--olive-0, now-fn-color2rgb(#e2e7d0));
+$now-datavis_color--olive-1:                var(--now-datavis_color--olive-1, now-fn-color2rgb(#d2d9b5));
+$now-datavis_color--olive-2:                var(--now-datavis_color--olive-2, now-fn-color2rgb(#c1cb9a));
+$now-datavis_color--olive-3:                var(--now-datavis_color--olive-3, now-fn-color2rgb(#b0bd7f));
+$now-datavis_color--olive-4:                var(--now-datavis_color--olive-4, now-fn-color2rgb(#9faf64));
+$now-datavis_color--olive-5:                var(--now-datavis_color--olive-5, now-fn-color2rgb(#8fa249));
+$now-datavis_color--olive-6:                var(--now-datavis_color--olive-6, now-fn-color2rgb(#7d8e3e));
+$now-datavis_color--olive-7:                var(--now-datavis_color--olive-7, now-fn-color2rgb(#6c7b37));
+$now-datavis_color--olive-8:                var(--now-datavis_color--olive-8, now-fn-color2rgb(#5a662e));
+$now-datavis_color--olive-9:                var(--now-datavis_color--olive-9, now-fn-color2rgb(#4b5525));
+$now-datavis_color--olive-10:               var(--now-datavis_color--olive-10, now-fn-color2rgb(#383f1c));
+
+// Pink
+$now-datavis_color--pink-0:                 var(--now-datavis_color--pink-0, now-fn-color2rgb(#f6d5f6));
+$now-datavis_color--pink-1:                 var(--now-datavis_color--pink-1, now-fn-color2rgb(#f0bcf0));
+$now-datavis_color--pink-2:                 var(--now-datavis_color--pink-2, now-fn-color2rgb(#eba2eb));
+$now-datavis_color--pink-3:                 var(--now-datavis_color--pink-3, now-fn-color2rgb(#e486e4));
+$now-datavis_color--pink-4:                 var(--now-datavis_color--pink-4, now-fn-color2rgb(#e06ce0));
+$now-datavis_color--pink-5:                 var(--now-datavis_color--pink-5, now-fn-color2rgb(#d954d9));
+$now-datavis_color--pink-6:                 var(--now-datavis_color--pink-6, now-fn-color2rgb(#bf4abf));
+$now-datavis_color--pink-7:                 var(--now-datavis_color--pink-7, now-fn-color2rgb(#a540a5));
+$now-datavis_color--pink-8:                 var(--now-datavis_color--pink-8, now-fn-color2rgb(#8c368c));
+$now-datavis_color--pink-9:                 var(--now-datavis_color--pink-9, now-fn-color2rgb(#722c72));
+$now-datavis_color--pink-10:                var(--now-datavis_color--pink-10, now-fn-color2rgb(#582258));
+
+// Purple
+$now-datavis_color--purple-0:               var(--now-datavis_color--purple-0, now-fn-color2rgb(#d8d8ee));
+$now-datavis_color--purple-1:               var(--now-datavis_color--purple-1, now-fn-color2rgb(#bebee4));
+$now-datavis_color--purple-2:               var(--now-datavis_color--purple-2, now-fn-color2rgb(#a6a5d9));
+$now-datavis_color--purple-3:               var(--now-datavis_color--purple-3, now-fn-color2rgb(#9190d0));
+$now-datavis_color--purple-4:               var(--now-datavis_color--purple-4, now-fn-color2rgb(#7876c6));
+$now-datavis_color--purple-5:               var(--now-datavis_color--purple-5, now-fn-color2rgb(#5f5dbb));
+$now-datavis_color--purple-6:               var(--now-datavis_color--purple-6, now-fn-color2rgb(#5554a6));
+$now-datavis_color--purple-7:               var(--now-datavis_color--purple-7, now-fn-color2rgb(#49488e));
+$now-datavis_color--purple-8:               var(--now-datavis_color--purple-8, now-fn-color2rgb(#3c3c77));
+$now-datavis_color--purple-9:               var(--now-datavis_color--purple-9, now-fn-color2rgb(#323262));
+$now-datavis_color--purple-10:              var(--now-datavis_color--purple-10, now-fn-color2rgb(#26264b));
+
+// Red
+$now-datavis_color--red-0:                  var(--now-datavis_color--red-0, now-fn-color2rgb(#f6d5d6));
+$now-datavis_color--red-1:                  var(--now-datavis_color--red-1, now-fn-color2rgb(#f0bcbc));
+$now-datavis_color--red-2:                  var(--now-datavis_color--red-2, now-fn-color2rgb(#eba2a4));
+$now-datavis_color--red-3:                  var(--now-datavis_color--red-3, now-fn-color2rgb(#e48687));
+$now-datavis_color--red-4:                  var(--now-datavis_color--red-4, now-fn-color2rgb(#e06c6e));
+$now-datavis_color--red-5:                  var(--now-datavis_color--red-5, now-fn-color2rgb(#d95454));
+$now-datavis_color--red-6:                  var(--now-datavis_color--red-6, now-fn-color2rgb(#bf4a4c));
+$now-datavis_color--red-7:                  var(--now-datavis_color--red-7, now-fn-color2rgb(#a54042));
+$now-datavis_color--red-8:                  var(--now-datavis_color--red-8, now-fn-color2rgb(#8c3636));
+$now-datavis_color--red-9:                  var(--now-datavis_color--red-9, now-fn-color2rgb(#722c2c));
+$now-datavis_color--red-10:                 var(--now-datavis_color--red-10, now-fn-color2rgb(#582222));
+
+// Teal
+$now-datavis_color--teal-0:                 var(--now-datavis_color--teal-0, now-fn-color2rgb(#d2f4ec));
+$now-datavis_color--teal-1:                 var(--now-datavis_color--teal-1, now-fn-color2rgb(#b6ede1));
+$now-datavis_color--teal-2:                 var(--now-datavis_color--teal-2, now-fn-color2rgb(#9ee6d6));
+$now-datavis_color--teal-3:                 var(--now-datavis_color--teal-3, now-fn-color2rgb(#81dfca));
+$now-datavis_color--teal-4:                 var(--now-datavis_color--teal-4, now-fn-color2rgb(#69d8c0));
+$now-datavis_color--teal-5:                 var(--now-datavis_color--teal-5, now-fn-color2rgb(#4dd1b4));
+$now-datavis_color--teal-6:                 var(--now-datavis_color--teal-6, now-fn-color2rgb(#42b89e));
+$now-datavis_color--teal-7:                 var(--now-datavis_color--teal-7, now-fn-color2rgb(#3aa18b));
+$now-datavis_color--teal-8:                 var(--now-datavis_color--teal-8, now-fn-color2rgb(#328674));
+$now-datavis_color--teal-9:                 var(--now-datavis_color--teal-9, now-fn-color2rgb(#286c5d));
+$now-datavis_color--teal-10:                var(--now-datavis_color--teal-10, now-fn-color2rgb(#1e5247));
+
+// Violet
+$now-datavis_color--violet-0:               var(--now-datavis_color--violet-0, now-fn-color2rgb(#e8d8ee));
+$now-datavis_color--violet-1:               var(--now-datavis_color--violet-1, now-fn-color2rgb(#dabee4));
+$now-datavis_color--violet-2:               var(--now-datavis_color--violet-2, now-fn-color2rgb(#cba5d9));
+$now-datavis_color--violet-3:               var(--now-datavis_color--violet-3, now-fn-color2rgb(#bf90d0));
+$now-datavis_color--violet-4:               var(--now-datavis_color--violet-4, now-fn-color2rgb(#b176c6));
+$now-datavis_color--violet-5:               var(--now-datavis_color--violet-5, now-fn-color2rgb(#a25dbb));
+$now-datavis_color--violet-6:               var(--now-datavis_color--violet-6, now-fn-color2rgb(#9054a6));
+$now-datavis_color--violet-7:               var(--now-datavis_color--violet-7, now-fn-color2rgb(#7c488e));
+$now-datavis_color--violet-8:               var(--now-datavis_color--violet-8, now-fn-color2rgb(#673c77));
+$now-datavis_color--violet-9:               var(--now-datavis_color--violet-9, now-fn-color2rgb(#553262));
+$now-datavis_color--violet-10:              var(--now-datavis_color--violet-10, now-fn-color2rgb(#41264b));
+
+// Yellow
+$now-datavis_color--yellow-0:               var(--now-datavis_color--yellow-0, now-fn-color2rgb(#ffeecc));
+$now-datavis_color--yellow-1:               var(--now-datavis_color--yellow-1, now-fn-color2rgb(#ffe1a3));
+$now-datavis_color--yellow-2:               var(--now-datavis_color--yellow-2, now-fn-color2rgb(#ffd47a));
+$now-datavis_color--yellow-3:               var(--now-datavis_color--yellow-3, now-fn-color2rgb(#ffc752));
+$now-datavis_color--yellow-4:               var(--now-datavis_color--yellow-4, now-fn-color2rgb(#ffb929));
+$now-datavis_color--yellow-5:               var(--now-datavis_color--yellow-5, now-fn-color2rgb(#ffac00));
+$now-datavis_color--yellow-6:               var(--now-datavis_color--yellow-6, now-fn-color2rgb(#e09700));
+$now-datavis_color--yellow-7:               var(--now-datavis_color--yellow-7, now-fn-color2rgb(#c28300));
+$now-datavis_color--yellow-8:               var(--now-datavis_color--yellow-8, now-fn-color2rgb(#a36e00));
+$now-datavis_color--yellow-9:               var(--now-datavis_color--yellow-9, now-fn-color2rgb(#855900));
+$now-datavis_color--yellow-10:              var(--now-datavis_color--yellow-10, now-fn-color2rgb(#664500));
+
+// Green-yellow
+$now-datavis_color--yellow-green-0:         var(--now-datavis_color--yellow-green-0, now-fn-color2rgb(#eef5cc));
+$now-datavis_color--yellow-green-1:         var(--now-datavis_color--yellow-green-1, now-fn-color2rgb(#e3eeaa));
+$now-datavis_color--yellow-green-2:         var(--now-datavis_color--yellow-green-2, now-fn-color2rgb(#d6e788));
+$now-datavis_color--yellow-green-3:         var(--now-datavis_color--yellow-green-3, now-fn-color2rgb(#cee269));
+$now-datavis_color--yellow-green-4:         var(--now-datavis_color--yellow-green-4, now-fn-color2rgb(#c2db48));
+$now-datavis_color--yellow-green-5:         var(--now-datavis_color--yellow-green-5, now-fn-color2rgb(#b9d629));
+$now-datavis_color--yellow-green-6:         var(--now-datavis_color--yellow-green-6, now-fn-color2rgb(#a3bc24));
+$now-datavis_color--yellow-green-7:         var(--now-datavis_color--yellow-green-7, now-fn-color2rgb(#8ba31f));
+$now-datavis_color--yellow-green-8:         var(--now-datavis_color--yellow-green-8, now-fn-color2rgb(#77891a));
+$now-datavis_color--yellow-green-9:         var(--now-datavis_color--yellow-green-9, now-fn-color2rgb(#5f6f15));
+$now-datavis_color--yellow-green-10:        var(--now-datavis_color--yellow-green-10, now-fn-color2rgb(#4a5610));
+
+// Derived
+$now-datavis_color--negative:               var(--now-datavis_color--negative, $now-color_alert--critical-3);
+$now-datavis_color--positive:               var(--now-datavis_color--positive, $now-color_alert--positive-3);
+$now-datavis_color--primary:                var(--now-datavis_color--primary, $now-color--neutral-0);
+
+$now-datavis_color_chart--primary:          var(--now-datavis_color_chart--primary, $now-color--neutral-2);
+$now-datavis_color_chart--secondary:        var(--now-datavis_color_chart--secondary, $now-color--neutral-4);
+$now-datavis_color_chart--tertiary:         var(--now-datavis_color_chart--tertiary, $now-color--neutral-7);
+
+$now-datavis_color_chart_fill:              var(--now-datavis_color_chart_fill,  $now-color_alert--info-1);
+
+$now-datavis_color--accessibility-0:        var(--now-datavis_color--accessibility-0, $now-color--neutral-0);
+$now-datavis_color--accessibility-2:        var(--now-datavis_color--accessibility-2, $now-color--neutral-4);
+$now-datavis_color--accessibility-10:       var(--now-datavis_color--accessibility-10,  $now-color--neutral-20);
+
+$now-datavis_color_label--primary:          var(--now-datavis_color_label--primary, $now-color--neutral-18);
+$now-datavis_color_label--secondary:        var(--now-datavis_color_label--secondary, $now-color--neutral-9);
+$now-datavis_color_label--tertiary:         var(--now-datavis_color_label--tertiary, $now-color--neutral-5);
+
+$now-datavis_color_layer--primary:          var(--now-datavis_color_layer--primary, $now-color--neutral-2);
+$now-datavis_color_layer--secondary:        var(--now-datavis_color_layer--secondary, $now-color--neutral-4);
+$now-datavis_color_layer--tertiary:         var(--now-datavis_color_layer--tertiary, $now-color--neutral-5);
+$now-datavis_color_layer--quad:             var(--now-datavis_color_layer--quad,  $now-color--neutral-20);
+
+$now-datavis_color_layer_band--primary:     var(--now-datavis_color_layer_band--primary,  $now-color_alert--high-1);
+$now-datavis_color_layer_band--secondary:   var(--now-datavis_color_layer_band--secondary, $now-color_alert--high-2);
+
+// Qualitative color sequence, default is initial sequence
+$now-datavis_color--qualitative-0:          var(--now-datavis_color--qualitative-0, $now-datavis_color--blue-5);
+$now-datavis_color--qualitative-1:          var(--now-datavis_color--qualitative-1, $now-datavis_color--orange-3);
+$now-datavis_color--qualitative-2:          var(--now-datavis_color--qualitative-2, $now-datavis_color--green-5);
+$now-datavis_color--qualitative-3:          var(--now-datavis_color--qualitative-3, $now-datavis_color--pink-3);
+$now-datavis_color--qualitative-4:          var(--now-datavis_color--qualitative-4, $now-datavis_color--brown-5);
+$now-datavis_color--qualitative-5:          var(--now-datavis_color--qualitative-5, $now-datavis_color--violet-3);
+$now-datavis_color--qualitative-6:          var(--now-datavis_color--qualitative-6, $now-datavis_color--yellow-green-5);
+$now-datavis_color--qualitative-7:          var(--now-datavis_color--qualitative-7, $now-datavis_color--red-3);
+$now-datavis_color--qualitative-8:          var(--now-datavis_color--qualitative-8, $now-datavis_color--purple-5);
+$now-datavis_color--qualitative-9:          var(--now-datavis_color--qualitative-9, $now-datavis_color--olive-3);
+$now-datavis_color--qualitative-10:         var(--now-datavis_color--qualitative-10, $now-datavis_color--teal-5);
+
+$now-datavis_color--qualitative-11:         var(--now-datavis_color--qualitative-11, $now-datavis_color--blue-4);
+$now-datavis_color--qualitative-12:         var(--now-datavis_color--qualitative-12, $now-datavis_color--orange-2);
+$now-datavis_color--qualitative-13:         var(--now-datavis_color--qualitative-13, $now-datavis_color--green-4);
+$now-datavis_color--qualitative-14:         var(--now-datavis_color--qualitative-14, $now-datavis_color--pink-2);
+$now-datavis_color--qualitative-15:         var(--now-datavis_color--qualitative-15, $now-datavis_color--brown-4);
+$now-datavis_color--qualitative-16:         var(--now-datavis_color--qualitative-16, $now-datavis_color--violet-2);
+$now-datavis_color--qualitative-17:         var(--now-datavis_color--qualitative-17, $now-datavis_color--yellow-green-4);
+$now-datavis_color--qualitative-18:         var(--now-datavis_color--qualitative-18, $now-datavis_color--red-2);
+$now-datavis_color--qualitative-19:         var(--now-datavis_color--qualitative-19, $now-datavis_color--purple-4);
+$now-datavis_color--qualitative-20:         var(--now-datavis_color--qualitative-20, $now-datavis_color--olive-2);
+$now-datavis_color--qualitative-21:         var(--now-datavis_color--qualitative-21, $now-datavis_color--teal-4);
+
+$now-datavis_color--qualitative-22:         var(--now-datavis_color--qualitative-22, $now-datavis_color--blue-8);
+$now-datavis_color--qualitative-23:         var(--now-datavis_color--qualitative-23, $now-datavis_color--orange-6);
+$now-datavis_color--qualitative-24:         var(--now-datavis_color--qualitative-24, $now-datavis_color--green-8);
+$now-datavis_color--qualitative-25:         var(--now-datavis_color--qualitative-25, $now-datavis_color--pink-6);
+$now-datavis_color--qualitative-26:         var(--now-datavis_color--qualitative-26, $now-datavis_color--brown-8);
+$now-datavis_color--qualitative-27:         var(--now-datavis_color--qualitative-27, $now-datavis_color--violet-6);
+$now-datavis_color--qualitative-28:         var(--now-datavis_color--qualitative-28, $now-datavis_color--yellow-green-8);
+$now-datavis_color--qualitative-29:         var(--now-datavis_color--qualitative-29, $now-datavis_color--red-6);
+$now-datavis_color--qualitative-30:         var(--now-datavis_color--qualitative-30, $now-datavis_color--purple-8);
+$now-datavis_color--qualitative-31:         var(--now-datavis_color--qualitative-31, $now-datavis_color--olive-6);
+$now-datavis_color--qualitative-32:         var(--now-datavis_color--qualitative-32, $now-datavis_color--teal-8);
+
+$now-datavis_color_series_default:          var(--now-datavis_color_series_default, $now-datavis_color--qualitative-0);
+
+// stylelint-enable servicenow/ndsonly-custom-property-schema

@@ -1,0 +1,11 @@
+// ServiceNow Now Design System
+
+// Theme / Old
+
+@import '@servicenow/sass-global/functions';
+
+@mixin now-mx-theme-colors-old {
+	--now-color--brand-0: #{now-fn-color2rgb(#ffffff)};
+	--now-color--brand-1: #{now-fn-color2rgb(#293e40)};
+	--now-color--brand-2: #{now-fn-color2rgb(#81b5a1)};
+}

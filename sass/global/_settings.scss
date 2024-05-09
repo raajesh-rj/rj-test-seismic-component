@@ -1,0 +1,80 @@
+// ServiceNow Now Design System
+
+// Globals / Settings
+
+@import 'functions';
+@import 'colors';
+
+// Typography
+$now-global-font-size--sm:              now-fn-px2rem(12px);
+$now-global-font-size--md:              now-fn-px2rem(16px);
+$now-global-font-size--lg:              now-fn-px2rem(20px);
+$now-global-font-size--xl:              now-fn-px2rem(24px);
+$now-global-font-size--xxl:             now-fn-px2rem(32px);
+
+// $now-font-family is in this file primarily for convenience and may be moved to its own
+// partial in sass-global in the future
+// stylelint-disable-next-line servicenow/ndsonly-custom-property-schema
+$now-font-family:                       var(--now-font-family, 'Source Sans Pro', Arial, sans-serif);
+
+$now-global-line-height--sm:            1.3333;
+$now-global-line-height:                1.25;
+$now-global-line-height-crop--before:   -0.25em;
+$now-global-line-height-crop--after:    -0.125em;
+
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+$now-line-height-crop--before:          var(--now-line-height-crop--before, $now-global-line-height-crop--before);
+$now-line-height-crop--after:           var(--now-line-height-crop--after, $now-global-line-height-crop--after);
+// stylelint-enable servicenow/ndsonly-custom-property-schema
+
+// Sizing
+$now-global-space--xxs:                 now-fn-px2rem(2px);
+$now-global-space--xs:                  now-fn-px2rem(4px);
+$now-global-space--sm:                  now-fn-px2rem(8px);
+$now-global-space--md:                  now-fn-px2rem(12px);
+$now-global-space--lg:                  now-fn-px2rem(16px);
+$now-global-space--xl:                  now-fn-px2rem(24px);
+$now-global-space--xxl:                 now-fn-px2rem(32px);
+$now-global-space--3xl:                 now-fn-px2rem(40px);
+$now-global-scrollbar-width:            now-fn-px2rem(17px);
+
+// z-index
+$now-global-layer--temp:                1000;
+$now-global-layer--nav:                 2000;
+$now-global-layer--notify:              3000;
+$now-global-layer--modal:               4000;
+$now-global-layer--tooltip:             5000;
+
+// Elements
+$now-global-border-radius--sm:          now-fn-px2rem(2px);
+$now-global-border-radius--md:          now-fn-px2rem(4px);
+$now-global-border-radius--lg:          now-fn-px2rem(8px);
+
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+$now-opacity--least:                    var(--now-opacity--least, 0.1);
+$now-opacity--less:                     var(--now-opacity--less, 0.25);
+// stylelint-enable servicenow/ndsonly-custom-property-schema
+
+$now-global-opacity--least:             $now-opacity--least;
+$now-global-opacity--less:              $now-opacity--less;
+$now-global-opacity--mid:               0.5;
+$now-global-opacity--more:              0.65;
+$now-global-opacity--most:              0.8;
+
+$now-global-drop-shadow--sm:            0 now-fn-px2rem(2px) now-fn-px2rem(4px) 0 RGB(56, 56, 56, $now-global-opacity--less);
+$now-global-drop-shadow--md:            0 now-fn-px2rem(4px) now-fn-px2rem(8px) 0 RGB(56, 56, 56, $now-global-opacity--less);
+$now-global-drop-shadow--lg:            0 now-fn-px2rem(8px) now-fn-px2rem(12px) 0 RGB(56, 56, 56, $now-global-opacity--less);
+$now-global-drop-shadow--xl:            0 now-fn-px2rem(12px) now-fn-px2rem(16px) 0 RGB(56, 56, 56, $now-global-opacity--less);
+$now-global-drop-shadow--xxl:           0 now-fn-px2rem(16px) now-fn-px2rem(24px) 0 RGB(56, 56, 56, $now-global-opacity--less);
+
+// theme-analyzer-disable
+
+// Colors
+$now-global-text--disabled:             RGB($now-color_text--primary, 0.3);
+$now-global-text--hint:                 RGB($now-color_text--primary, 0.45);
+
+// Accessibility
+$now-global-focus-ring:                 inset 0 0 0 #{now-fn-px2rem(2px)} RGB($now-color_focus-ring), inset 0 0 0 #{now-fn-px2rem(3px)} RGB($now-color_focus-ring_shadow);
+$now-global-focus-ring--bare:           inset 0 0 0 #{now-fn-px2rem(2px)} RGB($now-color_focus-ring);
+
+// theme-anlyzer-enable

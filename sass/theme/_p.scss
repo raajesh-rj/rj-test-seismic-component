@@ -1,0 +1,4 @@
+// stylelint-disable-next-line scss/at-function-pattern
+@function p($customProperty) {
+	@return unquote($customProperty);
+}

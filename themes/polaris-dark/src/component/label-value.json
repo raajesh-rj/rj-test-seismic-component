@@ -1,0 +1,18 @@
+{
+	"--now-label-value_label--color": "--now-display-type_label--color",
+	"--now-label-value_label--font-family": "--now-display-type_label--font-family",
+	"--now-label-value_label--font-style": "--now-display-type_label--font-style",
+	"--now-label-value_label--font-weight": "--now-display-type_label--font-weight",
+	"--now-label-value_label--text-transform": "--now-display-type_label--text-transform",
+	"--now-label-value_previous_delimiter--font-weight": "600",
+	"--now-label-value_previous--color": "--now-color_text--tertiary",
+	"--now-label-value_previous--font-style": "italic",
+	"--now-label-value_previous--font-weight": "normal",
+	"--now-label-value_previous--text-decoration": "line-through",
+	"--now-label-value_previous--text-transform": "--now-display-type_value--text-transform",
+	"--now-label-value_value--color": "--now-display-type_value--color",
+	"--now-label-value_value--font-family": "--now-display-type_value--font-family",
+	"--now-label-value_value--font-style": "--now-display-type_value--font-style",
+	"--now-label-value_value--font-weight": "--now-display-type_value--font-weight",
+	"--now-label-value_value--text-transform": "--now-display-type_value--text-transform"
+}

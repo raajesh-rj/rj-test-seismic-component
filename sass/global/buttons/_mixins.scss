@@ -1,0 +1,979 @@
+// Now Button Mixins
+// DO NOT IMPORT THIS PARTIAL DIRECTLY
+
+/// Outputs initial CSS for buttons
+///
+/// @group Buttons
+///
+@mixin now-mx-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	inline-size: inherit;
+	cursor: pointer;
+
+	&:active {
+		color: currentcolor;
+	}
+}
+
+/// Outputs CSS for small sized buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-sm {
+	min-block-size: now-fn-scale-size(
+		min-block-size,
+		$now-global-font-size--sm * 2,
+		$now-button--scale-size-block
+	);
+	padding-block-start: now-fn-scale-size(
+		padding-block-start,
+		now-fn-px2rem(4px),
+		$now-button--scale-size-block
+	);
+	padding-block-end: now-fn-scale-size(
+		padding-block-end,
+		now-fn-px2rem(4px),
+		$now-button--scale-size-block
+	);
+	font-size: $now-global-font-size--sm;
+	line-height: $now-global-line-height--sm;
+}
+
+/// Outputs CSS for medium sized buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-md {
+	min-block-size: now-fn-scale-size(
+		min-block-size,
+		$now-global-font-size--md * 2,
+		$now-button--scale-size-block
+	);
+	padding-block-start: now-fn-scale-size(
+		padding-block-start,
+		now-fn-px2rem(6px),
+		$now-button--scale-size-block
+	);
+	padding-block-end: now-fn-scale-size(
+		padding-block-end,
+		now-fn-px2rem(6px),
+		$now-button--scale-size-block
+	);
+	font-size: $now-global-font-size--md;
+	line-height: $now-global-line-height;
+}
+
+/// Outputs CSS for large sized buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-lg {
+	min-block-size: now-fn-scale-size(
+		min-block-size,
+		$now-global-font-size--xl * 2,
+		$now-button--scale-size-block
+	);
+	padding-block-start: now-fn-scale-size(
+		padding-block-start,
+		now-fn-px2rem(6px),
+		$now-button--scale-size-block
+	);
+	padding-block-end: now-fn-scale-size(
+		padding-block-end,
+		now-fn-px2rem(6px),
+		$now-button--scale-size-block
+	);
+	font-size: $now-global-font-size--xl;
+	line-height: $now-global-line-height;
+}
+
+/// Outputs CSS for small sized iconic buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-iconic-sm {
+	inline-size: now-fn-scale-size(
+		inline-size,
+		$now-global-font-size--sm * 2,
+		$now-button--scale-size
+	);
+	block-size: now-fn-scale-size(
+		block-size,
+		$now-global-font-size--sm * 2,
+		$now-button--scale-size
+	);
+}
+
+/// Outputs CSS for medium sized iconic buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-iconic-md {
+	inline-size: now-fn-scale-size(
+		inline-size,
+		$now-global-font-size--md * 2,
+		$now-button--scale-size
+	);
+	block-size: now-fn-scale-size(
+		block-size,
+		$now-global-font-size--md * 2,
+		$now-button--scale-size
+	);
+}
+
+/// Outputs CSS for large sized iconic buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-iconic-lg {
+	inline-size: now-fn-scale-size(
+		inline-size,
+		$now-global-font-size--xl * 2,
+		$now-button--scale-size
+	);
+	block-size: now-fn-scale-size(
+		block-size,
+		$now-global-font-size--xl * 2,
+		$now-button--scale-size
+	);
+}
+
+/// Outputs CSS for now-button using `primary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-primary {
+	border-width: $now-button--primary--border-width;
+	border-color: RGB($now-button--primary--border-color);
+	border-start-start-radius: $now-button--primary--border-start-start-radius;
+	border-start-end-radius: $now-button--primary--border-start-end-radius;
+	border-end-start-radius: $now-button--primary--border-end-start-radius;
+	border-end-end-radius: $now-button--primary--border-end-end-radius;
+	color: RGB($now-button--primary--color);
+	background-color: RGB($now-button--primary--background-color);
+
+	.now-button-icon {
+			color: RGB($now-button_icon--primary--color);
+		}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB($now-button--primary--border-color--hover);
+			color: RGB($now-button--primary--color--hover);
+			background-color: RGB($now-button--primary--background-color--hover);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB($now-button--primary--border-color--active);
+			color: RGB($now-button--primary--color--active);
+			background-color: RGB($now-button--primary--background-color--active);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--primary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for now-button using `primary-positive` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-primary-positive {
+	border-width: $now-button--primary-positive--border-width;
+	border-color: RGB($now-button--primary-positive--border-color);
+	border-start-start-radius: $now-button--primary-positive--border-start-start-radius;
+	border-start-end-radius: $now-button--primary-positive--border-start-end-radius;
+	border-end-start-radius: $now-button--primary-positive--border-end-start-radius;
+	border-end-end-radius: $now-button--primary-positive--border-end-end-radius;
+	color: RGB($now-button--primary-positive--color);
+	background-color: RGB($now-button--primary-positive--background-color);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--primary-positive--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB($now-button--primary-positive--border-color--hover);
+			color: RGB($now-button--primary-positive--color--hover);
+			background-color: RGB(
+				$now-button--primary-positive--background-color--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary-positive--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--primary-positive--border-color--active
+			);
+			color: RGB($now-button--primary-positive--color--active);
+			background-color: RGB(
+				$now-button--primary-positive--background-color--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary-positive--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--primary-positive--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for now-button using `primary-negative` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-primary-negative {
+	border-width: $now-button--primary-negative--border-width;
+	border-color: RGB($now-button--primary-negative--border-color);
+	border-start-start-radius: $now-button--primary-negative--border-start-start-radius;
+	border-start-end-radius: $now-button--primary-negative--border-start-end-radius;
+	border-end-start-radius: $now-button--primary-negative--border-end-start-radius;
+	border-end-end-radius: $now-button--primary-negative--border-end-end-radius;
+	color: RGB($now-button--primary-negative--color);
+	background-color: RGB($now-button--primary-negative--background-color);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--primary-negative--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB($now-button--primary-negative--border-color--hover);
+			color: RGB($now-button--primary-negative--color--hover);
+			background-color: RGB(
+				$now-button--primary-negative--background-color--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary-negative--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--primary-negative--border-color--active
+			);
+			color: RGB($now-button--primary-negative--color--active);
+			background-color: RGB(
+				$now-button--primary-negative--background-color--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--primary-negative--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--primary-negative--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for now-button using `secondary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-secondary {
+	border-width: $now-button--secondary--border-width;
+	border-color: RGB($now-button--secondary--border-color);
+	border-start-start-radius: $now-button--secondary--border-start-start-radius;
+	border-start-end-radius: $now-button--secondary--border-start-end-radius;
+	border-end-start-radius: $now-button--secondary--border-end-start-radius;
+	border-end-end-radius: $now-button--secondary--border-end-end-radius;
+	color: RGB($now-button--secondary--color);
+	background-color: RGB(
+		$now-button--secondary--background-color,
+		$now-button--secondary--background-color-alpha
+	);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--secondary--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB($now-button--secondary--border-color--hover);
+			color: RGB($now-button--secondary--color--hover);
+			background-color: RGB(
+				$now-button--secondary--background-color--hover,
+				$now-button--secondary--background-color-alpha--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB($now-button--secondary--border-color--active);
+			color: RGB($now-button--secondary--color--active);
+			background-color: RGB(
+				$now-button--secondary--background-color--active,
+				$now-button--secondary--background-color-alpha--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--secondary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for now-button using `secondary-positive` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-secondary-positive {
+	border-width: $now-button--secondary-positive--border-width;
+	border-color: RGB($now-button--secondary-positive--border-color);
+	border-start-start-radius: $now-button--secondary-positive--border-start-start-radius;
+	border-start-end-radius: $now-button--secondary-positive--border-start-end-radius;
+	border-end-start-radius: $now-button--secondary-positive--border-end-start-radius;
+	border-end-end-radius: $now-button--secondary-positive--border-end-end-radius;
+	color: RGB($now-button--secondary-positive--color);
+	background-color: RGB(
+		$now-button--secondary-positive--background-color,
+		$now-button--secondary-positive--background-color-alpha
+	);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--secondary-positive--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--secondary-positive--border-color--hover
+			);
+			color: RGB($now-button--secondary-positive--color--hover);
+			background-color: RGB(
+				$now-button--secondary-positive--background-color--hover,
+				$now-button--secondary-positive--background-color-alpha--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary-positive--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--secondary-positive--border-color--active
+			);
+			color: RGB($now-button--secondary-positive--color--active);
+			background-color: RGB(
+				$now-button--secondary-positive--background-color--active,
+				$now-button--secondary-positive--background-color-alpha--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary-positive--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--secondary-positive--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for now-button using `secondary-negative` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-secondary-negative {
+	border-width: $now-button--secondary-negative--border-width;
+	border-color: RGB($now-button--secondary-negative--border-color);
+	border-start-start-radius: $now-button--secondary-negative--border-start-start-radius;
+	border-start-end-radius: $now-button--secondary-negative--border-start-end-radius;
+	border-end-start-radius: $now-button--secondary-negative--border-end-start-radius;
+	border-end-end-radius: $now-button--secondary-negative--border-end-end-radius;
+	color: RGB($now-button--secondary-negative--color);
+	background-color: RGB(
+		$now-button--secondary-negative--background-color,
+		$now-button--secondary-negative--background-color-alpha
+	);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--secondary-negative--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--secondary-negative--border-color--hover
+			);
+			color: RGB($now-button--secondary-negative--color--hover);
+			background-color: RGB(
+				$now-button--secondary-negative--background-color--hover,
+				$now-button--secondary-negative--background-color-alpha--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary-negative--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--secondary-negative--border-color--active
+			);
+			color: RGB($now-button--secondary-negative--color--active);
+			background-color: RGB(
+				$now-button--secondary-negative--background-color--active,
+				$now-button--secondary-negative--background-color-alpha--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--secondary-negative--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--secondary-negative--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for buttons using `tertiary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-tertiary {
+	border-width: $now-button--tertiary--border-width;
+	border-color: RGB(
+		$now-button--tertiary--border-color,
+		$now-button--tertiary--border-color-alpha
+	);
+	border-start-start-radius: $now-button--tertiary--border-start-start-radius;
+	border-start-end-radius: $now-button--tertiary--border-start-end-radius;
+	border-end-start-radius: $now-button--tertiary--border-end-start-radius;
+	border-end-end-radius: $now-button--tertiary--border-end-end-radius;
+	color: RGB(
+		$now-button--tertiary--color,
+		$now-button--tertiary--color-alpha
+	);
+	background-color: RGB(
+		$now-button--tertiary--background-color,
+		$now-button--tertiary--background-color-alpha
+	);
+
+	.now-button-icon {
+		color: RGB($now-button_icon--tertiary--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--tertiary--border-color--hover,
+				$now-button--tertiary--border-color-alpha--hover
+			);
+			color: RGB(
+				$now-button--tertiary--color--hover,
+				$now-button--tertiary--color-alpha--hover
+			);
+			background-color: RGB(
+				$now-button--tertiary--background-color--hover,
+				$now-button--tertiary--background-color-alpha--hover
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--tertiary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--tertiary--border-color--active,
+				$now-button--tertiary--border-color-alpha--active
+			);
+			color: RGB(
+				$now-button--tertiary--color--active,
+				$now-button--tertiary--color-alpha--active
+			);
+			background-color: RGB(
+				$now-button--tertiary--background-color--active,
+				$now-button--tertiary--background-color-alpha--active
+			);
+
+			.now-button-icon {
+				color: RGB($now-button_icon--tertiary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--tertiary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for bare buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-is-bare {
+	&,
+	&:hover,
+	&:active {
+		border-width: 0;
+		border-color: transparent;
+		background-color: transparent;
+	}
+}
+
+/// Outputs CSS for bare buttons using `primary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-primary {
+	border-width: $now-button--bare_primary--border-width;
+	border-radius: $now-button--bare_primary--border-radius;
+	color: RGB($now-button--bare_primary--color);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_primary--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--bare_primary--border-color--hover,
+				$now-button--bare_primary--border-color-alpha--hover
+			);
+			color: RGB($now-button--bare_primary--color--hover);
+			background-color: RGB(
+				$now-button--bare_primary--background-color--hover,
+				$now-button--bare_primary--background-color-alpha--hover
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_primary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--bare_primary--border-color--active,
+				$now-button--bare_primary--border-color-alpha--active
+			);
+			color: RGB($now-button--bare_primary--color--active);
+			background-color: RGB(
+				$now-button--bare_primary--background-color--active,
+				$now-button--bare_primary--background-color-alpha--active
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_primary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--bare_primary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for bare buttons using `primary` variant plus
+/// `highContrast`.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-primary-high-contrast {
+	color: RGB($now-button--bare_primary_high-contrast--color);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_primary_high-contrast--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB($now-button--bare_primary_high-contrast--color--hover);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_primary_high-contrast--color--hover);
+			}
+		}
+
+		&:active {
+			color: RGB($now-button--bare_primary_high-contrast--color--active);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_primary_high-contrast--color--active);
+			}
+		}
+	}
+}
+
+/// Outputs CSS for bare buttons using `secondary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-secondary {
+	border-width: $now-button--bare_secondary--border-width;
+	border-radius: $now-button--bare_secondary--border-radius;
+	color: RGB($now-button--bare_secondary--color);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_secondary--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--bare_secondary--border-color--hover,
+				$now-button--bare_secondary--border-color-alpha--hover
+			);
+			color: RGB($now-button--bare_secondary--color--hover);
+			background-color: RGB(
+				$now-button--bare_secondary--background-color--hover,
+				$now-button--bare_secondary--background-color-alpha--hover
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_secondary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--bare_secondary--border-color--active,
+				$now-button--bare_secondary--border-color-alpha--active
+			);
+			color: RGB($now-button--bare_secondary--color--active);
+			background-color: RGB(
+				$now-button--bare_secondary--background-color--active,
+				$now-button--bare_secondary--background-color-alpha--active
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_secondary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--bare_secondary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for bare buttons using `secondary` variant plus
+/// `highContrast`.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-secondary-high-contrast {
+	color: RGB($now-button--bare_secondary_high-contrast--color);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_secondary_high-contrast--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB($now-button--bare_secondary_high-contrast--color--hover);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_secondary_high-contrast--color--hover);
+			}
+		}
+
+		&:active {
+			color: RGB($now-button--bare_secondary_high-contrast--color--active);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_secondary_high-contrast--color--active);
+			}
+		}
+	}
+}
+
+/// Outputs CSS for bare buttons using `tertiary` variant.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-tertiary {
+	border-width: $now-button--bare_tertiary--border-width;
+	border-radius: $now-button--bare_tertiary--border-radius;
+	color: RGB($now-button--bare_tertiary--color);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_tertiary--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			border-color: RGB(
+				$now-button--bare_tertiary--border-color--hover,
+				$now-button--bare_tertiary--border-color-alpha--hover
+			);
+			color: RGB($now-button--bare_tertiary--color--hover);
+			background-color: RGB(
+				$now-button--bare_tertiary--background-color--hover,
+				$now-button--bare_tertiary--background-color-alpha--hover
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_tertiary--color--hover);
+			}
+		}
+
+		&:active {
+			border-color: RGB(
+				$now-button--bare_tertiary--border-color--active,
+				$now-button--bare_tertiary--border-color-alpha--active
+			);
+			color: RGB($now-button--bare_tertiary--color--active);
+			background-color: RGB(
+				$now-button--bare_tertiary--background-color--active,
+				$now-button--bare_tertiary--background-color-alpha--active
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_tertiary--color--active);
+			}
+		}
+	}
+
+	&.is-disabled {
+		opacity: $now-button--bare_tertiary--opacity--disabled;
+	}
+}
+
+/// Outputs CSS for bare buttons using `tertiary` variant plus
+/// `highContrast`.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-bare-tertiary-high-contrast {
+	color: RGB(
+		$now-button--bare_tertiary_high-contrast--color,
+		$now-button--bare_tertiary_high-contrast--color-alpha
+	);
+
+	.now-button-bare-icon {
+		color: RGB($now-button_icon--bare_tertiary_high-contrast--color);
+	}
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB(
+				$now-button--bare_tertiary_high-contrast--color--hover,
+				$now-button--bare_tertiary_high-contrast--color-alpha--hover
+			);
+			
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_tertiary_high-contrast--color--hover);
+			}
+		}
+
+		&:active {
+			color: RGB(
+				$now-button--bare_tertiary_high-contrast--color--active,
+				$now-button--bare_tertiary_high-contrast--color-alpha--active
+			);
+
+			.now-button-bare-icon {
+				color: RGB($now-button_icon--bare_tertiary_high-contrast--color--active);
+			}
+		}
+	}
+}
+
+/// Outputs CSS for disabled buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-is-disabled {
+	cursor: not-allowed;
+	opacity: $now-button--opacity--disabled;
+
+	&:hover {
+		box-shadow: none;
+	}
+
+	&:focus {
+		@include now-mx-focus-ring;
+	}
+}
+
+/// Outputs CSS for disabled bare buttons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-is-bare-is-disabled {
+	&.is-disabled,
+	&.is-disabled:hover {
+		border-color: transparent;
+		background-color: transparent;
+	}
+}
+
+/// Outputs CSS for buttons containing only icons.
+///
+/// @group Buttons
+///
+@mixin now-mx-button-only-icon {
+	padding-inline-start: 0;
+	padding-inline-end: 0;
+
+	&.-sm {
+		inline-size: now-fn-scale-size(
+			inline-size,
+			$now-global-font-size--sm * 2,
+			$now-button--scale-size
+		);
+	}
+
+	&.-md {
+		inline-size: now-fn-scale-size(
+			inline-size,
+			$now-global-font-size--md * 2,
+			$now-button--scale-size
+		);
+	}
+
+	&.-lg {
+		inline-size: now-fn-scale-size(
+			inline-size,
+			$now-global-font-size--xl * 2,
+			$now-button--scale-size
+		);
+	}
+}
+
+/// Outputs CSS for forced colors for buttons
+///
+/// @group Buttons
+///
+@mixin now-mx-button-forced-color {
+	border-width: 1px !important;
+	border-style: solid !important;
+	color: buttontext !important;
+	background-color: buttonface !important;
+
+	now-icon {
+		color: inherit !important;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: highlight !important;
+		color: highlight !important;
+		background-color: highlighttext !important;
+	}
+
+	&.is-disabled,
+	&.is-disabled:hover {
+		border-color: graytext !important;
+		color: graytext !important;
+		background-color: buttonface !important;
+		opacity: 1 !important;
+	}
+}
+
+/// Outputs CSS for forced colors for button stateful selected state
+///
+/// @group Buttons
+///
+@mixin now-mx-button-stateful-selected-forced-color {
+	&.is-selected {
+		border-color: selecteditemtext;
+		color: selecteditemtext !important;
+		background-color: selecteditem !important;
+
+		&.is-disabled {
+			color: graytext !important;
+			background-color: buttonface !important;
+		}
+	}
+}
+
+// DEPRECATED
+
+@mixin now-mx-button-primary-selection {
+	color: RGB($now-button-stateful--primary-selection--color);
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB($now-button-stateful--primary-selection--color--hover);
+			background-color: RGBA(
+				$now-button-stateful--primary-selection--background-color--hover,
+				$now-global-opacity--least
+			);
+		}
+
+		&:active {
+			color: RGB($now-button-stateful--primary-selection--color--active);
+			background-color: RGBA(
+				$now-button-stateful--primary-selection--background-color--active,
+				$now-global-opacity--less
+			);
+		}
+	}
+}
+
+@mixin now-mx-button-secondary-selection {
+	color: RGB($now-button-stateful--secondary-selection--color);
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB($now-button-stateful--secondary-selection--color--hover);
+			background-color: RGBA(
+				$now-button-stateful--secondary-selection--background-color--hover,
+				$now-global-opacity--least
+			);
+		}
+
+		&:active {
+			color: RGB($now-button-stateful--secondary-selection--color--active);
+			background-color: RGBA(
+				$now-button-stateful--secondary-selection--background-color--active,
+				$now-global-opacity--less
+			);
+		}
+	}
+}
+
+@mixin now-mx-button-tertiary-selection {
+	color: RGB($now-button-stateful--tertiary-selection--color);
+
+	&:not(.is-disabled) {
+		&:hover {
+			color: RGB($now-button-stateful--tertiary-selection--color--hover);
+			background-color: RGBA(
+				$now-button-stateful--tertiary-selection--background-color--hover,
+				$now-global-opacity--least
+			);
+		}
+
+		&:active {
+			color: RGB($now-button-stateful--tertiary-selection--color--active);
+			background-color: RGBA(
+				$now-button-stateful--tertiary-selection--background-color--active,
+				$now-global-opacity--less
+			);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"--now-progress-bar_path--alert--background-color": "--now-color_alert--high-3",
+	"--now-progress-bar_path--error--background-color": "--now-color_alert--critical-2",
+	"--now-progress-bar_path--gray--background-color": "--now-color_grouped--gray-2",
+	"--now-progress-bar_path--green--background-color": "--now-color_grouped--green-2",
+	"--now-progress-bar_path--inactive--background-color": "--now-progress-bar--background-color",
+	"--now-progress-bar_path--initial--background-color": "--now-loading--initial--background-color",
+	"--now-progress-bar_path--orange--background-color": "--now-color_grouped--orange-2",
+	"--now-progress-bar_path--pink--background-color": "--now-color_grouped--pink-2",
+	"--now-progress-bar_path--positive--background-color": "--now-color_alert--positive-3",
+	"--now-progress-bar--background-color": "--now-color_background--tertiary",
+	"--now-progress-bar--border-color": "--now-color_border--primary",
+	"--now-progress-bar--border-radius": "--now-loading--border-radius",
+	"--now-progress-bar--border-width": "--now-loading--border-width",
+	"--now-progress-bar_path--border-width": "2px",
+	"--now-progress-bar_path--border-color": "--now-color_border--primary-actionable"
+}

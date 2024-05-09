@@ -1,0 +1,12 @@
+{
+	"--now-form-control_handle--border-radius": "$now-global-border-radius--sm",
+	"--now-form-control_handle--border-width": "1px",
+	"--now-form-control_track--border-radius": "$now-global-border-radius--sm",
+	"--now-form-control_track--border-width": "1px",
+	"--now-form-control--border-radius": "0",
+	"--now-form-control--border-width": "1px",
+	"--now-form-control--font-family": "--now-font-family",
+	"--now-form-control--font-style": "normal",
+	"--now-form-control--font-weight": "normal",
+	"--now-form-control--text-transform": "none"
+}

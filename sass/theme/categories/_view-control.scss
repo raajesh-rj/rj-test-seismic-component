@@ -1,0 +1,12 @@
+// ServiceNow Now Design System
+
+// Theme / Category / View Control
+
+@mixin now-mx-theme-category-view-control {
+	--now-view-control--font-style: normal;
+	--now-view-control--font-weight: normal;
+	--now-view-control--font-family: var(--now-font-family);
+	--now-view-control--text-transform: none;
+	--now-view-control--border-width: 0;
+	--now-view-control--border-radius: 0;
+}

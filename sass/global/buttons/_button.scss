@@ -1,0 +1,426 @@
+// Now Button Theme
+// DO NOT IMPORT THIS PARTIAL DIRECTLY
+
+$now-button--scale-size-inline: var(--now-button--scale-size-inline, 1);
+$now-button--scale-size-block: var(--now-button--scale-size-block, 1);
+$now-button--scale-size: var(--now-button--scale-size, 1);
+
+$now-button--font-style: var(--now-button--font-style, $now-actionable--font-style);
+$now-button--font-weight: var(--now-button--font-weight, $now-actionable--font-weight);
+$now-button--font-family: var(--now-button--font-family, $now-actionable--font-family);
+$now-button--text-transform: var(--now-button--text-transform, $now-actionable--text-transform);
+$now-button--text-wrap: var(--now-button--text-wrap, normal);
+
+$now-button--border-width: var(--now-button--border-width, $now-actionable--border-width);
+$now-button--border-radius: var(--now-button--border-radius, $now-actionable--border-radius);
+$now-button--border-start-start-radius: var(--now-button--border-start-start-radius, $now-button--border-radius);
+$now-button--border-start-end-radius: var(--now-button--border-start-end-radius, $now-button--border-radius);
+$now-button--border-end-start-radius: var(--now-button--border-end-start-radius, $now-button--border-radius);
+$now-button--border-end-end-radius: var(--now-button--border-end-end-radius, $now-button--border-radius);
+
+$now-button--opacity--disabled: var(--now-button--opacity--disabled, $now-actionable--opacity--disabled);
+
+// Primary
+
+$now-button--primary--border-width: var(--now-button--primary--border-width, $now-button--border-width);
+$now-button--primary--border-radius: var(--now-button--primary--border-radius, $now-button--border-radius);
+$now-button--primary--border-start-start-radius: var(--now-button--primary--border-start-start-radius, $now-button--primary--border-radius);
+$now-button--primary--border-start-end-radius: var(--now-button--primary--border-start-end-radius, $now-button--primary--border-radius);
+$now-button--primary--border-end-start-radius: var(--now-button--primary--border-end-start-radius, $now-button--primary--border-radius);
+$now-button--primary--border-end-end-radius: var(--now-button--primary--border-end-end-radius, $now-button--primary--border-radius);
+
+$now-button--primary--opacity--disabled: var(--now-button--primary--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--primary--border-color: var(--now-button--primary--border-color, $now-color--primary-3);
+$now-button--primary--border-color--hover: var(--now-button--primary--border-color--hover, $now-button--primary--border-color);
+$now-button--primary--border-color--active: var(--now-button--primary--border-color--active, $now-button--primary--border-color);
+
+$now-button--primary--color: var(--now-button--primary--color, $now-color--neutral-0);
+$now-button--primary--color--hover: var(--now-button--primary--color--hover, $now-button--primary--color);
+$now-button--primary--color--active: var(--now-button--primary--color--active, $now-button--primary--color);
+
+$now-button--primary--background-color: var(--now-button--primary--background-color, $now-color--primary-1);
+$now-button--primary--background-color--hover: var(--now-button--primary--background-color--hover, $now-color--primary-2);
+$now-button--primary--background-color--active: var(--now-button--primary--background-color--active, $now-color--primary-3);
+
+$now-button_icon--primary--color: var(--now-button_icon--primary--color, $now-button--primary--color);
+$now-button_icon--primary--color--hover: var(--now-button_icon--primary--color--hover, $now-button--primary--color--hover);
+$now-button_icon--primary--color--active: var(--now-button_icon--primary--color--active, $now-button--primary--color--active);
+
+// Primary High-contrast (DEPRECATED)
+
+$now-button--primary_high-contrast--color: var(--now-button--primary_high-contrast--color, $now-color--primary-2);
+$now-button--primary_high-contrast--color--hover: var(--now-button--primary_high-contrast--color--hover, $now-color--primary-3);
+$now-button--primary_high-contrast--color--active: var(--now-button--primary_high-contrast--color--active, $now-color_text--primary);
+
+// Primary-positive
+
+$now-button--primary-positive--border-width: var(--now-button--primary-positive--border-width, $now-button--border-width);
+$now-button--primary-positive--border-radius: var(--now-button--primary-positive--border-radius, $now-button--border-radius);
+$now-button--primary-positive--border-start-start-radius: var(--now-button--primary-positive--border-start-start-radius, $now-button--primary-positive--border-radius);
+$now-button--primary-positive--border-start-end-radius: var(--now-button--primary-positive--border-start-end-radius, $now-button--primary-positive--border-radius);
+$now-button--primary-positive--border-end-start-radius: var(--now-button--primary-positive--border-end-start-radius, $now-button--primary-positive--border-radius);
+$now-button--primary-positive--border-end-end-radius: var(--now-button--primary-positive--border-end-end-radius, $now-button--primary-positive--border-radius);
+
+$now-button--primary-positive--opacity--disabled: var(--now-button--primary-positive--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--primary-positive--border-color: var(--now-button--primary-positive--border-color, $now-color_alert--positive-4);
+$now-button--primary-positive--border-color--hover: var(--now-button--primary-positive--border-color--hover, $now-button--primary-positive--border-color);
+$now-button--primary-positive--border-color--active: var(--now-button--primary-positive--border-color--active, $now-button--primary-positive--border-color);
+
+$now-button--primary-positive--color: var(--now-button--primary-positive--color, $now-button--primary--color);
+$now-button--primary-positive--color--hover: var(--now-button--primary-positive--color--hover, $now-button--primary-positive--color);
+$now-button--primary-positive--color--active: var(--now-button--primary-positive--color--active, $now-button--primary-positive--color);
+
+$now-button--primary-positive--background-color: var(--now-button--primary-positive--background-color, $now-color_alert--positive-2);
+$now-button--primary-positive--background-color--hover: var(--now-button--primary-positive--background-color--hover, $now-color_alert--positive-3);
+$now-button--primary-positive--background-color--active: var(--now-button--primary-positive--background-color--active, $now-color_alert--positive-4);
+
+$now-button_icon--primary-positive--color: var(--now-button_icon--primary-positive--color, $now-button--primary-positive--color);
+$now-button_icon--primary-positive--color--hover: var(--now-button_icon--primary-positive--color--hover, $now-button--primary-positive--color--hover);
+$now-button_icon--primary-positive--color--active: var(--now-button_icon--primary-positive--color--active, $now-button--primary-positive--color--active);
+
+// Primary-negative
+
+$now-button--primary-negative--border-width: var(--now-button--primary-negative--border-width, $now-button--border-width);
+$now-button--primary-negative--border-radius: var(--now-button--primary-negative--border-radius, $now-button--border-radius);
+$now-button--primary-negative--border-start-start-radius: var(--now-button--primary-negative--border-start-start-radius, $now-button--primary-negative--border-radius);
+$now-button--primary-negative--border-start-end-radius: var(--now-button--primary-negative--border-start-end-radius, $now-button--primary-negative--border-radius);
+$now-button--primary-negative--border-end-start-radius: var(--now-button--primary-negative--border-end-start-radius, $now-button--primary-negative--border-radius);
+$now-button--primary-negative--border-end-end-radius: var(--now-button--primary-negative--border-end-end-radius, $now-button--primary-negative--border-radius);
+
+$now-button--primary-negative--opacity--disabled: var(--now-button--primary-negative--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--primary-negative--border-color: var(--now-button--primary-negative--border-color, $now-color_alert--critical-4);
+$now-button--primary-negative--border-color--hover: var(--now-button--primary-negative--border-color--hover, $now-button--primary-negative--border-color);
+$now-button--primary-negative--border-color--active: var(--now-button--primary-negative--border-color--active, $now-button--primary-negative--border-color);
+
+$now-button--primary-negative--color: var(--now-button--primary-negative--color, $now-color--neutral-0);
+$now-button--primary-negative--color--hover: var(--now-button--primary-negative--color--hover, $now-button--primary-negative--color);
+$now-button--primary-negative--color--active: var(--now-button--primary-negative--color--active, $now-button--primary-negative--color);
+
+$now-button--primary-negative--background-color: var(--now-button--primary-negative--background-color, $now-color_alert--critical-2);
+$now-button--primary-negative--background-color--hover: var(--now-button--primary-negative--background-color--hover, $now-color_alert--critical-3);
+$now-button--primary-negative--background-color--active: var(--now-button--primary-negative--background-color--active, $now-color_alert--critical-4);
+
+$now-button_icon--primary-negative--color: var(--now-button_icon--primary-negative--color, $now-button--primary-negative--color);
+$now-button_icon--primary-negative--color--hover: var(--now-button_icon--primary-negative--color--hover, $now-button--primary-negative--color--hover);
+$now-button_icon--primary-negative--color--active: var(--now-button_icon--primary-negative--color--active, $now-button--primary-negative--color--active);
+
+// Primary-selection (DEPRECATED)
+
+$now-button--primary-selection--color: var(
+	--now-button--primary-selection--color,
+	$now-color_selection--primary-2
+);
+$now-button--primary-selection--color--hover: var(
+	--now-button--primary-selection--color--hover,
+	$now-color_selection--primary-3
+);
+$now-button--primary-selection--color--active: var(
+	--now-button--primary-selection--color--active,
+	$now-color_selection--primary-4
+);
+$now-button--primary-selection--background-color--hover: var(
+	--now-button--primary-selection--background-color--hover,
+	$now-color_selection--primary-3
+);
+$now-button--primary-selection--background-color--active: var(
+	--now-button--primary-selection--background-color--active,
+	$now-color_selection--primary-3
+);
+$now-button--primary-selection_high-contrast--color: var(
+	--now-button--primary-selection_high-contrast--color,
+	$now-color_selection--primary-4
+);
+$now-button--primary-selection_high-contrast--color--hover: var(
+	--now-button--primary-selection_high-contrast--color--hover,
+	$now-color_text--primary
+);
+$now-button--primary-selection_high-contrast--color--active: var(
+	--now-button--primary-selection_high-contrast--color--active,
+	$now-color_text--primary
+);
+$now-button--primary-selection_highlighted--background-color--selected: var(
+	--now-button--primary-selection_highlighted--background-color--selected,
+	$now-color_selection--primary-2
+);
+$now-button--primary-selection_highlighted--background-color--selected_hover: var(
+	p(
+		--now-button--primary-selection_highlighted--background-color--selected_hover
+	),
+	$now-button--primary-selection_highlighted--background-color--selected
+);
+$now-button--primary-selection_highlighted--background-color--selected_active: var(
+	p(
+		--now-button--primary-selection_highlighted--background-color--selected_active
+	),
+	$now-button--primary-selection_highlighted--background-color--selected
+);
+
+// Secondary
+
+$now-button--secondary--border-width: var(--now-button--secondary--border-width, $now-button--border-width);
+$now-button--secondary--border-radius: var(--now-button--secondary--border-radius, $now-button--border-radius);
+$now-button--secondary--border-start-start-radius: var(--now-button--secondary--border-start-start-radius, $now-button--secondary--border-radius);
+$now-button--secondary--border-start-end-radius: var(--now-button--secondary--border-start-end-radius, $now-button--secondary--border-radius);
+$now-button--secondary--border-end-start-radius: var(--now-button--secondary--border-end-start-radius, $now-button--secondary--border-radius);
+$now-button--secondary--border-end-end-radius: var(--now-button--secondary--border-end-end-radius, $now-button--secondary--border-radius);
+
+$now-button--secondary--opacity--disabled: var(--now-button--secondary--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--secondary--border-color: var(--now-button--secondary--border-color, $now-color--neutral-7);
+$now-button--secondary--border-color--hover: var(--now-button--secondary--border-color--hover, $now-button--secondary--border-color);
+$now-button--secondary--border-color--active: var(--now-button--secondary--border-color--active, $now-button--secondary--border-color);
+
+$now-button--secondary--color: var(--now-button--secondary--color, $now-color--neutral-18);
+$now-button--secondary--color--hover: var(--now-button--secondary--color--hover, $now-color--secondary-2);
+$now-button--secondary--color--active: var(--now-button--secondary--color--active, $now-color--secondary-3);
+
+$now-button--secondary--background-color: var(--now-button--secondary--background-color, $now-color_background--tertiary);
+$now-button--secondary--background-color-alpha: var(--now-button--secondary--background-color-alpha, 1);
+$now-button--secondary--background-color--hover: var(--now-button--secondary--background-color--hover, $now-color--neutral-3);
+$now-button--secondary--background-color-alpha--hover: var(--now-button--secondary--background-color-alpha--hover, $now-button--secondary--background-color-alpha);
+$now-button--secondary--background-color--active: var(--now-button--secondary--background-color--active, $now-color--neutral-5);
+$now-button--secondary--background-color-alpha--active: var(--now-button--secondary--background-color-alpha--active, $now-button--secondary--background-color-alpha);
+
+$now-button_icon--secondary--color: var(--now-button_icon--secondary--color, $now-button--secondary--color);
+$now-button_icon--secondary--color--hover: var(--now-button_icon--secondary--color--hover, $now-button--secondary--color--hover);
+$now-button_icon--secondary--color--active: var(--now-button_icon--secondary--color--active, $now-button--secondary--color--active);
+
+// Secondary High-contrast (DEPRECATED)
+
+$now-button--secondary_high-contrast--color: var(--now-button--secondary_high-contrast--color, $now-color--secondary-2);
+$now-button--secondary_high-contrast--color--hover: var(--now-button--secondary_high-contrast--color--hover, $now-color--secondary-3);
+$now-button--secondary_high-contrast--color--active: var(--now-button--secondary_high-contrast--color--active, $now-color_text--primary);
+
+// Secondary-positive
+
+$now-button--secondary-positive--border-width: var(--now-button--secondary-positive--border-width, $now-button--border-width);
+$now-button--secondary-positive--border-radius: var(--now-button--secondary-positive--border-radius, $now-button--border-radius);
+$now-button--secondary-positive--border-start-start-radius: var(--now-button--secondary-positive--border-start-start-radius, $now-button--secondary-positive--border-radius);
+$now-button--secondary-positive--border-start-end-radius: var(--now-button--secondary-positive--border-start-end-radius, $now-button--secondary-positive--border-radius);
+$now-button--secondary-positive--border-end-start-radius: var(--now-button--secondary-positive--border-end-start-radius, $now-button--secondary-positive--border-radius);
+$now-button--secondary-positive--border-end-end-radius: var(--now-button--secondary-positive--border-end-end-radius, $now-button--secondary-positive--border-radius);
+
+$now-button--secondary-positive--opacity--disabled: var(--now-button--secondary-positive--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--secondary-positive--border-color: var(--now-button--secondary-positive--border-color, $now-color_alert--positive-2);
+$now-button--secondary-positive--border-color--hover: var(--now-button--secondary-positive--border-color--hover, $now-button--secondary-positive--border-color);
+$now-button--secondary-positive--border-color--active: var(--now-button--secondary-positive--border-color--active, $now-button--secondary-positive--border-color);
+
+$now-button--secondary-positive--color: var(--now-button--secondary-positive--color, $now-color_alert--positive-4);
+$now-button--secondary-positive--color--hover: var(--now-button--secondary-positive--color--hover, $now-color_alert--positive-5);
+$now-button--secondary-positive--color--active: var(--now-button--secondary-positive--color--active, $now-color--neutral-0);
+
+$now-button--secondary-positive--background-color: var(--now-button--secondary-positive--background-color, $now-color_alert--positive-0);
+$now-button--secondary-positive--background-color-alpha: var(--now-button--secondary-positive--background-color-alpha, 1);
+$now-button--secondary-positive--background-color--hover: var(--now-button--secondary-positive--background-color--hover, $now-color_alert--positive-1);
+$now-button--secondary-positive--background-color-alpha--hover: var(--now-button--secondary-positive--background-color-alpha--hover, $now-button--secondary-positive--background-color-alpha);
+$now-button--secondary-positive--background-color--active: var(--now-button--secondary-positive--background-color--active, $now-color_alert--positive-2);
+$now-button--secondary-positive--background-color-alpha--active: var(--now-button--secondary-positive--background-color-alpha--active, $now-button--secondary-positive--background-color-alpha);
+
+$now-button_icon--secondary-positive--color: var(--now-button_icon--secondary-positive--color, $now-button--secondary-positive--color);
+$now-button_icon--secondary-positive--color--hover: var(--now-button_icon--secondary-positive--color--hover, $now-button--secondary-positive--color--hover);
+$now-button_icon--secondary-positive--color--active: var(--now-button_icon--secondary-positive--color--active, $now-button--secondary-positive--color--active);
+
+// Secondary-negative
+
+$now-button--secondary-negative--border-width: var(--now-button--secondary-negative--border-width, $now-button--border-width);
+$now-button--secondary-negative--border-radius: var(--now-button--secondary-negative--border-radius, $now-button--border-radius);
+$now-button--secondary-negative--border-start-start-radius: var(--now-button--secondary-negative--border-start-start-radius, $now-button--secondary-negative--border-radius);
+$now-button--secondary-negative--border-start-end-radius: var(--now-button--secondary-negative--border-start-end-radius, $now-button--secondary-negative--border-radius);
+$now-button--secondary-negative--border-end-start-radius: var(--now-button--secondary-negative--border-end-start-radius, $now-button--secondary-negative--border-radius);
+$now-button--secondary-negative--border-end-end-radius: var(--now-button--secondary-negative--border-end-end-radius, $now-button--secondary-negative--border-radius);
+
+$now-button--secondary-negative--opacity--disabled: var(--now-button--secondary-negative--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--secondary-negative--border-color: var(--now-button--secondary-negative--border-color, $now-color_alert--critical-2);
+$now-button--secondary-negative--border-color--hover: var(--now-button--secondary-negative--border-color--hover, $now-button--secondary-negative--border-color);
+$now-button--secondary-negative--border-color--active: var(--now-button--secondary-negative--border-color--active, $now-button--secondary-negative--border-color);
+
+$now-button--secondary-negative--color: var(--now-button--secondary-negative--color, $now-color_alert--critical-4);
+$now-button--secondary-negative--color--hover: var(--now-button--secondary-negative--color--hover, $now-color_alert--critical-5);
+$now-button--secondary-negative--color--active: var(--now-button--secondary-negative--color--active, $now-color--neutral-0);
+
+$now-button--secondary-negative--background-color: var(--now-button--secondary-negative--background-color, $now-color_alert--critical-0);
+$now-button--secondary-negative--background-color-alpha: var(--now-button--secondary-negative--background-color-alpha, 1);
+$now-button--secondary-negative--background-color--hover: var(--now-button--secondary-negative--background-color--hover, $now-color_alert--critical-1);
+$now-button--secondary-negative--background-color-alpha--hover: var(--now-button--secondary-negative--background-color-alpha--hover, $now-button--secondary-negative--background-color-alpha);
+$now-button--secondary-negative--background-color--active: var(--now-button--secondary-negative--background-color--active, $now-color_alert--critical-2);
+$now-button--secondary-negative--background-color-alpha--active: var(--now-button--secondary-negative--background-color-alpha--active, $now-button--secondary-negative--background-color-alpha);
+
+$now-button_icon--secondary-negative--color: var(--now-button_icon--secondary-negative--color, $now-button--secondary-negative--color);
+$now-button_icon--secondary-negative--color--hover: var(--now-button_icon--secondary-negative--color--hover, $now-button--secondary-negative--color--hover);
+$now-button_icon--secondary-negative--color--active: var(--now-button_icon--secondary-negative--color--active, $now-button--secondary-negative--color--active);
+
+// Secondary-selection (DEPRECATED)
+
+$now-button--secondary-selection--color: var(
+	--now-button--secondary-selection--color,
+	$now-color_selection--primary-2
+);
+$now-button--secondary-selection--color--hover: var(
+	--now-button--secondary-selection--color--hover,
+	$now-color_selection--primary-3
+);
+$now-button--secondary-selection--color--active: var(
+	--now-button--secondary-selection--color--active,
+	$now-color_selection--primary-4
+);
+$now-button--secondary-selection--background-color--hover: var(
+	--now-button--secondary-selection--background-color--hover,
+	$now-color--neutral-12
+);
+$now-button--secondary-selection--background-color--active: var(
+	--now-button--secondary-selection--background-color--active,
+	$now-color--neutral-12
+);
+$now-button--secondary-selection_high-contrast--color: var(
+	--now-button--secondary-selection_high-contrast--color,
+	$now-color_selection--primary-3
+);
+$now-button--secondary-selection_high-contrast--color--hover: var(
+	--now-button--secondary-selection_high-contrast--color--hover,
+	$now-color_selection--primary-4
+);
+$now-button--secondary-selection_high-contrast--color--active: var(
+	--now-button--secondary-selection_high-contrast--color--active,
+	$now-color_text--primary
+);
+$now-button--secondary-selection_highlighted--background-color--selected: var(
+	--now-button--secondary-selection_highlighted--background-color--selected,
+	$now-color_selection--primary-2
+);
+$now-button--secondary-selection_highlighted--background-color--selected_hover: var(
+	p(
+		--now-button--secondary-selection_highlighted--background-color--selected_hover
+	),
+	$now-button--secondary-selection_highlighted--background-color--selected
+);
+$now-button--secondary-selection_highlighted--background-color--selected_active: var(
+	p(
+		--now-button--secondary-selection_highlighted--background-color--selected_active
+	),
+	$now-button--secondary-selection_highlighted--background-color--selected
+);
+
+// Tertiary
+
+$now-button--tertiary--border-width: var(--now-button--tertiary--border-width, $now-button--border-width);
+$now-button--tertiary--border-radius: var(--now-button--tertiary--border-radius, $now-button--border-radius);
+$now-button--tertiary--border-start-start-radius: var(--now-button--tertiary--border-start-start-radius, $now-button--tertiary--border-radius);
+$now-button--tertiary--border-start-end-radius: var(--now-button--tertiary--border-start-end-radius, $now-button--tertiary--border-radius);
+$now-button--tertiary--border-end-start-radius: var(--now-button--tertiary--border-end-start-radius, $now-button--tertiary--border-radius);
+$now-button--tertiary--border-end-end-radius: var(--now-button--tertiary--border-end-end-radius, $now-button--tertiary--border-radius);
+
+$now-button--tertiary--opacity--disabled: var(--now-button--tertiary--opacity--disabled, $now-button--opacity--disabled);
+
+$now-button--tertiary--border-color: var(--now-button--tertiary--border-color, $now-color--neutral-7);
+$now-button--tertiary--border-color-alpha: var(--now-button--tertiary--border-color-alpha, 1);
+$now-button--tertiary--border-color--hover: var(--now-button--tertiary--border-color--hover, $now-button--tertiary--border-color);
+$now-button--tertiary--border-color-alpha--hover: var(--now-button--tertiary--border-color-alpha--hover, $now-button--tertiary--border-color-alpha);
+$now-button--tertiary--border-color--active: var(--now-button--tertiary--border-color--active, $now-button--tertiary--border-color);
+$now-button--tertiary--border-color-alpha--active: var(--now-button--tertiary--border-color-alpha--active, $now-button--tertiary--border-color-alpha);
+
+$now-button--tertiary--color: var(--now-button--tertiary--color, $now-color_text--primary);
+$now-button--tertiary--color-alpha: var(--now-button--tertiary--color-alpha, 1);
+$now-button--tertiary--color--hover: var(--now-button--tertiary--color--hover, $now-color--secondary-2);
+$now-button--tertiary--color-alpha--hover: var(--now-button--tertiary--color-alpha--hover, $now-button--tertiary--color-alpha);
+$now-button--tertiary--color--active: var(--now-button--tertiary--color--active, $now-color--secondary-3);
+$now-button--tertiary--color-alpha--active: var(--now-button--tertiary--color-alpha--active, $now-button--tertiary--color-alpha);
+
+$now-button--tertiary--background-color: var(--now-button--tertiary--background-color, $now-color_background--primary);
+$now-button--tertiary--background-color-alpha: var(--now-button--tertiary--background-color-alpha, 0);
+$now-button--tertiary--background-color--hover: var(--now-button--tertiary--background-color--hover, $now-color--neutral-2);
+$now-button--tertiary--background-color-alpha--hover: var(--now-button--tertiary--background-color-alpha--hover, 1);
+$now-button--tertiary--background-color--active: var(--now-button--tertiary--background-color--active, $now-color--neutral-5);
+$now-button--tertiary--background-color-alpha--active: var(--now-button--tertiary--background-color-alpha--active, 1);
+
+$now-button_icon--tertiary--color: var(--now-button_icon--tertiary--color, $now-button--tertiary--color);
+$now-button_icon--tertiary--color--hover: var(--now-button_icon--tertiary--color--hover, $now-button--tertiary--color--hover);
+$now-button_icon--tertiary--color--active: var(--now-button_icon--tertiary--color--active, $now-button--tertiary--color--active);
+
+// Tertiary High-contrast (DEPRECATED)
+
+$now-button--tertiary_high-contrast--color: var(--now-button--tertiary_high-contrast--color, $now-button--tertiary--color);
+$now-button--tertiary_high-contrast--color-alpha: var(--now-button--tertiary_high-contrast--color-alpha, 1);
+$now-button--tertiary_high-contrast--color--hover: var(--now-button--tertiary_high-contrast--color--hover, $now-color--secondary-3);
+$now-button--tertiary_high-contrast--color-alpha--hover: var(--now-button--tertiary_high-contrast--color-alpha--hover, $now-button--tertiary_high-contrast--color-alpha);
+$now-button--tertiary_high-contrast--color--active: var(--now-button--tertiary_high-contrast--color--active, $now-color_text--primary);
+$now-button--tertiary_high-contrast--color-alpha--active: var(--now-button--tertiary_high-contrast--color-alpha--active, $now-button--tertiary_high-contrast--color-alpha);
+
+// Tertiary-Selection (DEPRECATED)
+
+$now-button--tertiary-selection--color: var(
+	--now-button--tertiary-selection--color,
+	$now-color--neutral-12
+);
+$now-button--tertiary-selection--color--hover: var(
+	--now-button--tertiary-selection--color--hover,
+	$now-color_selection--primary-3
+);
+$now-button--tertiary-selection--color--active: var(
+	--now-button--tertiary-selection--color--active,
+	$now-color_selection--primary-4
+);
+$now-button--tertiary-selection--color--selected: var(
+	--now-button--tertiary-selection--color--selected,
+	$now-color_selection--primary-2
+);
+$now-button--tertiary-selection--color--selected_hover: var(
+	--now-button--tertiary-selection--color--selected_hover,
+	$now-button--tertiary-selection--color--hover
+);
+$now-button--tertiary-selection--color--selected_active: var(
+	--now-button--tertiary-selection--color--selected_active,
+	$now-button--tertiary-selection--color--active
+);
+$now-button--tertiary-selection--background-color--hover: var(
+	--now-button--tertiary-selection--background-color--hover,
+	$now-color_selection--primary-2
+);
+$now-button--tertiary-selection--background-color--active: var(
+	--now-button--tertiary-selection--background-color--active,
+	$now-color_selection--primary-2
+);
+$now-button--tertiary-selection_high-contrast--color: var(
+	--now-button--tertiary-selection_high-contrast--color,
+	$now-color--neutral-15
+);
+$now-button--tertiary-selection_high-contrast--color--hover: var(
+	--now-button--tertiary-selection_high-contrast--color--hover,
+	$now-color_selection--primary-4
+);
+$now-button--tertiary-selection_high-contrast--color--active: var(
+	--now-button--tertiary-selection_high-contrast--color--active,
+	$now-color_text--primary
+);
+$now-button--tertiary-selection_high-contrast--color--selected: var(
+	--now-button--tertiary-selection_high-contrast--color--selected,
+	$now-color_selection--primary-3
+);
+$now-button--tertiary-selection_high-contrast--color--selected_hover: var(
+	--now-button--tertiary-selection_high-contrast--color--selected_hover,
+	$now-button--tertiary-selection_high-contrast--color--hover
+);
+$now-button--tertiary-selection_high-contrast--color--selected_active: var(
+	--now-button--tertiary-selection_high-contrast--color--selected_active,
+	$now-button--tertiary-selection_high-contrast--color--active
+);
+$now-button--tertiary-selection_highlighted--background-color--selected: var(
+	--now-button--tertiary-selection_highlighted--background-color--selected,
+	$now-color_selection--primary-2
+);
+$now-button--tertiary-selection_highlighted--background-color--selected_hover: var(
+	p(
+		--now-button--tertiary-selection_highlighted--background-color--selected_hover
+	),
+	$now-button--tertiary-selection_highlighted--background-color--selected
+);
+$now-button--tertiary-selection_highlighted--background-color--selected_active: var(
+	p(
+		--now-button--tertiary-selection_highlighted--background-color--selected_active
+	),
+	$now-button--tertiary-selection_highlighted--background-color--selected
+);

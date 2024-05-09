@@ -1,0 +1,31 @@
+// ServiceNow Now Design System
+
+// Utilities / Spacing
+
+// This partial imports spacing classes based on logical properties
+// (https://drafts.csswg.org/css-logical/).
+// Logical Properties
+// - Block: top or bottom in ltr. How paragraphs lay themselves out.
+// - Inline: left or right in ltr. How letters lay themselves out.
+// - Start: top or left in ltr. Where one starts reading.
+// - End: bottom or right in ltr. Where one ends reading.
+
+@import '@servicenow/sass-utility/spacing/margin/xxs';
+@import '@servicenow/sass-utility/spacing/margin/xs';
+@import '@servicenow/sass-utility/spacing/margin/sm';
+@import '@servicenow/sass-utility/spacing/margin/md';
+@import '@servicenow/sass-utility/spacing/margin/lg';
+@import '@servicenow/sass-utility/spacing/margin/xl';
+@import '@servicenow/sass-utility/spacing/margin/xxl';
+@import '@servicenow/sass-utility/spacing/margin/3xl';
+@import '@servicenow/sass-utility/spacing/margin/zero';
+
+@import '@servicenow/sass-utility/spacing/padding/xxs';
+@import '@servicenow/sass-utility/spacing/padding/xs';
+@import '@servicenow/sass-utility/spacing/padding/sm';
+@import '@servicenow/sass-utility/spacing/padding/md';
+@import '@servicenow/sass-utility/spacing/padding/lg';
+@import '@servicenow/sass-utility/spacing/padding/xl';
+@import '@servicenow/sass-utility/spacing/padding/xxl';
+@import '@servicenow/sass-utility/spacing/padding/3xl';
+@import '@servicenow/sass-utility/spacing/padding/zero';

@@ -1,0 +1,12 @@
+@import '@servicenow/sass-global/index';
+
+// TODO: Right now the SCSS variables are the source of truth for the scripts
+// that extract theme data for the theme behavior and possibly other things.
+// We should change it so we don't have to add a SCSS variable if it is not
+// needed. Adding this so the theme behavior picks this up.
+
+// stylelint-disable-next-line servicenow/ndsonly-custom-property-schema
+$now-datavis_register_swatch--border-radius: var(
+	--now-datavis_register_swatch--border-radius,
+	0
+);

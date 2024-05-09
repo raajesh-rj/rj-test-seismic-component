@@ -1,0 +1,20 @@
+// ServiceNow Now Design System
+
+// Utilities / A11y
+
+// Hide only visually, but have it available for screen readers:
+// https://github.com/h5bp/html5-boilerplate/issues/1985#issuecomment-394096182
+// https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+
+.now-a11y-label {
+	position: absolute;
+	overflow: hidden;
+	inline-size: 1px;
+	block-size: 1px;
+	margin: 0;
+	border: none;
+	padding: 0;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+}

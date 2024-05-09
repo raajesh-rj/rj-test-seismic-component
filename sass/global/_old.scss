@@ -1,0 +1,288 @@
+@import 'functions';
+
+// theme-analyzer-disable
+
+// stylelint-disable-next-line servicenow/ndsonly-custom-property-schema, servicenow/ndsonly-same-name-variables
+$now-global-font-family:                    var(--now-font-family, 'Source Sans Pro', Arial, sans-serif);
+
+// Brand
+$now-color--brand-0:                        $now-color_brand--neutral;
+$now-color--brand-1:                        $now-color_brand--primary;
+$now-color--brand-2:                        $now-color_brand--secondary;
+
+// Presence
+$now-color--presence-available:             $now-color_presence--available;
+$now-color--presence-busy:                  $now-color_presence--busy;
+$now-color--presence-away:                  $now-color_presence--away;
+$now-color--presence-offline:               $now-color_presence--offline;
+
+// Alert
+
+// Critical
+$now-color--alert-critical-0:               $now-color_alert--critical-0;
+$now-color--alert-critical-1:               $now-color_alert--critical-1;
+$now-color--alert-critical-2:               $now-color_alert--critical-2;
+$now-color--alert-critical-3:               $now-color_alert--critical-3;
+$now-color--alert-critical-4:               $now-color_alert--critical-4;
+$now-color--alert-critical-5:               $now-color_alert--critical-5;
+
+// High
+$now-color--alert-high-0:                   $now-color_alert--high-0;
+$now-color--alert-high-1:                   $now-color_alert--high-1;
+$now-color--alert-high-2:                   $now-color_alert--high-2;
+$now-color--alert-high-3:                   $now-color_alert--high-3;
+$now-color--alert-high-4:                   $now-color_alert--high-4;
+$now-color--alert-high-5:                   $now-color_alert--high-5;
+
+// Warning
+$now-color--alert-warning-0:                $now-color_alert--warning-0;
+$now-color--alert-warning-1:                $now-color_alert--warning-1;
+$now-color--alert-warning-2:                $now-color_alert--warning-2;
+$now-color--alert-warning-3:                $now-color_alert--warning-3;
+$now-color--alert-warning-4:                $now-color_alert--warning-4;
+$now-color--alert-warning-5:                $now-color_alert--warning-5;
+
+// Moderate
+$now-color--alert-moderate-0:               $now-color_alert--moderate-0;
+$now-color--alert-moderate-1:               $now-color_alert--moderate-1;
+$now-color--alert-moderate-2:               $now-color_alert--moderate-2;
+$now-color--alert-moderate-3:               $now-color_alert--moderate-3;
+$now-color--alert-moderate-4:               $now-color_alert--moderate-4;
+$now-color--alert-moderate-5:               $now-color_alert--moderate-5;
+
+// Info
+$now-color--alert-info-0:                   $now-color_alert--info-0;
+$now-color--alert-info-1:                   $now-color_alert--info-1;
+$now-color--alert-info-2:                   $now-color_alert--info-2;
+$now-color--alert-info-3:                   $now-color_alert--info-3;
+$now-color--alert-info-4:                   $now-color_alert--info-4;
+$now-color--alert-info-5:                   $now-color_alert--info-5;
+
+// Positive
+$now-color--alert-positive-0:               $now-color_alert--positive-0;
+$now-color--alert-positive-1:               $now-color_alert--positive-1;
+$now-color--alert-positive-2:               $now-color_alert--positive-2;
+$now-color--alert-positive-3:               $now-color_alert--positive-3;
+$now-color--alert-positive-4:               $now-color_alert--positive-4;
+$now-color--alert-positive-5:               $now-color_alert--positive-5;
+
+// Low
+$now-color--alert-low-0:                    $now-color_alert--low-0;
+$now-color--alert-low-1:                    $now-color_alert--low-1;
+$now-color--alert-low-2:                    $now-color_alert--low-2;
+$now-color--alert-low-3:                    $now-color_alert--low-3;
+$now-color--alert-low-4:                    $now-color_alert--low-4;
+$now-color--alert-low-5:                    $now-color_alert--low-5;
+
+// Background
+$now-color--background-primary:             $now-color_background--primary;
+$now-color--background-secondary:           $now-color_background--secondary;
+$now-color--background-tertiary:            $now-color_background--tertiary;
+
+// Divider
+$now-color--divider-primary:                $now-color_divider--primary;
+$now-color--divider-secondary:              $now-color_divider--secondary;
+$now-color--divider-tertiary:               $now-color_divider--tertiary;
+
+// Text
+$now-color--text-primary:                   $now-color_text--primary;
+$now-color--text-secondary:                 $now-color_text--secondary;
+$now-color--text-tertiary:                  $now-color_text--tertiary;
+
+// Border
+$now-color--border-primary:                 $now-color_border--primary;
+$now-color--border-secondary:               $now-color_border--secondary;
+$now-color--border-tertiary:                $now-color_border--tertiary;
+
+// Focus Ring
+$now-color--focus-ring:                     $now-color_focus-ring;
+$now-color--focus-ring-shadow:              $now-color_focus-ring_shadow;
+
+// Selection
+$now-color--selection-primary-0:            $now-color_selection--primary-0;
+$now-color--selection-primary-1:            $now-color_selection--primary-1;
+$now-color--selection-primary-2:            $now-color_selection--primary-2;
+$now-color--selection-primary-3:            $now-color_selection--primary-3;
+$now-color--selection-primary-4:            $now-color_selection--primary-4;
+
+$now-color--selection-secondary-0:          $now-color_selection--secondary-0;
+$now-color--selection-secondary-1:          $now-color_selection--secondary-1;
+$now-color--selection-secondary-2:          $now-color_selection--secondary-2;
+$now-color--selection-secondary-3:          $now-color_selection--secondary-3;
+$now-color--selection-secondary-4:          $now-color_selection--secondary-4;
+
+// Surfaces
+$now-color--surface-1:                      $now-color_surface--neutral-1;
+$now-color--surface-2:                      $now-color_surface--neutral-2;
+$now-color--surface-3:                      $now-color_surface--neutral-3;
+$now-color--surface-4:                      $now-color_surface--neutral-4;
+$now-color--surface-5:                      $now-color_surface--neutral-5;
+$now-color--surface-6:                      $now-color_surface--neutral-6;
+
+$now-color--surface-brand-1:                $now-color_surface--brand-1;
+$now-color--surface-brand-2:                $now-color_surface--brand-2;
+$now-color--surface-brand-3:                $now-color_surface--brand-3;
+$now-color--surface-brand-4:                $now-color_surface--brand-4;
+$now-color--surface-brand-5:                $now-color_surface--brand-5;
+$now-color--surface-brand-6:                $now-color_surface--brand-6;
+
+$now-color--surface-divider-1:              $now-color_surface--divider-1;
+$now-color--surface-divider-2:              $now-color_surface--divider-2;
+$now-color--surface-divider-3:              $now-color_surface--divider-3;
+$now-color--surface-divider-4:              $now-color_surface--divider-4;
+$now-color--surface-divider-5:              $now-color_surface--divider-5;
+$now-color--surface-divider-6:              $now-color_surface--divider-6;
+
+// Chrome
+$now-color--chrome-0:                       $now-color_chrome--brand-0;
+$now-color--chrome-1:                       $now-color_chrome--brand-1;
+$now-color--chrome-2:                       $now-color_chrome--brand-2;
+$now-color--chrome-3:                       $now-color_chrome--brand-3;
+$now-color--chrome-4:                       $now-color_chrome--brand-4;
+$now-color--chrome-5:                       $now-color_chrome--brand-5;
+$now-color--chrome-6:                       $now-color_chrome--brand-6;
+$now-color--chrome-7:                       $now-color_chrome--brand-7;
+$now-color--chrome-8:                       $now-color_chrome--brand-8;
+$now-color--chrome-9:                       $now-color_chrome--brand-9;
+$now-color--chrome-10:                      $now-color_chrome--brand-10;
+
+$now-color--chrome-divider-0:               $now-color_chrome--divider-0;
+$now-color--chrome-divider-1:               $now-color_chrome--divider-1;
+$now-color--chrome-divider-2:               $now-color_chrome--divider-2;
+$now-color--chrome-divider-3:               $now-color_chrome--divider-3;
+$now-color--chrome-divider-4:               $now-color_chrome--divider-4;
+$now-color--chrome-divider-5:               $now-color_chrome--divider-5;
+$now-color--chrome-divider-6:               $now-color_chrome--divider-6;
+$now-color--chrome-divider-7:               $now-color_chrome--divider-7;
+$now-color--chrome-divider-8:               $now-color_chrome--divider-8;
+$now-color--chrome-divider-9:               $now-color_chrome--divider-9;
+$now-color--chrome-divider-10:              $now-color_chrome--divider-10;
+
+// Category
+
+// Blue
+$now-color--category-blue-0:                $now-color_grouped--blue-0;
+$now-color--category-blue-1:                $now-color_grouped--blue-1;
+$now-color--category-blue-2:                $now-color_grouped--blue-2;
+$now-color--category-blue-3:                $now-color_grouped--blue-3;
+$now-color--category-blue-4:                $now-color_grouped--blue-4;
+$now-color--category-blue-5:                $now-color_grouped--blue-5;
+
+// Brown
+$now-color--category-brown-0:               $now-color_grouped--brown-0;
+$now-color--category-brown-1:               $now-color_grouped--brown-1;
+$now-color--category-brown-2:               $now-color_grouped--brown-2;
+$now-color--category-brown-3:               $now-color_grouped--brown-3;
+$now-color--category-brown-4:               $now-color_grouped--brown-4;
+$now-color--category-brown-5:               $now-color_grouped--brown-5;
+
+// Gray
+$now-color--category-gray-0:                $now-color_grouped--gray-0;
+$now-color--category-gray-1:                $now-color_grouped--gray-1;
+$now-color--category-gray-2:                $now-color_grouped--gray-2;
+$now-color--category-gray-3:                $now-color_grouped--gray-3;
+$now-color--category-gray-4:                $now-color_grouped--gray-4;
+$now-color--category-gray-5:                $now-color_grouped--gray-5;
+
+// Green
+$now-color--category-green-0:               $now-color_grouped--green-0;
+$now-color--category-green-1:               $now-color_grouped--green-1;
+$now-color--category-green-2:               $now-color_grouped--green-2;
+$now-color--category-green-3:               $now-color_grouped--green-3;
+$now-color--category-green-4:               $now-color_grouped--green-4;
+$now-color--category-green-5:               $now-color_grouped--green-5;
+
+// Green-yellow
+$now-color--category-green-yellow-0:        $now-color_grouped--green-yellow-0;
+$now-color--category-green-yellow-1:        $now-color_grouped--green-yellow-1;
+$now-color--category-green-yellow-2:        $now-color_grouped--green-yellow-2;
+$now-color--category-green-yellow-3:        $now-color_grouped--green-yellow-3;
+$now-color--category-green-yellow-4:        $now-color_grouped--green-yellow-4;
+$now-color--category-green-yellow-5:        $now-color_grouped--green-yellow-5;
+
+// Magenta
+$now-color--category-magenta-0:             $now-color_grouped--magenta-0;
+$now-color--category-magenta-1:             $now-color_grouped--magenta-1;
+$now-color--category-magenta-2:             $now-color_grouped--magenta-2;
+$now-color--category-magenta-3:             $now-color_grouped--magenta-3;
+$now-color--category-magenta-4:             $now-color_grouped--magenta-4;
+$now-color--category-magenta-5:             $now-color_grouped--magenta-5;
+
+// Orange
+$now-color--category-orange-0:              $now-color_grouped--orange-0;
+$now-color--category-orange-1:              $now-color_grouped--orange-1;
+$now-color--category-orange-2:              $now-color_grouped--orange-2;
+$now-color--category-orange-3:              $now-color_grouped--orange-3;
+$now-color--category-orange-4:              $now-color_grouped--orange-4;
+$now-color--category-orange-5:              $now-color_grouped--orange-5;
+
+// Pink
+$now-color--category-pink-0:                $now-color_grouped--pink-0;
+$now-color--category-pink-1:                $now-color_grouped--pink-1;
+$now-color--category-pink-2:                $now-color_grouped--pink-2;
+$now-color--category-pink-3:                $now-color_grouped--pink-3;
+$now-color--category-pink-4:                $now-color_grouped--pink-4;
+$now-color--category-pink-5:                $now-color_grouped--pink-5;
+
+// Purple
+$now-color--category-purple-0:              $now-color_grouped--purple-0;
+$now-color--category-purple-1:              $now-color_grouped--purple-1;
+$now-color--category-purple-2:              $now-color_grouped--purple-2;
+$now-color--category-purple-3:              $now-color_grouped--purple-3;
+$now-color--category-purple-4:              $now-color_grouped--purple-4;
+$now-color--category-purple-5:              $now-color_grouped--purple-5;
+
+// Teal
+$now-color--category-teal-0:                $now-color_grouped--teal-0;
+$now-color--category-teal-1:                $now-color_grouped--teal-1;
+$now-color--category-teal-2:                $now-color_grouped--teal-2;
+$now-color--category-teal-3:                $now-color_grouped--teal-3;
+$now-color--category-teal-4:                $now-color_grouped--teal-4;
+$now-color--category-teal-5:                $now-color_grouped--teal-5;
+
+// Yellow
+$now-color--category-yellow-0:              $now-color_grouped--yellow-0;
+$now-color--category-yellow-1:              $now-color_grouped--yellow-1;
+$now-color--category-yellow-2:              $now-color_grouped--yellow-2;
+$now-color--category-yellow-3:              $now-color_grouped--yellow-3;
+$now-color--category-yellow-4:              $now-color_grouped--yellow-4;
+$now-color--category-yellow-5:              $now-color_grouped--yellow-5;
+
+// Categories Display type
+$now-display-type-label--font-style:        $now-display-type_label--font-style;
+$now-display-type-label--font-weight:       $now-display-type_label--font-weight;
+$now-display-type-label--font-family:       $now-display-type_label--font-family;
+$now-display-type-label--text-transform:    $now-display-type_label--text-transform;
+$now-display-type-label--color:             $now-display-type_label--color;
+
+$now-display-type-value--font-style:        $now-display-type_value--font-style;
+$now-display-type-value--font-weight:       $now-display-type_value--font-weight;
+$now-display-type-value--font-family:       $now-display-type_value--font-family;
+$now-display-type-value--text-transform:    $now-display-type_value--text-transform;
+$now-display-type-value--color:             $now-display-type_value--color;
+
+// Categories Form Control
+$now-form-control-handle--border-width:     $now-form-control_handle--border-width;
+$now-form-control-handle--border-radius:    $now-form-control_handle--border-radius;
+
+$now-form-control-track--border-width:      $now-form-control_track--border-width;
+$now-form-control-track--border-radius:     $now-form-control_track--border-radius;
+
+// Categories Menu
+$now-menu--divider-width:                   $now-menu_divider--width;
+$now-menu--divider-color:                   $now-menu_divider--color;
+
+$now-menu-header--font-style:               $now-menu_heading--font-style;
+$now-menu-header--font-weight:              $now-menu_heading--font-weight;
+$now-menu-header--font-family:              $now-menu_heading--font-family;
+$now-menu-header--text-transform:           $now-menu_heading--text-transform;
+
+$now-menu-sublabel--font-style:             $now-menu_sublabel--font-style;
+$now-menu-sublabel--font-weight:            $now-menu_sublabel--font-weight;
+$now-menu-sublabel--font-family:            $now-menu_sublabel--font-family;
+$now-menu-sublabel--text-transform:         $now-menu_sublabel--text-transform;
+
+$now-menu-search--font-style:               $now-menu_search--font-style;
+$now-menu-search--font-weight:              $now-menu_search--font-weight;
+$now-menu-search--font-family:              $now-menu_search--font-family;
+$now-menu-search--text-transform:           $now-menu_search--text-transform;

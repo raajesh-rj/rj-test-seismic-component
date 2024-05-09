@@ -1,0 +1,64 @@
+// ServiceNow Now Design System
+
+// Global / Colors / Framework
+
+@import '../functions';
+
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+
+// Brand
+$now-color_brand--neutral:      var(--now-color_brand--neutral, var(--now-color--brand-0, now-fn-color2rgb(#ffffff)));
+$now-color_brand--primary:      var(--now-color_brand--primary, var(--now-color--brand-1, now-fn-color2rgb(#293e40)));
+$now-color_brand--secondary:    var(--now-color_brand--secondary, var(--now-color--brand-2, now-fn-color2rgb(#81b5a1)));
+
+// Surface
+$now-color_surface--neutral-1:  var(--now-color_surface--neutral-1, now-fn-color2rgb(#fcfcfc));
+$now-color_surface--neutral-2:  var(--now-color_surface--neutral-2, now-fn-color2rgb(#f2f3f3));
+$now-color_surface--neutral-3:  var(--now-color_surface--neutral-3, now-fn-color2rgb(#e8eaea));
+$now-color_surface--neutral-4:  var(--now-color_surface--neutral-4, now-fn-color2rgb(#dde1e1));
+$now-color_surface--neutral-5:  var(--now-color_surface--neutral-5, now-fn-color2rgb(#d3d7d8));
+$now-color_surface--neutral-6:  var(--now-color_surface--neutral-6, now-fn-color2rgb(#c9cecf));
+
+// Surface - Brand
+$now-color_surface--brand-1:    var(--now-color_surface--brand-1, now-fn-color2rgb(#ecf4f1));
+$now-color_surface--brand-2:    var(--now-color_surface--brand-2, now-fn-color2rgb(#dae9e4));
+$now-color_surface--brand-3:    var(--now-color_surface--brand-3, now-fn-color2rgb(#c8dfd6));
+$now-color_surface--brand-4:    var(--now-color_surface--brand-4, now-fn-color2rgb(#b7d4c9));
+$now-color_surface--brand-5:    var(--now-color_surface--brand-5, now-fn-color2rgb(#a5cabc));
+$now-color_surface--brand-6:    var(--now-color_surface--brand-6, now-fn-color2rgb(#93c0ae));
+
+// Surface - Divider
+$now-color_surface--divider-1:  var(--now-color_surface--divider-1, now-fn-color2rgb(#f1f3f3));
+$now-color_surface--divider-2:  var(--now-color_surface--divider-2, now-fn-color2rgb(#dde0e0));
+$now-color_surface--divider-3:  var(--now-color_surface--divider-3, now-fn-color2rgb(#c8cdce));
+$now-color_surface--divider-4:  var(--now-color_surface--divider-4, now-fn-color2rgb(#b3babb));
+$now-color_surface--divider-5:  var(--now-color_surface--divider-5, now-fn-color2rgb(#9ea8a9));
+$now-color_surface--divider-6:  var(--now-color_surface--divider-6, now-fn-color2rgb(#8a9597));
+
+// Chrome
+$now-color_chrome--brand-0:     var(--now-color_chrome--brand-0, now-fn-color2rgb(#dfe2e2));
+$now-color_chrome--brand-1:     var(--now-color_chrome--brand-1, now-fn-color2rgb(#bbc2c2));
+$now-color_chrome--brand-2:     var(--now-color_chrome--brand-2, now-fn-color2rgb(#96a1a1));
+$now-color_chrome--brand-3:     var(--now-color_chrome--brand-3, now-fn-color2rgb(#728081));
+$now-color_chrome--brand-4:     var(--now-color_chrome--brand-4, now-fn-color2rgb(#4d6061));
+$now-color_chrome--brand-5:     var(--now-color_chrome--brand-5, now-fn-color2rgb(#293f40));
+$now-color_chrome--brand-6:     var(--now-color_chrome--brand-6, now-fn-color2rgb(#25393a));
+$now-color_chrome--brand-7:     var(--now-color_chrome--brand-7, now-fn-color2rgb(#213233));
+$now-color_chrome--brand-8:     var(--now-color_chrome--brand-8, now-fn-color2rgb(#1d2c2d));
+$now-color_chrome--brand-9:     var(--now-color_chrome--brand-9, now-fn-color2rgb(#192626));
+$now-color_chrome--brand-10:    var(--now-color_chrome--brand-10, now-fn-color2rgb(#152020));
+
+// Chrome - Divider
+$now-color_chrome--divider-0:   var(--now-color_chrome--divider-0, now-fn-color2rgb(#a9b2b3));
+$now-color_chrome--divider-1:   var(--now-color_chrome--divider-1, now-fn-color2rgb(#909b9c));
+$now-color_chrome--divider-2:   var(--now-color_chrome--divider-2, now-fn-color2rgb(#768485));
+$now-color_chrome--divider-3:   var(--now-color_chrome--divider-3, now-fn-color2rgb(#5c6d6e));
+$now-color_chrome--divider-4:   var(--now-color_chrome--divider-4, now-fn-color2rgb(#435657));
+$now-color_chrome--divider-5:   var(--now-color_chrome--divider-5, now-fn-color2rgb(#243738));
+$now-color_chrome--divider-6:   var(--now-color_chrome--divider-6, now-fn-color2rgb(#1e2e2f));
+$now-color_chrome--divider-7:   var(--now-color_chrome--divider-7, now-fn-color2rgb(#192626));
+$now-color_chrome--divider-8:   var(--now-color_chrome--divider-8, now-fn-color2rgb(#131d1e));
+$now-color_chrome--divider-9:   var(--now-color_chrome--divider-9, now-fn-color2rgb(#0e1515));
+$now-color_chrome--divider-10:  var(--now-color_chrome--divider-10, now-fn-color2rgb(#080d0d));
+
+// stylelint-enable servicenow/ndsonly-custom-property-schema

@@ -1,0 +1,108 @@
+@import 'functions';
+@import 'settings';
+
+/// Makes a visual "spacing" value scalable through theming.
+/// Space scaling is not linear and the scaling factor changes based on the value of the space.
+/// If the spacing value you are scaling represents only part of the total space you are
+/// trying to scale then you should use $target to pass in the total space you are trying to scale.
+/// Do not use negative values, instead multiply the result of the function with -1, e.g calc(#{now-fn-scale-space(the_space_value)}* -1)
+///
+/// The example below illustrates how a space in a form is made of both a margin-block-start and a margin-block-end.
+/// Each margin is 8px and the total visual space on the design calls for 16px
+///
+/// @param {Number} $value - The spacing value that will become scalable
+/// @param {Number} $target - Optional value of the total visual space that needs to be scalable
+/// @return {Number} - The scalable space
+///
+///	@example scss
+///		.top-component {
+///			margin-block-end: now-fn-scale-space(8px, 16px);
+///		}
+///		.bottom-component {
+///			margin-block-start: now-fn-scale-space(8px, 16px);
+///		}
+///
+///	@example scss - Input
+///		.foo {
+///			margin-inline-end: now-fn-scale-space($now-global-space--md);
+///	 	}
+///
+///
+@function now-fn-scale-space($value, $target: $value) {
+	// allow px or rem
+	@if comparable($target, 1px) {
+		$target: now-fn-px2rem($target);
+	} @else if not comparable($target, 1rem) {
+		@warn 'now-fn-scale-space can only use px or rem';
+	}
+
+	@if $target <= $now-global-space--xxs {
+		@return calc(#{var(--now-scale-space--xxs, 1)} * #{$value});
+	} @else if $target <= $now-global-space--xs {
+		@return calc(#{var(--now-scale-space--xs, 1)} * #{$value});
+	} @else if $target <= $now-global-space--sm {
+		@return calc(#{var(--now-scale-space--sm, 1)} * #{$value});
+	} @else if $target <= $now-global-space--md {
+		@return calc(#{var(--now-scale-space--md, 1)} * #{$value});
+	} @else if $target <= $now-global-space--lg {
+		@return calc(#{var(--now-scale-space--lg, 1)} * #{$value});
+	} @else if $target <= $now-global-space--xl {
+		@return calc(#{var(--now-scale-space--xl, 1)} * #{$value});
+	} @else if $target <= $now-global-space--xxl {
+		@return calc(#{var(--now-scale-space--xxl, 1)} * #{$value});
+	} @else {
+		// everything above xxl will get scaled using the 3xl factor
+		@return calc(#{var(--now-scale-space--3xl, 1)} * #{$value});
+	}
+}
+
+/// Applies the scaling formula for scaling the size of a component to a CSS rule of your choice.
+///
+/// If the property has `inline-size|width` or `block-size|height` in the name, the mixin
+/// will use this formula to scale: `value = 1/2 value + (scaling theme hook * 1/2 value)`
+///
+/// If the property has `margin` or `padding` in the name, the mixin will use
+/// this formula to scale: `value = value * scaling theme hook`
+///
+/// @param {String} $property - css property that is being set
+/// @param {Number} $value - the property value that is being scaled
+/// @param {String} $scaleSizeVar - the scaling theme hook
+/// @return {Number} The value of the height, width, padding, or margin with scaling
+///  hook applied
+///
+/// @example scss - Input
+/// 	.foo {
+/// 		block-size: now-fn-scale-size('block-size', 16px, $now-badge--scale_block);
+///		}
+///
+/// @example css - Output
+/// 	.foo {
+/// 		block-size: 8px + $now-badge--scale_block * 8px
+///		}
+///
+/// @example scss - Input
+/// 	.bar {
+/// 		padding-inline-start: now-fn-scale-size('padding-inline-start', 8px, $now-badge--scale_inline);
+///		}
+///
+/// @example css - Output
+/// 	.bar {
+/// 		padding-inline-start: 8px * $now-badge--scale_inline
+///		}
+///
+@function now-fn-scale-size($propertyName, $value, $scaleSizeVar) {
+	@if (
+		str-index($propertyName, 'inline-size') or
+			str-index($propertyName, 'width') or str-index($propertyName, 'block-size') or
+			str-index($propertyName, 'height')
+	) {
+		@return calc(#{$value} / 2 + #{$scaleSizeVar} * #{$value} / 2);
+	} @else if (
+			str-index($propertyName, 'padding') or
+				str-index($propertyName, 'margin') or
+				str-index($propertyName, 'gap')
+		)
+	{
+		@return calc(#{$value} * #{$scaleSizeVar});
+	}
+}

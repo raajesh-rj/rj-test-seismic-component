@@ -1,0 +1,12 @@
+{
+	"--now-text-link--font-family": "inherit",
+	"--now-text-link--font-style": "inherit",
+	"--now-text-link--font-weight": "inherit",
+	"--now-text-link--primary--color": "--now-color--link-2",
+	"--now-text-link--primary--color--active": "--now-color--link-4",
+	"--now-text-link--primary--color--hover": "--now-color--link-3",
+	"--now-text-link--secondary--color": "--now-color--link-3",
+	"--now-text-link--secondary--color--active": "--now-color_text--primary",
+	"--now-text-link--secondary--color--hover": "--now-color--link-4",
+	"--now-text-link--text-transform": "inherit"
+}

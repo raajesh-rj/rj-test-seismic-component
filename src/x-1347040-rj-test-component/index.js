@@ -3,7 +3,7 @@ import {
 	extensionSplit,
 	filterAriaAttributes,
 } from '@servicenow/library-enhanced-utils';
-import {actionTypes} from '@servicenow/ui-core';
+import {actionTypes, createCustomElement} from '@servicenow/ui-core';
 import styles from './_now-button.scss';
 import '@servicenow/now-icon';
 import tooltipBehavior, {
@@ -159,7 +159,7 @@ const view = (state, {dispatch}) => {
  * @uib.actions NOW_BUTTON#CLICKED
  * @uib.slots
  */
-createEnhancedElement('now-button', {
+createCustomElement('now-button', {
 	properties: {
 		/**
 		 * Text displayed inside the button.

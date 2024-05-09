@@ -1,0 +1,49 @@
+// ServiceNow Now Design System
+
+// Global / Colors / Derived
+
+@import '../functions';
+@import 'base';
+
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+
+// Background
+$now-color_background--primary:                 var(--now-color_background--primary, $now-color--neutral-0);
+$now-color_background--secondary:               var(--now-color_background--secondary, $now-color--neutral-1);
+$now-color_background--tertiary:                var(--now-color_background--tertiary, $now-color--neutral-2);
+
+// Actionable Background
+$now-color_background--primary-actionable:      var(--now-color_background--primary-actionable, $now-color--neutral-18);
+$now-color_background--secondary-actionable:    var(--now-color_background--secondary-actionable, $now-color--neutral-15);
+$now-color_background--tertiary-actionable:     var(--now-color_background--tertiary-actionable, $now-color--neutral-12);
+
+// Divider
+$now-color_divider--primary:                    var(--now-color_divider--primary, $now-color--neutral-7);
+$now-color_divider--secondary:                  var(--now-color_divider--secondary, $now-color--neutral-5);
+$now-color_divider--tertiary:                   var(--now-color_divider--tertiary, $now-color--neutral-3);
+
+// Text
+$now-color_text--primary:                       var(--now-color_text--primary, $now-color--neutral-18);
+$now-color_text--secondary:                     var(--now-color_text--secondary, $now-color--neutral-15);
+$now-color_text--tertiary:                      var(--now-color_text--tertiary, $now-color--neutral-12);
+
+// Actionable Text
+$now-color_text--primary-actionable:            var(--now-color_text--primary-actionable, $now-color--neutral-0);
+$now-color_text--secondary-actionable:          var(--now-color_text--secondary-actionable, $now-color--neutral-1);
+$now-color_text--tertiary-actionable:           var(--now-color_text--tertiary-actionable, $now-color--neutral-2);
+
+// Border
+$now-color_border--primary:                     var(--now-color_border--primary, $now-color--neutral-7);
+$now-color_border--secondary:                   var(--now-color_border--secondary, $now-color--neutral-5);
+$now-color_border--tertiary:                    var(--now-color_border--tertiary, $now-color--neutral-3);
+
+// Actionable Border
+$now-color_border--primary-actionable:          var(--now-color_border--primary-actionable, $now-color--neutral-18);
+$now-color_border--secondary-actionable:        var(--now-color_border--secondary-actionable, $now-color--neutral-15);
+$now-color_border--tertiary-actionable:         var(--now-color_border--tertiary-actionable, $now-color--neutral-12);
+
+// Focus Ring
+$now-color_focus-ring:                          var(--now-color_focus-ring, $now-color--secondary-1);
+$now-color_focus-ring_shadow:                   var(--now-color_focus-ring_shadow, $now-color_background--primary);
+
+// stylelint-enable servicenow/ndsonly-custom-property-schema

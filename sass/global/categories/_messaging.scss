@@ -1,0 +1,12 @@
+// ServiceNow Now Design System
+
+// Global / Category / Messaging
+
+$now-messaging--font-style:       var(--now-messaging--font-style, normal);
+$now-messaging--font-weight:      var(--now-messaging--font-weight, normal);
+$now-messaging--font-family:      var(--now-messaging--font-family, $now-font-family);
+$now-messaging--text-transform:   var(--now-messaging--text-transform, none);
+$now-messaging--border-width:     var(--now-messaging--border-width, 1px);
+$now-messaging--border-color:     var(--now-messaging--border-color, $now-color_border--secondary);
+$now-messaging--border-radius:    var(--now-messaging--border-radius, $now-global-border-radius--md);
+$now-messaging--background-color: var(--now-messaging--background-color, $now-color_background--primary);

@@ -1,0 +1,54 @@
+// ServiceNow Now Design System
+
+// Utilities / Align
+
+// These utility classes provide ways to align elements in both inline and
+// block contexts within a flexbox container. Note inline and block apply both
+// within row and column contexts. In a row context (the flexbox default),
+// block applies on the x-axis, and inline applies on the y-axis. Conversely,
+// in a column context, block applies on the y-axis, and inline applies on the
+// x-axis.
+
+.now-align {
+	display: flex;
+
+	&.-row.-reverse {
+		flex-direction: row-reverse;
+	}
+
+	&.-column {
+		flex-direction: column;
+
+		&.-reverse {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&.-wrap {
+		flex-wrap: wrap;
+	}
+
+	&.-inline {
+		justify-content: space-between;
+	}
+
+	&.-inline-center {
+		justify-content: center;
+	}
+
+	&.-inline-end {
+		justify-content: flex-end;
+	}
+
+	&.-block-start {
+		align-items: flex-start;
+	}
+
+	&.-block-center {
+		align-items: center;
+	}
+
+	&.-block-end {
+		align-items: flex-end;
+	}
+}

@@ -1,0 +1,71 @@
+// ServiceNow Now Design System
+
+// Global / Category / Display Type
+
+$now-display-type--font-style:                        var(--now-display-type--font-style, normal);
+$now-display-type--font-weight:                       var(--now-display-type--font-weight, normal);
+$now-display-type--font-family:                       var(--now-display-type--font-family, $now-font-family);
+$now-display-type--text-transform:                    var(--now-display-type--text-transform, none);
+$now-display-type--line-height-crop--before:          var(--now-display-type--line-height-crop--before, $now-line-height-crop--before);
+$now-display-type--line-height-crop--after:           var(--now-display-type--line-height-crop--after, $now-line-height-crop--after);
+$now-display-type--color:                             var(--now-display-type--color, $now-color_text--primary);
+
+$now-display-type_label--font-style:                  var(--now-display-type_label--font-style, $now-display-type--font-style);
+$now-display-type_label--font-weight:                 var(--now-display-type_label--font-weight, $now-display-type--font-weight);
+$now-display-type_label--font-family:                 var(--now-display-type_label--font-family, $now-display-type--font-family);
+$now-display-type_label--text-transform:              var(--now-display-type_label--text-transform, $now-display-type--text-transform);
+$now-display-type_label--color:                       var(--now-display-type_label--color, $now-color_text--tertiary);
+
+$now-display-type_value--font-style:                  var(--now-display-type_value--font-style, $now-display-type--font-style);
+$now-display-type_value--font-weight:                 var(--now-display-type_value--font-weight, $now-display-type--font-weight);
+$now-display-type_value--font-family:                 var(--now-display-type_value--font-family, $now-display-type--font-family);
+$now-display-type_value--text-transform:              var(--now-display-type_value--text-transform, $now-display-type--text-transform);
+$now-display-type_value--color:                       var(--now-display-type_value--color, $now-display-type--color);
+
+$now-display-type--primary--font-style:               var(--now-display-type--primary--font-style, $now-display-type--font-style);
+$now-display-type--primary--font-weight:              var(--now-display-type--primary--font-weight, 600);
+$now-display-type--primary--font-family:              var(--now-display-type--primary--font-family, $now-display-type--font-family);
+$now-display-type--primary--text-transform:           var(--now-display-type--primary--text-transform, $now-display-type--text-transform);
+$now-display-type--primary--color:                    var(--now-display-type--primary--color, $now-display-type--color);
+
+$now-display-type--secondary--font-style:             var(--now-display-type--secondary--font-style, $now-display-type--font-style);
+$now-display-type--secondary--font-weight:            var(--now-display-type--secondary--font-weight, $now-display-type--font-weight);
+$now-display-type--secondary--font-family:            var(--now-display-type--secondary--font-family, $now-display-type--font-family);
+$now-display-type--secondary--text-transform:         var(--now-display-type--secondary--text-transform, $now-display-type--text-transform);
+$now-display-type--secondary--color:                  var(--now-display-type--secondary--color, $now-color_text--secondary);
+
+$now-display-type--tertiary--font-style:              var(--now-display-type--tertiary--font-style, $now-display-type--font-style);
+$now-display-type--tertiary--font-weight:             var(--now-display-type--tertiary--font-weight, $now-display-type--font-weight);
+$now-display-type--tertiary--font-family:             var(--now-display-type--tertiary--font-family, $now-display-type--font-family);
+$now-display-type--tertiary--text-transform:          var(--now-display-type--tertiary--text-transform, $now-display-type--text-transform);
+$now-display-type--tertiary--color:                   var(--now-display-type--tertiary--color, $now-color_text--tertiary);
+
+$now-display-type--header-primary--font-style:        var(--now-display-type--header-primary--font-style, $now-display-type--primary--font-style);
+$now-display-type--header-primary--font-weight:       var(--now-display-type--header-primary--font-weight, $now-display-type--primary--font-weight);
+$now-display-type--header-primary--font-family:       var(--now-display-type--header-primary--font-family, $now-display-type--primary--font-family);
+$now-display-type--header-primary--text-transform:    var(--now-display-type--header-primary--text-transform, $now-display-type--primary--text-transform);
+
+$now-display-type--header-secondary--font-style:      var(--now-display-type--header-secondary--font-style, $now-display-type--secondary--font-style);
+$now-display-type--header-secondary--font-weight:     var(--now-display-type--header-secondary--font-weight, $now-display-type--secondary--font-weight);
+$now-display-type--header-secondary--font-family:     var(--now-display-type--header-secondary--font-family, $now-display-type--secondary--font-family);
+$now-display-type--header-secondary--text-transform:  var(--now-display-type--header-secondary--text-transform, $now-display-type--secondary--text-transform);
+
+$now-display-type--header-tertiary--font-style:       var(--now-display-type--header-tertiary--font-style, $now-display-type--tertiary--font-style);
+$now-display-type--header-tertiary--font-weight:      var(--now-display-type--header-tertiary--font-weight, $now-display-type--tertiary--font-weight);
+$now-display-type--header-tertiary--font-family:      var(--now-display-type--header-tertiary--font-family, $now-display-type--tertiary--font-family);
+$now-display-type--header-tertiary--text-transform:   var(--now-display-type--header-tertiary--text-transform, $now-display-type--tertiary--text-transform);
+
+$now-display-type--title-primary--font-style:         var(--now-display-type--title-primary--font-style, $now-display-type--primary--font-style);
+$now-display-type--title-primary--font-weight:        var(--now-display-type--title-primary--font-weight, $now-display-type--primary--font-weight);
+$now-display-type--title-primary--font-family:        var(--now-display-type--title-primary--font-family, $now-display-type--primary--font-family);
+$now-display-type--title-primary--text-transform:     var(--now-display-type--title-primary--text-transform, $now-display-type--primary--text-transform);
+
+$now-display-type--title-secondary--font-style:       var(--now-display-type--title-secondary--font-style, $now-display-type--secondary--font-style);
+$now-display-type--title-secondary--font-weight:      var(--now-display-type--title-secondary--font-weight, $now-display-type--secondary--font-weight);
+$now-display-type--title-secondary--font-family:      var(--now-display-type--title-secondary--font-family, $now-display-type--secondary--font-family);
+$now-display-type--title-secondary--text-transform:   var(--now-display-type--title-secondary--text-transform, $now-display-type--secondary--text-transform);
+
+$now-display-type--title-tertiary--font-style:        var(--now-display-type--title-tertiary--font-style, $now-display-type--tertiary--font-style);
+$now-display-type--title-tertiary--font-weight:       var(--now-display-type--title-tertiary--font-weight, $now-display-type--tertiary--font-weight);
+$now-display-type--title-tertiary--font-family:       var(--now-display-type--title-tertiary--font-family, $now-display-type--tertiary--font-family);
+$now-display-type--title-tertiary--text-transform:    var(--now-display-type--title-tertiary--text-transform, $now-display-type--tertiary--text-transform);

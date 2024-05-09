@@ -1,0 +1,7 @@
+{
+  "--now-font-family": "Lato, Arial, sans-serif",
+  "--now-line-height-crop--before": "-0.25775em",
+  "--now-line-height-crop--after": "-0.27825em",
+  "--now-opacity--least": "0.1",
+	"--now-opacity--less": "0.25"
+}

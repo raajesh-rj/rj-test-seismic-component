@@ -1,0 +1,11 @@
+{
+	"--now-avatar--background-color": "--now-color_background--secondary",
+	"--now-avatar--border-color": "--now-color_border--tertiary",
+	"--now-avatar--border-radius": "50%",
+	"--now-avatar--border-width": "--now-identifier--border-width",
+	"--now-avatar--color": "--now-color_text--tertiary",
+	"--now-avatar--font-family": "--now-identifier--font-family",
+	"--now-avatar--font-style": "--now-identifier--font-style",
+	"--now-avatar--font-weight": "--now-identifier--font-weight",
+	"--now-avatar--text-transform": "uppercase"
+}

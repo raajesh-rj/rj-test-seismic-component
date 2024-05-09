@@ -1,0 +1,6 @@
+{
+    "--now-datavis_series_target-global--color": "--now-color--neutral-10",
+    "--now-datavis_series_target-personal--color": "--now-color--neutral-7",
+    "--now-datavis_series_threshold-global--color": "--now-color--neutral-10",
+    "--now-datavis_series_threshold-personal--color": "--now-color--neutral-7"
+}

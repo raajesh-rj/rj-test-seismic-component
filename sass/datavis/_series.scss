@@ -1,0 +1,9 @@
+// stylelint-disable servicenow/ndsonly-custom-property-schema
+
+$now-datavis_series_target-global--color:       var(--now-datavis_series_target-global--color, $now-color--neutral-10);
+$now-datavis_series_target-personal--color:     var(--now-datavis_series_target-personal--color, $now-color--neutral-7);
+
+$now-datavis_series_threshold-global--color:    var(--now-datavis_series_threshold-global--color, $now-color--neutral-10);
+$now-datavis_series_threshold-personal--color:  var(--now-datavis_series_threshold-personal--color, $now-color--neutral-7);
+
+// stylelint-enable servicenow/ndsonly-custom-property-schema

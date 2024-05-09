@@ -1,0 +1,20 @@
+{
+	"--now-pagination-control--background-color": "--now-color_background--primary",
+	"--now-pagination-control--background-color--active": "--now-color--secondary-2",
+	"--now-pagination-control--background-color--focus": "--now-color_background--tertiary",
+	"--now-pagination-control--background-color--hover": "--now-color--secondary-2",
+	"--now-pagination-control--background-color--selected": "--now-color_background--tertiary",
+	"--now-pagination-control--background-color-alpha": "0",
+	"--now-pagination-control--background-color-alpha--active": "--now-opacity--less",
+	"--now-pagination-control--background-color-alpha--focus": "1",
+	"--now-pagination-control--background-color-alpha--hover": "--now-opacity--least",
+	"--now-pagination-control--background-color-alpha--selected": "1",
+	"--now-pagination-control--border-radius": "--now-actionable--border-radius",
+	"--now-pagination-control--color": "--now-color_text--primary",
+	"--now-pagination-control--color--active": "--now-color--secondary-3",
+	"--now-pagination-control--color--hover": "--now-color--secondary-2",
+	"--now-pagination-control--font-family": "--now-view-control--font-family",
+	"--now-pagination-control--font-style": "--now-view-control--font-style",
+	"--now-pagination-control--font-weight": "--now-view-control--font-weight",
+	"--now-pagination-control--text-transform": "--now-view-control--text-transform"
+}

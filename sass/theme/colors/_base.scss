@@ -1,0 +1,64 @@
+// ServiceNow Now Design System
+
+// Theme / Colors / Base
+
+@import '@servicenow/sass-global/functions';
+
+@mixin now-mx-theme-colors-base {
+	--now-color--neutral-0: #{now-fn-color2rgb(#ffffff)};
+	--now-color--neutral-1: #{now-fn-color2rgb(#f6f7f7)};
+	--now-color--neutral-2: #{now-fn-color2rgb(#e4e6e7)};
+	--now-color--neutral-3: #{now-fn-color2rgb(#d1d6d6)};
+	--now-color--neutral-4: #{now-fn-color2rgb(#bfc5c6)};
+	--now-color--neutral-5: #{now-fn-color2rgb(#acb4b5)};
+	--now-color--neutral-6: #{now-fn-color2rgb(#9aa4a5)};
+	--now-color--neutral-7: #{now-fn-color2rgb(#879394)};
+	--now-color--neutral-8: #{now-fn-color2rgb(#758284)};
+	--now-color--neutral-9: #{now-fn-color2rgb(#637274)};
+	--now-color--neutral-10: #{now-fn-color2rgb(#506163)};
+	--now-color--neutral-11: #{now-fn-color2rgb(#49585a)};
+	--now-color--neutral-12: #{now-fn-color2rgb(#425051)};
+	--now-color--neutral-13: #{now-fn-color2rgb(#3a4748)};
+	--now-color--neutral-14: #{now-fn-color2rgb(#333e3f)};
+	--now-color--neutral-15: #{now-fn-color2rgb(#2c3537)};
+	--now-color--neutral-16: #{now-fn-color2rgb(#252d2e)};
+	--now-color--neutral-17: #{now-fn-color2rgb(#1e2425)};
+	--now-color--neutral-18: #{now-fn-color2rgb(#161b1c)};
+	--now-color--neutral-19: #{now-fn-color2rgb(#0f1213)};
+	--now-color--neutral-20: #{now-fn-color2rgb(#080a0a)};
+	--now-color--neutral-21: #{now-fn-color2rgb(#000000)};
+	--now-color--primary-0: #{now-fn-color2rgb(#ddede9)};
+	--now-color--primary-1: #{now-fn-color2rgb(#1e856d)};
+	--now-color--primary-2: #{now-fn-color2rgb(#176452)};
+	--now-color--primary-3: #{now-fn-color2rgb(#0f4337)};
+	--now-color--secondary-0: #{now-fn-color2rgb(#d9ebee)};
+	--now-color--secondary-1: #{now-fn-color2rgb(#01778e)};
+	--now-color--secondary-2: #{now-fn-color2rgb(#01596b)};
+	--now-color--secondary-3: #{now-fn-color2rgb(#013c47)};
+	--now-color_selection--primary-0: #{now-fn-color2rgb(#ddede9)};
+	--now-color_selection--primary-1: #{now-fn-color2rgb(#7eb9ab)};
+	--now-color_selection--primary-2: #{now-fn-color2rgb(#1e856d)};
+	--now-color_selection--primary-3: #{now-fn-color2rgb(#176452)};
+	--now-color_selection--primary-4: #{now-fn-color2rgb(#0f4337)};
+	--now-color_selection--secondary-0: #{now-fn-color2rgb(#f5f8f9)};
+	--now-color_selection--secondary-1: #{now-fn-color2rgb(#edf3f5)};
+	--now-color_selection--secondary-2: #{now-fn-color2rgb(#e5eef0)};
+	--now-color_selection--secondary-3: #{now-fn-color2rgb(#dae2e4)};
+	--now-color_selection--secondary-4: #{now-fn-color2rgb(#ced6d8)};
+	--now-color--interactive-0: #{now-fn-color2rgb(#d9ebee)};
+	--now-color--interactive-1: #{now-fn-color2rgb(#6db1be)};
+	--now-color--interactive-2: #{now-fn-color2rgb(#01778e)};
+	--now-color--interactive-3: #{now-fn-color2rgb(#01596b)};
+	--now-color--interactive-4: #{now-fn-color2rgb(#013c47)};
+	--now-color--link-1: #{now-fn-color2rgb(#4da0b0)};
+	--now-color--link-2: #{now-fn-color2rgb(#01778e)};
+	--now-color--link-3: #{now-fn-color2rgb(#01687c)};
+	--now-color--link-4: #{now-fn-color2rgb(#01596b)};
+	--now-color--focus-1: #{now-fn-color2rgb(#4da0b0)};
+	--now-color--focus-2: #{now-fn-color2rgb(#01778e)};
+	--now-color--focus-3: #{now-fn-color2rgb(#01596b)};
+	--now-color_presence--available: #{now-fn-color2rgb(#4ba66b)};
+	--now-color_presence--busy: #{now-fn-color2rgb(#ea3c10)};
+	--now-color_presence--away: #{now-fn-color2rgb(#e27918)};
+	--now-color_presence--offline: #{now-fn-color2rgb(#879394)};
+}

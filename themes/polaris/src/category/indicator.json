@@ -1,0 +1,8 @@
+{
+	"--now-indicator--border-radius": "$now-global-border-radius--sm",
+	"--now-indicator--border-width": "0",
+	"--now-indicator--font-family": "--now-font-family",
+	"--now-indicator--font-style": "normal",
+	"--now-indicator--font-weight": "normal",
+	"--now-indicator--text-transform": "none"
+}

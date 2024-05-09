@@ -1,0 +1,7 @@
+{
+	"--now-dragdrop_badge--background-color": "--now-color_alert--info-2",
+	"--now-dragdrop_badge--border-color": "--now-color--neutral-0",
+	"--now-dragdrop_badge--color": "--now-color--neutral-0",
+	"--now-dragdrop_badge--font-family": "--now-font-family",
+	"--now-dragdrop_ghost--background-color": "--now-color--neutral-0"
+}

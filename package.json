@@ -30,7 +30,11 @@
 		"@servicenow/library-enhanced-utils": "quebec",
 		"@servicenow/behavior-tooltip": "24.3.11-ecdd.2",
 		"@servicenow/behavior-focus": "quebec",
-		"@servicenow/library-schemas": "quebec"
+		"@servicenow/library-schemas": "quebec",
+		"@servicenow/theme-initial": "file:themes/initial",
+		"@servicenow/sass-global": "file:sass/global",
+		"sass-loader": "12.0.0",
+		"sass": "^1.33.0"
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "24.0.1",

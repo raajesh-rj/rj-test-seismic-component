@@ -1,0 +1,7 @@
+{
+	"--now-label-value-inline--color": "--now-display-type_label--color",
+	"--now-label-value-inline--font-family": "--now-display-type_label--font-family",
+	"--now-label-value-inline--font-style": "--now-display-type_label--font-style",
+	"--now-label-value-inline--font-weight": "--now-display-type_label--font-weight",
+	"--now-label-value-inline--text-transform": "--now-display-type_label--text-transform"
+}

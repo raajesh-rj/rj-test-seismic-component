@@ -1,0 +1,75 @@
+// ServiceNow Now Design System
+
+// Utilities / Typography
+
+// This class provides a hook to use line-height crop functionality. See
+// `now-mx-line-height-crop` mixin for more info.
+
+// stylelint-disable selector-class-pattern
+
+.now-line-height-crop {
+	@include now-mx-line-height-crop;
+}
+
+.now-line-height-crop--sm {
+	@include now-mx-line-height-crop($now-global-line-height--sm);
+}
+
+// These classes provide hooks for styling text nodes.
+
+.now-heading--md,
+.now-heading--lg,
+.now-heading--xl {
+	font-weight: 600;
+	color: RGB($now-color_text--primary);
+}
+
+.now-heading--md {
+	font-size: $now-global-font-size--md;
+}
+
+.now-heading--lg {
+	font-size: $now-global-font-size--lg;
+}
+
+.now-heading--xl {
+	font-size: $now-global-font-size--xl;
+}
+
+.now-text--normal {
+	font-weight: normal;
+}
+
+.now-text--semibold {
+	font-weight: 600;
+}
+
+.now-text--bold {
+	font-weight: bold;
+}
+
+.now-text--sm {
+	font-size: $now-global-font-size--sm;
+}
+
+.now-text--md {
+	font-size: $now-global-font-size--md;
+}
+
+.now-text--lg {
+	font-size: $now-global-font-size--lg;
+}
+
+.now-text--primary {
+	color: RGB($now-color_text--primary);
+}
+
+.now-text--secondary {
+	color: RGB($now-color_text--secondary);
+}
+
+.now-text--tertiary {
+	color: RGB($now-color_text--tertiary);
+}
+
+// stylelint-enable selector-class-pattern

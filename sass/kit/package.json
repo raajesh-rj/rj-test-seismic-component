@@ -1,0 +1,23 @@
+{
+	"name": "@servicenow/sass-kit",
+	"version": "26.0.14-webux.1",
+	"description": "Shortcut to install all global and generic design system styles",
+	"meta": {
+		"release": "N"
+	},
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"No tests specified for this package\""
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://code.devsnc.com/dev/design-system"
+	},
+	"bugs": "https://tinyurl.com/new-nds-def",
+	"dependencies": {
+		"@servicenow/sass-generic": "file:../generic",
+		"@servicenow/sass-global": "file:../global"
+	}
+}

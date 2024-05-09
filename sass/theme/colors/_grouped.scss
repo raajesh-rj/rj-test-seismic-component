@@ -1,0 +1,74 @@
+// ServiceNow Now Design System
+
+// Theme / Colors / Grouped
+
+@import '@servicenow/sass-global/functions';
+
+@mixin now-mx-theme-colors-grouped {
+	--now-color_grouped--blue-0: #{now-fn-color2rgb(#d7e7f0)};
+	--now-color_grouped--blue-1: #{now-fn-color2rgb(#a7ccde)};
+	--now-color_grouped--blue-2: #{now-fn-color2rgb(#78b0cc)};
+	--now-color_grouped--blue-3: #{now-fn-color2rgb(#6696ad)};
+	--now-color_grouped--blue-4: #{now-fn-color2rgb(#547b8f)};
+	--now-color_grouped--blue-5: #{now-fn-color2rgb(#426170)};
+	--now-color_grouped--brown-0: #{now-fn-color2rgb(#e1dcd6)};
+	--now-color_grouped--brown-1: #{now-fn-color2rgb(#bfb3a7)};
+	--now-color_grouped--brown-2: #{now-fn-color2rgb(#9c8a77)};
+	--now-color_grouped--brown-3: #{now-fn-color2rgb(#857565)};
+	--now-color_grouped--brown-4: #{now-fn-color2rgb(#6d6153)};
+	--now-color_grouped--brown-5: #{now-fn-color2rgb(#564c42)};
+	--now-color_grouped--gray-0: #{now-fn-color2rgb(#dcdee0)};
+	--now-color_grouped--gray-1: #{now-fn-color2rgb(#b4b8bb)};
+	--now-color_grouped--gray-2: #{now-fn-color2rgb(#8b9196)};
+	--now-color_grouped--gray-3: #{now-fn-color2rgb(#767b80)};
+	--now-color_grouped--gray-4: #{now-fn-color2rgb(#616669)};
+	--now-color_grouped--gray-5: #{now-fn-color2rgb(#4d5053)};
+	--now-color_grouped--green-0: #{now-fn-color2rgb(#dfe6d8)};
+	--now-color_grouped--green-1: #{now-fn-color2rgb(#b9c8ab)};
+	--now-color_grouped--green-2: #{now-fn-color2rgb(#93aa7d)};
+	--now-color_grouped--green-3: #{now-fn-color2rgb(#7d916a)};
+	--now-color_grouped--green-4: #{now-fn-color2rgb(#677758)};
+	--now-color_grouped--green-5: #{now-fn-color2rgb(#515e45)};
+	--now-color_grouped--green-yellow-0: #{now-fn-color2rgb(#e1e6cf)};
+	--now-color_grouped--green-yellow-1: #{now-fn-color2rgb(#bdca96)};
+	--now-color_grouped--green-yellow-2: #{now-fn-color2rgb(#9aad5e)};
+	--now-color_grouped--green-yellow-3: #{now-fn-color2rgb(#839350)};
+	--now-color_grouped--green-yellow-4: #{now-fn-color2rgb(#6c7942)};
+	--now-color_grouped--green-yellow-5: #{now-fn-color2rgb(#555f34)};
+	--now-color_grouped--magenta-0: #{now-fn-color2rgb(#efd7ec)};
+	--now-color_grouped--magenta-1: #{now-fn-color2rgb(#dda8d7)};
+	--now-color_grouped--magenta-2: #{now-fn-color2rgb(#cb79c1)};
+	--now-color_grouped--magenta-3: #{now-fn-color2rgb(#ad67a4)};
+	--now-color_grouped--magenta-4: #{now-fn-color2rgb(#8e5587)};
+	--now-color_grouped--magenta-5: #{now-fn-color2rgb(#70436a)};
+	--now-color_grouped--orange-0: #{now-fn-color2rgb(#f3d9d2)};
+	--now-color_grouped--orange-1: #{now-fn-color2rgb(#e5ad9e)};
+	--now-color_grouped--orange-2: #{now-fn-color2rgb(#d7816a)};
+	--now-color_grouped--orange-3: #{now-fn-color2rgb(#b76e5a)};
+	--now-color_grouped--orange-4: #{now-fn-color2rgb(#975a4a)};
+	--now-color_grouped--orange-5: #{now-fn-color2rgb(#76473a)};
+	--now-color_grouped--pink-0: #{now-fn-color2rgb(#efd7dd)};
+	--now-color_grouped--pink-1: #{now-fn-color2rgb(#dda8b6)};
+	--now-color_grouped--pink-2: #{now-fn-color2rgb(#cb798f)};
+	--now-color_grouped--pink-3: #{now-fn-color2rgb(#ad677a)};
+	--now-color_grouped--pink-4: #{now-fn-color2rgb(#8e5564)};
+	--now-color_grouped--pink-5: #{now-fn-color2rgb(#70434f)};
+	--now-color_grouped--purple-0: #{now-fn-color2rgb(#e9e1f1)};
+	--now-color_grouped--purple-1: #{now-fn-color2rgb(#cfbee1)};
+	--now-color_grouped--purple-2: #{now-fn-color2rgb(#b59bd1)};
+	--now-color_grouped--purple-3: #{now-fn-color2rgb(#9a84b2)};
+	--now-color_grouped--purple-4: #{now-fn-color2rgb(#7f6d92)};
+	--now-color_grouped--purple-5: #{now-fn-color2rgb(#645573)};
+	--now-color_grouped--teal-0: #{now-fn-color2rgb(#d2e7e3)};
+	--now-color_grouped--teal-1: #{now-fn-color2rgb(#9dcac3)};
+	--now-color_grouped--teal-2: #{now-fn-color2rgb(#68aea3)};
+	--now-color_grouped--teal-3: #{now-fn-color2rgb(#58948b)};
+	--now-color_grouped--teal-4: #{now-fn-color2rgb(#497a72)};
+	--now-color_grouped--teal-5: #{now-fn-color2rgb(#39605a)};
+	--now-color_grouped--yellow-0: #{now-fn-color2rgb(#fbf1d1)};
+	--now-color_grouped--yellow-1: #{now-fn-color2rgb(#f5e09b)};
+	--now-color_grouped--yellow-2: #{now-fn-color2rgb(#f0cf65)};
+	--now-color_grouped--yellow-3: #{now-fn-color2rgb(#ccb056)};
+	--now-color_grouped--yellow-4: #{now-fn-color2rgb(#a89147)};
+	--now-color_grouped--yellow-5: #{now-fn-color2rgb(#847238)};
+}

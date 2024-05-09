@@ -1,0 +1,13 @@
+// ServiceNow Now Design System
+
+// Global / Category / Loading
+
+$now-loading--font-style:                       var(--now-loading--font-style, normal);
+$now-loading--font-weight:                      var(--now-loading--font-weight, normal);
+$now-loading--font-family:                      var(--now-loading--font-family, $now-font-family);
+$now-loading--text-transform:                   var(--now-loading--text-transform, none);
+$now-loading--border-width:                     var(--now-loading--border-width, 1px);
+$now-loading--border-radius:                    var(--now-loading--border-radius, 0);
+
+$now-loading--initial--border-color:            var(--now-loading--initial--border-color, $now-color--primary-2);
+$now-loading--initial--background-color:        var(--now-loading--initial--background-color, $now-color--primary-1);

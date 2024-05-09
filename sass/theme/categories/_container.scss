@@ -1,0 +1,14 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Container
+
+@mixin now-mx-theme-category-container {
+	--now-container--font-style: normal;
+	--now-container--font-weight: normal;
+	--now-container--font-family: var(--now-font-family);
+	--now-container--text-transform: none;
+	--now-container--border-width: 1px;
+	--now-container--border-color: var(--now-color_border--tertiary);
+	--now-container--border-radius: 0;
+	--now-container--color: var(--now-color_background--primary);
+}

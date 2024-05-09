@@ -1,0 +1,12 @@
+{
+	"--now-tooltip--background-color": "--now-color--neutral-19",
+	"--now-tooltip--background-color-alpha": "1",
+	"--now-tooltip--border-color": "--now-menu--border-color",
+	"--now-tooltip--border-radius": "--now-menu--border-radius",
+	"--now-tooltip--border-width": "1px",
+	"--now-tooltip--color": "--now-color--neutral-0",
+	"--now-tooltip--font-family": "--now-menu--font-family",
+	"--now-tooltip--font-style": "--now-menu--font-style",
+	"--now-tooltip--font-weight": "--now-menu--font-weight",
+	"--now-tooltip--text-transform": "--now-menu--text-transform"
+}

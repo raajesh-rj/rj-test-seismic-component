@@ -12,6 +12,7 @@
 						"variant",
 						"size",
 						"disabled",
+						"bare",
 						{
 							"initialOpenState": true,
 							"sectionType": "section",

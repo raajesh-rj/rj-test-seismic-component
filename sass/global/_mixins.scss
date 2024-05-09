@@ -1,0 +1,541 @@
+// ServiceNow Now Design System
+
+// Globals / Mixins
+
+// Mixin namespace should be now-mx-*
+
+@import 'buttons';
+
+/// Truncates single line text using ellipsis.
+///
+@mixin now-mx-ellipsis() {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/// Ouputs CSS for `:focus` states on a standard element
+///
+/// @group Accessibility
+///
+@mixin now-mx-focus-ring {
+	&::-moz-focus-inner {
+		border-style: none;
+	}
+
+	&:focus {
+		box-shadow: $now-global-focus-ring;
+		outline: none;
+	}
+
+	@media (forced-colors: active) {
+		&:focus {
+			outline: 1px solid highlight;
+		}
+	}
+}
+
+/// Ouputs CSS for `:focus` states on a bare or text element
+///
+/// @group Accessibility
+///
+@mixin now-mx-focus-ring--bare {
+	&::-moz-focus-inner {
+		border-style: none;
+	}
+
+	&:focus {
+		box-shadow: $now-global-focus-ring--bare;
+		outline: none;
+	}
+
+	@media (forced-colors: active) {
+		&:focus {
+			outline: 1px solid highlight;
+		}
+	}
+}
+
+/// Used in `now-mx-global-space-sub`
+/// An object that uses some short hand names as keys and how that needs to be
+/// output in css for it to work
+// theme-analyzer-disable-next-line
+$now-spacing-directions: (
+	'block': 'block-start' 'block-end',
+	'block-start': 'block-start',
+	'block-end': 'block-end',
+	'inline': 'inline-start' 'inline-end',
+	'inline-start': 'inline-start',
+	'inline-end': 'inline-end'
+);
+
+/// Creates a set of classes declaring margins or paddings for each size
+/// supported in the global spacing set, plus zero.
+///
+/// @output CSS rules declaring margins and paddings
+///
+/// @access private
+///
+/// @param {String} $property-key - whether margin or padding
+/// @param {String} $property-value - for margin m, for padding p
+/// @param {String} $size-key - size abbreviation
+/// @param {String} $size-value - global spacing variable
+///
+/// @example scss - Input
+/// 	@include now-mx-global-space-sub(m, margin, xxs, $now-global-space--xxs);
+///
+/// @example css - Output
+/// 	.now-m-block--xxs {
+///			margin-block-start: 2px;
+///			margin-block-end: 2px;
+///		}
+///
+///		.now-m-block-start--xxs {
+///			margin-block-start: 2px;
+///		}
+///
+///		.now-m-block-end--xxs {
+///			margin-block-end: 2px;
+///		}
+///
+///		.now-m-inline--xxs {
+///			margin-inline-start: 2px;
+///			margin-inline-end: 2px;
+///		}
+///
+///		.now-m-inline-start--xxs {
+///			margin-inline-start: 2px;
+///		}
+///
+///		.now-m-inline-end--xxs {
+///			margin-inline-end: 2px;
+///		}
+///
+@mixin now-mx-global-space-sub(
+	$property-key,
+	$property-value,
+	$size-key,
+	$size-value
+) {
+	@each $direction-key, $direction-value in $now-spacing-directions {
+		.now-#{$property-key}-#{$direction-key}--#{$size-key} {
+			@each $direction in $direction-value {
+				#{$property-value}-#{$direction}: #{$size-value};
+			}
+		}
+	}
+}
+
+/// Sets values for CSS properties that otherwise inherit their values. Most
+/// components will share this common set of values as is, but when not
+/// appropriate, different values can be set in the mixin's argument or can be
+/// omitted from the compiled CSS by setting `false` as a property's value in
+/// the mixin's argument.
+///
+/// @output CSS rules to override values inherited.
+///
+/// @param {String | Bool} $font-style [normal] - font-style value
+/// @param {String | Bool} $font-weight [normal] - font-weight value
+/// @param {String | Bool} $font-variant [normal] - font-variant value
+/// @param {String | Bool} $letter-spacing [inherit] - letter-spacing value
+/// @param {String | Bool} $word-spacing [inherit] - word-spacing value
+/// @param {String | Bool} $text-transform [none] - text-transform value
+/// @param {Number | Bool} $text-indent [0] - text-indent value
+/// @param {String | Bool} $text-shadow [none] - text-shadow value
+/// @param {String | Bool} $white-space [normal] - white-space value
+///
+/// @example scss - Input
+/// 	.foo {
+///			@include now-mx-inherits($font-style:false,$font-weight:bold);
+/// 	}
+///
+/// @example css - Output
+/// 	.foo {
+/// 		font-weight: bold;
+/// 		font-variant: normal;
+/// 		letter-spacing: normal;
+/// 		word-spacing: normal;
+/// 		text-transform: none;
+/// 		text-indent: 0;
+/// 		text-shadow: none;
+/// 		white-space: normal;
+/// 	}
+///
+@mixin now-mx-inherits(
+	$font-style: normal,
+	$font-weight: normal,
+	$font-variant: normal,
+	$letter-spacing: inherit,
+	$word-spacing: inherit,
+	$text-transform: none,
+	$text-indent: 0,
+	$text-shadow: none,
+	$white-space: normal
+) {
+	@if $font-style {
+		font-style: $font-style;
+	}
+	@if $font-weight {
+		font-weight: $font-weight;
+	}
+	@if $font-variant {
+		font-variant: $font-variant;
+	}
+	@if $letter-spacing {
+		letter-spacing: $letter-spacing;
+	}
+	@if $word-spacing {
+		word-spacing: $word-spacing;
+	}
+	@if $text-transform {
+		text-transform: $text-transform;
+	}
+	@if $text-indent {
+		text-indent: $text-indent;
+	}
+	@if $text-shadow {
+		text-shadow: $text-shadow;
+	}
+	@if $white-space {
+		white-space: $white-space;
+	}
+}
+
+/// Removes vertical space from above and below text while maintaining
+/// line-height. Is particularly useful for visually vertically centering text
+/// inside a container.
+///
+/// Default argument is global line-height but can accept custom
+/// line-height and adjusts cropping accordingly. Can also take optional
+/// arguments to add space for either ascenders or descenders avoiding unwanted
+/// clipping of text when the `.now-line-height-crop` element is subject to
+/// overflow hidden.
+///
+/// @link http://text-crop.eightshapes.com
+///
+/// @group Typography
+///
+/// @param {Number} $line-height [$now-global-line-height] - line-height value
+/// @param {String} $custom-property-namspace [--now-line-height-crop] - custom property namespace to use (excluding --before or --after)
+/// @param {bool} $include-ascender-space [false] - add padding-block-start
+/// @param {bool} $include-descender-space [false] - add padding-block-end
+///
+/// @example scss - Input
+///		.foo {
+///			@include now-mx-line-height-crop;
+///		}
+///
+/// @example css - Output
+///		.foo:before,
+///		.foo:after {
+///			content: '';
+///			display: block;
+///			height: 0;
+///		}
+///		.foo:before {
+///			margin-block-start: calc(0.25em * 1);
+///		}
+///		.foo:after {
+///			margin-block-end: calc(0.125em * 1);
+///		}
+///		.foo + .foo {
+///			margin-block-start: calc(0.25em * 1 * -1);
+///		}
+///
+@mixin now-mx-line-height-crop(
+	$line-height: $now-global-line-height,
+	$custom-property-namespace: --now-line-height-crop,
+	$include-ascender-space: false,
+	$include-descender-space: false
+) {
+	$line-height-ratio: calc(#{$line-height} / #{$now-global-line-height});
+	display: block;
+
+	// theme-analyzer-disable
+
+	@if $include-ascender-space {
+		padding-block-start: calc(
+			var(#{$custom-property-namespace}--before) * #{$line-height-ratio} * -1
+		);
+	}
+	@if $include-descender-space {
+		padding-block-end: calc(
+			var(#{$custom-property-namespace}--after) * #{$line-height-ratio} * -1
+		);
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		block-size: 0;
+	}
+
+	&:before {
+		margin-block-start: calc(
+			var(
+					#{$custom-property-namespace}--before,
+					#{$now-global-line-height-crop--before}
+				) * #{$line-height-ratio}
+		);
+	}
+
+	&:after {
+		margin-block-end: calc(
+			var(
+					#{$custom-property-namespace}--after,
+					#{$now-global-line-height-crop--after}
+				) * #{$line-height-ratio}
+		);
+	}
+
+	// This compensates for when adjacent elements using `.now-line-height-crop`
+	// don't have their own margins, or they're zero.
+
+	& + & {
+		margin-block-start: calc(
+			var(
+					#{$custom-property-namespace}--after,
+					#{$now-global-line-height-crop--after}
+				) * #{$line-height-ratio} * -1
+		);
+	}
+
+	// theme-analyzer-enable
+}
+
+/// Applies a multi-line truncation with ellipses.
+/// @link https://css-tricks.com/almanac/properties/l/line-clamp/
+///
+/// @group Typography
+///
+/// @param {Number} $lines - number of lines to clamp.
+///
+/// @example scss - Input
+/// 	.content {
+/// 		@include now-mx-line-clamp(3);
+/// 	}
+///
+/// @example css - Output
+/// 	.content {
+/// 		display: -webkit-box;
+/// 		-webkit-line-clamp: 3;
+/// 		-webkit-box-orient: vertical;
+/// 		overflow: hidden;
+/// 		text-overflow: ellipsis;
+/// 	}
+///
+@mixin now-mx-line-clamp($lines) {
+	// stylelint-disable-next-line value-no-vendor-prefix
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/// Sets a direction sensitive CSS property (property will be flipped for an
+/// RTL layout)
+///
+/// @group i18n
+///
+/// @param {String} $prop - Direction sensitive CSS property
+/// @param {String} $val - CSS value
+/// @output Direction sensitive rulesets in both `[dir='ltr']` and
+/// `[dir='rtl']` contexts
+///
+/// @example scss - Input
+///		.foo {
+///			@include now-mx-rtl-property(left, 16px);
+///		}
+///
+/// @example css - Output
+///		:root:not([dir='rtl']) .foo,
+///		:host(:not([dir='rtl'])) .foo {
+///			left: 16px;
+///		}
+///		:root[dir='rtl'] .foo,
+///		:host([dir='rtl']) .foo {
+///			right: 16px;
+///		}
+///
+@mixin now-mx-rtl-property($prop, $val) {
+	@if not (
+		(str-index($prop, 'left')) or (str-index($prop, 'right') or (str-index($prop, 'start') or str-index($prop, 'end')))
+	) {
+		@error '`#{$prop}` is not a valid value for $prop. Please specify a property containing `left` or `right` or `start` or `end`';
+	}
+
+	// stylelint-disable selector-max-attribute
+
+	:root:not([dir='rtl']) &,
+	:host(:not([dir='rtl'])) & {
+		#{$prop}: #{$val};
+	}
+
+	:root[dir='rtl'] &,
+	:host([dir='rtl']) & {
+		@if str-index($prop, 'left') {
+			$reverse-prop: now-fn-str-replace($prop, 'left', 'right');
+			#{$reverse-prop}: #{$val};
+		}
+		@if str-index($prop, 'right') {
+			$reverse-prop: now-fn-str-replace($prop, 'right', 'left');
+			#{$reverse-prop}: #{$val};
+		}
+		@if str-index($prop, 'start') {		
+			$reverse-prop: now-fn-str-replace($prop, 'start', 'end');
+			#{$reverse-prop}: #{$val};
+		
+		}
+		@if str-index($prop, 'end') {
+			$reverse-prop: now-fn-str-replace($prop, 'end', 'start');
+			#{$reverse-prop}: #{$val};
+		}
+	}
+
+	// stylelint-enable selector-max-attribute
+}
+
+/// Sets a direction sensitive CSS value (value will be flipped for an
+/// RTL layout)
+///
+/// @group i18n
+///
+/// @param {String} $prop - Direction sensitive CSS property
+/// @param {String} $val - CSS value
+/// @output Direction sensitive rulesets in both `[dir='ltr']` and
+/// `[dir='rtl']` contexts
+///
+/// @example scss - Input
+///		.foo {
+///			@include now-mx-rtl-value(text-align, left);
+///		}
+///
+/// @example css - Output
+///		:root:not([dir='rtl']) .foo,
+///		:host(:not([dir='rtl'])) .foo {
+///			text-align: left;
+///		}
+///		:root[dir='rtl'] .foo,
+///		:host([dir='rtl']) .foo {
+///			text-align: right;
+///		}
+///
+@mixin now-mx-rtl-value($prop, $val) {
+	@if not (
+		(str-index($val, 'left')) or (str-index($val, 'right'))
+	) {
+		@error '`#{$val}` is not a valid value for $val. Please specify a value containing `left` or `right`';
+	}
+
+	// stylelint-disable selector-max-attribute
+
+	:root:not([dir='rtl']) &,
+	:host(:not([dir='rtl'])) & {
+		#{$prop}: #{$val};
+	}
+
+	:root[dir='rtl'] &,
+	:host([dir='rtl']) & {
+		@if str-index($val, 'left') {
+			$reverse-val: now-fn-str-replace($val, 'left', 'right');
+			#{$prop}: #{$reverse-val};
+		}
+		@if str-index($val, 'right') {
+			$reverse-val: now-fn-str-replace($val, 'right', 'left');
+			#{$prop}: #{$reverse-val};
+		}
+	}
+
+	// stylelint-enable selector-max-attribute
+}
+
+@mixin now-mx-truncate {
+	.now-truncate {
+		display: flex;
+		align-items: flex-end;
+
+		&.-primary .now-truncate-trigger {
+			color: inherit;
+		}
+
+		// stylelint-disable servicenow/use-derived-color
+
+		&.-dark .now-truncate-trigger {
+			color: RGB($now-color--neutral-21);
+		}
+
+		&.-light .now-truncate-trigger {
+			color: RGB($now-color--neutral-0);
+		}
+
+		// stylelint-enable servicenow/use-derived-color
+	}
+
+	.now-truncate-content {
+		display: block;
+		overflow: hidden;
+		flex: 1;
+		min-inline-size: 0;
+		margin: 0;
+		padding: 0;
+		line-height: inherit;
+
+		&.-single {
+			word-break: break-all;
+		}
+
+		&.-multi {
+			overflow-wrap: break-word;
+			hyphens: auto;
+		}
+	}
+
+	.now-truncate-trigger {
+		@include now-mx-focus-ring;
+		@include now-mx-button-bare-primary;
+		display: block;
+		margin: 0;
+		border: none;
+		padding: 0 $now-global-space--xxs 0 $now-global-space--xs;
+		font-weight: 600;
+		font-size: inherit;
+		line-height: inherit;
+		font-family: inherit;
+		letter-spacing: now-fn-px2rem(2px);
+		cursor: pointer;
+		background-color: transparent;
+	}
+}
+
+/// DEPRECATED, IE11 IS NO LONGER SUPPORTED BY MODERN SERVICENOW UIS. We are
+/// leaving this mixin to ensure customer code that still uses it doesn't fail
+/// to compile, but it should be removed.
+///
+/// Provides an exotic CSS media-query only MSIE11 understands.
+///
+/// @group Internet Explorer
+///
+/// @content CSS targeted for MSIE11 only
+///
+/// @example scss - Input
+///		@include now-mx-ie11only {
+///			.foo {
+///				width: auto;
+///			}
+///		}
+///
+///	@example css - Output
+///		@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+///			.foo {
+///				width: auto;
+///			}
+///		}
+///
+@mixin now-mx-ie11only {
+	@warn "[@servicenow/sass-global] now-mx-ie11only mixin is deprecated, ServiceNow modern UIs no longer support IE11, remove the IE11 fallback from your code.";
+	@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		@content;
+	}
+}

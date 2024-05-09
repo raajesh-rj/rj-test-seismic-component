@@ -1,0 +1,5 @@
+{
+	"--now-popover--background-color": "--now-menu--background-color",
+	"--now-popover--border-color": "--now-menu--border-color",
+	"--now-popover--border-radius": "--now-menu--border-radius"
+}

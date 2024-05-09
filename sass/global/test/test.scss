@@ -1,0 +1,194 @@
+@import '../../../node_modules/sass-true/sass/true';
+@import '../settings';
+@import '../functions';
+@import '../scaling';
+@import '../mixins';
+
+@include describe('Convert pixels to rems') {
+	@include it('Returns correct rem value from pixel value.') {
+		$test: now-fn-px2rem(32px);
+		$expect: 2rem;
+		@include assert-equal(
+			$test,
+			$expect,
+			'The rem amount is incorrect or does not exist'
+		);
+	}
+}
+
+@include describe('Convert color to RGB triplet') {
+	@include it('Returns correct RGB triplet notation values.') {
+		$test: now-fn-color2rgb(#ffffff);
+		$expect: 255, 255, 255;
+		@include assert-equal(
+			$test,
+			$expect,
+			'The RGB triplets are incorrect or do not exist'
+		);
+	}
+}
+
+@include describe('Output classes based on :host dir') {
+	@include it('Outputs classes for ltr and rtl directions') {
+		@include assert {
+			@include output {
+				@include now-mx-rtl-property(right, 5px);
+				@include now-mx-rtl-property(left, 160px);
+				@include now-mx-rtl-value(float, 'right');
+			}
+			@include expect {
+				:root:not([dir='rtl']) &,
+				:host(:not([dir='rtl'])) & {
+					right: 5px;
+				}
+
+				:root[dir='rtl'] &,
+				:host([dir='rtl']) & {
+					left: 5px;
+				}
+
+				:root:not([dir='rtl']) &,
+				:host(:not([dir='rtl'])) & {
+					left: 160px;
+				}
+
+				:root[dir='rtl'] &,
+				:host([dir='rtl']) & {
+					right: 160px;
+				}
+
+				:root:not([dir='rtl']) &,
+				:host(:not([dir='rtl'])) & {
+					float: right;
+				}
+
+				:root[dir='rtl'] &,
+				:host([dir='rtl']) & {
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+@include describe('Output subset of spacing classes') {
+	@include it('outputs subset spacing classes correctly') {
+		@include assert {
+			$now-global-space-all: false;
+			$now-global-space-m--xxs: true;
+			@include output {
+				@if ($now-global-space-all == false and $now-global-space-m--xxs) {
+					@include now-mx-global-space-sub(
+						m,
+						margin,
+						xxs,
+						$now-global-space--xxs
+					);
+				}
+			}
+			@include expect {
+				.now-m-block--xxs {
+					margin-block-start: 0.125rem;
+					margin-block-end: 0.125rem;
+				}
+				.now-m-block-start--xxs {
+					margin-block-start: 0.125rem;
+				}
+				.now-m-block-end--xxs {
+					margin-block-end: 0.125rem;
+				}
+				.now-m-inline--xxs {
+					margin-inline-start: 0.125rem;
+					margin-inline-end: 0.125rem;
+				}
+				.now-m-inline-start--xxs {
+					margin-inline-start: 0.125rem;
+				}
+				.now-m-inline-end--xxs {
+					margin-inline-end: 0.125rem;
+				}
+			}
+		}
+	}
+}
+
+@include describe('Output classes based on scaling function') {
+	@include it('Outputs correct formula for scaling size') {
+		@include assert {
+			@include output {
+				block-size: now-fn-scale-size('block-size', now-fn-px2rem(32px), var(--foo));
+				min-block-size: now-fn-scale-size('min-block-size', 24px, var(--foo));
+				max-inline-size: now-fn-scale-size('max-inline-size', 200px, var(--foo));
+				margin: now-fn-scale-size('margin', $now-global-space--md, var(--bar));
+				padding-inline-end: now-fn-scale-size(
+					'padding-inline-end',
+					8px,
+					var(--bar)
+				);
+			}
+			@include expect {
+				block-size: #{'calc(2rem / 2 + var(--foo) * 2rem / 2)'};
+				min-block-size: #{'calc(24px / 2 + var(--foo) * 24px / 2)'};
+				max-inline-size: #{'calc(200px / 2 + var(--foo) * 200px / 2)'};
+				margin: #{'calc(0.75rem * var(--bar))'};
+				padding-inline-end: #{'calc(8px * var(--bar))'};
+			}
+		}
+	}
+}
+
+@include describe('Scaling spaces') {
+	@include it('xxs size in rem') {
+		$test: now-fn-scale-space($now-global-space--xxs);
+		$expect: calc(var(--now-scale-space--xxs, 1) * 0.125rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('xs size in rem') {
+		$test: now-fn-scale-space($now-global-space--xs);
+		$expect: calc(var(--now-scale-space--xs, 1) * 0.25rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('sm size in rem') {
+		$test: now-fn-scale-space($now-global-space--sm);
+		$expect: calc(var(--now-scale-space--sm, 1) * 0.5rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('md size in rem') {
+		$test: now-fn-scale-space($now-global-space--md);
+		$expect: calc(var(--now-scale-space--md, 1) * 0.75rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('lg size in rem') {
+		$test: now-fn-scale-space($now-global-space--lg);
+		$expect: calc(var(--now-scale-space--lg, 1) * 1rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('xl size in rem') {
+		$test: now-fn-scale-space($now-global-space--xl);
+		$expect: calc(var(--now-scale-space--xl, 1) * 1.5rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('xxl size in rem') {
+		$test: now-fn-scale-space($now-global-space--xxl);
+		$expect: calc(var(--now-scale-space--xxl, 1) * 2rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('3xl size in rem') {
+		$test: now-fn-scale-space($now-global-space--3xl);
+		$expect: calc(var(--now-scale-space--3xl, 1) * 2.5rem);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+
+	@include it('Target determines the scaling factor for') {
+		$test: now-fn-scale-space(2px, 60px);
+		$expect: calc(var(--now-scale-space--3xl, 1) * 2px);
+		@include assert-equal(inspect($test), inspect($expect));
+	}
+}

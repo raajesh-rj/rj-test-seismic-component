@@ -1,0 +1,10 @@
+{
+	"--now-container--border-color": "--now-color_border--tertiary",
+	"--now-container--border-radius": "$now-global-border-radius--md",
+	"--now-container--border-width": "1px",
+	"--now-container--color": "--now-color_background--primary",
+	"--now-container--font-family": "--now-font-family",
+	"--now-container--font-style": "normal",
+	"--now-container--font-weight": "normal",
+	"--now-container--text-transform": "none"
+}

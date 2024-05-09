@@ -1,0 +1,52 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Display Type
+
+@mixin now-mx-theme-category-display-type {
+	--now-display-type--font-style: normal;
+	--now-display-type--font-weight: normal;
+	--now-display-type--font-family: var(--now-font-family);
+	--now-display-type--text-transform: none;
+	--now-display-type--color: var(--now-color_text--primary);
+	--now-display-type_label--font-style: var(--now-display-type--font-style);
+	--now-display-type_label--font-weight: var(--now-display-type--font-weight);
+	--now-display-type_label--font-family: var(--now-font-family);
+	--now-display-type_label--text-transform: var(
+		--now-display-type--text-transform
+	);
+	--now-display-type_label--color: var(--now-color_text--tertiary);
+	--now-display-type_value--font-style: var(--now-display-type--font-style);
+	--now-display-type_value--font-weight: var(--now-display-type--font-weight);
+	--now-display-type_value--font-family: var(--now-font-family);
+	--now-display-type_value--text-transform: var(
+		--now-display-type--text-transform
+	);
+	--now-display-type_value--color: var(--now-display-type--color);
+	--now-display-type--primary--font-style: var(--now-display-type--font-style);
+	--now-display-type--primary--font-weight: 600;
+	--now-display-type--primary--font-family: var(--now-font-family);
+	--now-display-type--primary--text-transform: var(
+		--now-display-type--text-transform
+	);
+	--now-display-type--primary--color: var(--now-display-type--color);
+	--now-display-type--secondary--font-style: var(
+		--now-display-type--font-style
+	);
+	--now-display-type--secondary--font-weight: var(
+		--now-display-type--font-weight
+	);
+	--now-display-type--secondary--font-family: var(--now-font-family);
+	--now-display-type--secondary--text-transform: var(
+		--now-display-type--text-transform
+	);
+	--now-display-type--secondary--color: var(--now-color_text--secondary);
+	--now-display-type--tertiary--font-style: var(--now-display-type--font-style);
+	--now-display-type--tertiary--font-weight: var(
+		--now-display-type--font-weight
+	);
+	--now-display-type--tertiary--font-family: var(--now-font-family);
+	--now-display-type--tertiary--text-transform: var(
+		--now-display-type--text-transform
+	);
+	--now-display-type--tertiary--color: var(--now-color_text--tertiary);
+}

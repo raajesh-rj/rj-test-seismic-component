@@ -1,0 +1,58 @@
+[
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "300",
+		"font-style": "normal",
+		"files": [
+			"assets/source-sans-pro-v21-latin-300.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "normal",
+		"font-style": "normal",
+		"files": [
+			"assets/source-sans-pro-v21-latin-regular.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "normal",
+		"font-style": "italic",
+		"files": [
+			"assets/source-sans-pro-v21-latin-italic.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "600",
+		"font-style": "normal",
+		"files": [
+			"assets/source-sans-pro-v21-latin-600.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "600",
+		"font-style": "italic",
+		"files": [
+			"assets/source-sans-pro-v21-latin-600italic.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "bold",
+		"font-style": "normal",
+		"files": [
+			"assets/source-sans-pro-v21-latin-700.woff2"
+		]
+	},
+	{
+		"font-family": "'Source Sans Pro'",
+		"font-weight": "bold",
+		"font-style": "italic",
+		"files": [
+			"assets/source-sans-pro-v21-latin-700italic.woff2"
+		]
+	}
+]

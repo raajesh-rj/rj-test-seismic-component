@@ -1,0 +1,14 @@
+{
+	"name": "@servicenow/theme-polaris",
+	"version": "26.0.14-webux.1",
+	"description": "Polaris theme for ServiceNow UIs",
+	"author": "Now Design System Engineering Team @ ServiceNow",
+	"repository": {
+		"type": "git",
+		"url": "https://code.devsnc.com/dev/design-system"
+	},
+	"bugs": "https://tinyurl.com/new-nds-def",
+	"scripts": {
+		"test": "echo \"No tests specified for this package.\""
+	}
+}

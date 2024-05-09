@@ -1,0 +1,21 @@
+// ServiceNow Now Design System
+
+// Generics / Host
+
+:host {
+	box-sizing: border-box;
+	line-height: var(--now-line-height, $now-global-line-height);
+	font-family: $now-font-family;
+}
+
+:host([hidden]) {
+	display: none;
+}
+
+* {
+	&,
+	&:before,
+	&:after {
+		box-sizing: border-box;
+	}
+}

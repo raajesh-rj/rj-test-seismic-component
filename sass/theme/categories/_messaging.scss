@@ -1,0 +1,14 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Messaging
+
+@mixin now-mx-theme-category-messaging {
+	--now-messaging--font-style: normal;
+	--now-messaging--font-weight: normal;
+	--now-messaging--font-family: var(--now-font-family);
+	--now-messaging--text-transform: none;
+	--now-messaging--border-width: 1px;
+	--now-messaging--border-color: var(--now-color_border--secondary);
+	--now-messaging--border-radius: #{$now-global-border-radius--md};
+	--now-messaging--background-color: var(--now-color_background--primary);
+}

@@ -1,0 +1,8 @@
+{
+	"--now-loader_icon--color": "--now-color--primary-1",
+	"--now-loader_label--color": "--now-color_text--primary",
+	"--now-loader--font-family": "--now-loading--font-family",
+	"--now-loader--font-style": "--now-loading--font-style",
+	"--now-loader--font-weight": "--now-loading--font-weight",
+	"--now-loader--text-transform": "--now-loading--text-transform"
+}

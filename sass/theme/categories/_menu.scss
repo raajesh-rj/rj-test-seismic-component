@@ -1,0 +1,28 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Menu
+
+@mixin now-mx-theme-category-menu {
+	--now-menu--font-style: normal;
+	--now-menu--font-weight: normal;
+	--now-menu--font-family: var(--now-font-family);
+	--now-menu--text-transform: none;
+	--now-menu--border-width: 1px;
+	--now-menu--border-color: var(--now-color_border--primary);
+	--now-menu--border-radius: #{$now-global-border-radius--sm};
+	--now-menu--background-color: var(--now-color_background--primary);
+	--now-menu_divider--width: 1px;
+	--now-menu_divider--color: #{$now-color_divider--tertiary};
+	--now-menu_heading--font-style: var(--now-menu--font-style);
+	--now-menu_heading--font-weight: var(--now-menu--font-weight);
+	--now-menu_heading--font-family: var(--now-menu--font-family);
+	--now-menu_heading--text-transform: var(--now-menu--text-transform);
+	--now-menu_sublabel--font-style: var(--now-menu--font-style);
+	--now-menu_sublabel--font-weight: var(--now-menu--font-weight);
+	--now-menu_sublabel--font-family: var(--now-menu--font-family);
+	--now-menu_sublabel--text-transform: var(--now-menu--text-transform);
+	--now-menu_search--font-style: var(--now-menu--font-style);
+	--now-menu_search--font-weight: var(--now-menu--font-weight);
+	--now-menu_search--font-family: var(--now-menu--font-family);
+	--now-menu_search--text-transform: var(--now-menu--text-transform);
+}

@@ -1,0 +1,23 @@
+{
+	"--now-accordion_caption--primary--color": "--now-color_text--primary",
+	"--now-accordion_caption--secondary--color": "--now-color_text--tertiary",
+	"--now-accordion_divider--color": "--now-color_divider--secondary",
+	"--now-accordion_divider--width": "1px",
+	"--now-accordion_heading--header--font-style": "--now-display-type--header-primary--font-style",
+	"--now-accordion_heading--header--font-weight": "--now-display-type--header-primary--font-weight",
+	"--now-accordion_heading--header--font-family": "--now-display-type--header-primary--font-family",
+	"--now-accordion_heading--header--text-transform": "--now-display-type--header-primary--text-transform",
+	"--now-accordion_heading--primary--color": "--now-color_text--primary",
+	"--now-accordion_heading--secondary--color": "--now-color_text--tertiary",
+	"--now-accordion_heading--title--font-style": "--now-display-type--title-primary--font-style",
+	"--now-accordion_heading--title--font-weight": "--now-display-type--title-primary--font-weight",
+	"--now-accordion_heading--title--font-family": "--now-display-type--title-primary--font-family",
+	"--now-accordion_heading--title--text-transform": "--now-display-type--title-primary--text-transform",
+	"--now-accordion_icon--color": "--now-color_text--tertiary",
+	"--now-accordion--color": "--now-color--secondary-1",
+	"--now-accordion--font-family": "--now-view-control--font-family",
+	"--now-accordion--font-style": "--now-view-control--font-style",
+	"--now-accordion--font-weight": "--now-view-control--font-weight",
+	"--now-accordion--opacity--disabled": "--now-opacity--less",
+	"--now-accordion--text-transform": "--now-view-control--text-transform"
+}

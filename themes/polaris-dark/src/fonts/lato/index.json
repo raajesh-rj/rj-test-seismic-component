@@ -1,0 +1,58 @@
+[
+  {
+    "font-family": "Lato",
+    "font-weight": "300",
+    "font-style": "normal",
+    "files": [
+      "assets/LatoSNJ-Light.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "normal",
+    "font-style": "normal",
+    "files": [
+      "assets/LatoSNJ-Regular.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "normal",
+    "font-style": "italic",
+    "files": [
+      "assets/LatoSNJ-RegularItalic.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "600",
+    "font-style": "normal",
+    "files": [
+      "assets/LatoSNJ-Medium.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "600",
+    "font-style": "italic",
+    "files": [
+      "assets/LatoSNJ-MediumItalic.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "bold",
+    "font-style": "normal",
+    "files": [
+      "assets/LatoSNJ-Bold.woff2"
+    ]
+  },
+  {
+    "font-family": "Lato",
+    "font-weight": "bold",
+    "font-style": "italic",
+    "files": [
+      "assets/LatoSNJ-BoldItalic.woff2"
+    ]
+  }
+]

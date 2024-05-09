@@ -1,0 +1,11 @@
+// ServiceNow Now Design System
+
+// Global / Category / Actionable
+
+$now-actionable--font-style:      var(--now-actionable--font-style, normal);
+$now-actionable--font-weight:     var(--now-actionable--font-weight, normal);
+$now-actionable--font-family:     var(--now-actionable--font-family, $now-font-family);
+$now-actionable--text-transform:  var(--now-actionable--text-transform, none);
+$now-actionable--border-width:    var(--now-actionable--border-width, 1px);
+$now-actionable--border-radius:   var(--now-actionable--border-radius, 0);
+$now-actionable--opacity--disabled: var(--now-actionable--opacity--disabled, $now-opacity--less);

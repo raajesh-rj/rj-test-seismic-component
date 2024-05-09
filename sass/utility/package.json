@@ -1,0 +1,19 @@
+{
+	"name": "@servicenow/sass-utility",
+	"version": "26.0.14-webux.1",
+	"description": "Utility CSS rules that can be used anywhere",
+	"meta": {
+		"release": "N"
+	},
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"No tests specified for this package\""
+	},
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://code.devsnc.com/dev/design-system"
+	},
+	"bugs": "https://tinyurl.com/new-nds-def"
+}

@@ -1,0 +1,85 @@
+// ServiceNow Now Design System
+
+@use 'sass:math';
+
+// Globals / Functions
+
+// Function namespace should be now-fn-*
+
+/// Returns a 16 base rem value computed from supplied pixel value
+///
+/// @group Sizing
+///
+/// @param {Number} $px-value - `px` value to be converted
+/// @return {Number} - `rem` value
+///
+/// @example scss - Input
+///		.foo {
+///			inline-size: now-fn-px2rem(32px);
+///		}
+///
+/// @example css - Output
+///		.foo {
+///			inline-size: 2rem;
+///		}
+///
+@function now-fn-px2rem($px-value) {
+	$rem-value: math.div($px-value, 16px);
+	@return $rem-value * 1rem;
+}
+
+/// Converts supplied color value to a RGB triplet
+///
+/// @group Colors
+///
+/// @param {Color} $color - Color expressed in valid CSS notation
+/// @return {List} - RGB triplet xxx, xxx, xxx
+///
+/// @example scss - Input
+/// 	$foo: now-fn-color2rgb(#ffffff)
+///
+///		.foo {
+///			color: RGB($foo);
+///		}
+///
+/// @example css - Output
+///		.foo {
+///			color: RGB(255,255,255);
+///		}
+///
+@function now-fn-color2rgb($color) {
+	@return red($color), green($color), blue($color);
+}
+
+/// Replace `$search` with `$replace` in `$string`. e.g. `str-replace
+/// ('padding-left', 'left', 'right');` returns 'padding-right'
+/// @link https://css-tricks.com/snippets/sass/str-replace-function/
+///
+/// @author Hugo Giraudel
+/// @access private
+///
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+///
+@function now-fn-str-replace($string, $search, $replace: '') {
+	// stylelint-disable-next-line scss/no-global-function-names
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace +
+			now-fn-str-replace(
+				str-slice($string, $index + str-length($search)),
+				$search,
+				$replace
+			);
+	}
+
+	@return $string;
+}
+
+// stylelint-disable-next-line scss/at-function-pattern
+@function p($customProperty) {
+	@return unquote($customProperty);
+}

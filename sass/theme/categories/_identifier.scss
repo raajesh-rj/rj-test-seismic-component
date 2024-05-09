@@ -1,0 +1,12 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Identifier
+
+@mixin now-mx-theme-category-identifier {
+	--now-identifier--font-style: normal;
+	--now-identifier--font-weight: normal;
+	--now-identifier--font-family: var(--now-font-family);
+	--now-identifier--text-transform: none;
+	--now-identifier--border-width: 1px;
+	--now-identifier--border-radius: 0;
+}

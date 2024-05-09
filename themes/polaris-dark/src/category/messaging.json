@@ -1,0 +1,10 @@
+{
+	"--now-messaging--background-color": "--now-color_background--primary",
+	"--now-messaging--border-color": "--now-color_border--secondary",
+	"--now-messaging--border-radius": "$now-global-border-radius--md",
+	"--now-messaging--border-width": "1px",
+	"--now-messaging--font-family": "--now-font-family",
+	"--now-messaging--font-style": "normal",
+	"--now-messaging--font-weight": "normal",
+	"--now-messaging--text-transform": "none"
+}

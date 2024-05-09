@@ -1,0 +1,14 @@
+// ServiceNow Now Design System
+
+// Theme / Category / Window
+
+@mixin now-mx-theme-category-window {
+	--now-window--font-style: normal;
+	--now-window--font-weight: normal;
+	--now-window--font-family: var(--now-font-family);
+	--now-window--text-transform: none;
+	--now-window--border-width: 1px;
+	--now-window--border-color: var(--now-color_divider--secondary);
+	--now-window--border-radius: #{$now-global-border-radius--md};
+	--now-window--background-color: var(--now-color_background--primary);
+}

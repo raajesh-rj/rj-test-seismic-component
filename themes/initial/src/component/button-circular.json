@@ -1,0 +1,13 @@
+{
+	"--now-button-circular--background-color": "--now-button--primary--background-color",
+	"--now-button-circular--background-color--active": "--now-button--primary--background-color--active",
+	"--now-button-circular--background-color--hover": "--now-button--primary--background-color--hover",
+	"--now-button-circular--border-color": "--now-button--primary--border-color",
+	"--now-button-circular--border-color--active": "--now-button--primary--border-color--active",
+	"--now-button-circular--border-color--hover": "--now-button--primary--border-color--hover",
+	"--now-button-circular--border-width": "0",
+	"--now-button-circular--color": "--now-button--primary--color",
+	"--now-button-circular--color--active": "--now-button--primary--color--active",
+	"--now-button-circular--color--hover": "--now-button--primary--color--hover",
+	"--now-button-circular--opacity--disabled": "--now-button--opacity--disabled"
+}

@@ -1,0 +1,7 @@
+{
+	"--now-font-family": "'Source Sans Pro', Arial, sans-serif",
+	"--now-line-height-crop--before": "-0.25em",
+	"--now-line-height-crop--after": "-0.125em",
+	"--now-opacity--least": "0.1",
+	"--now-opacity--less": "0.25"
+}

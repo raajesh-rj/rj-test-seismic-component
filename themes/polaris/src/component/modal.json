@@ -1,0 +1,20 @@
+{
+	"--now-modal_heading--color": "--now-display-type--primary--color",
+	"--now-modal_heading--font-family": "--now-display-type--header-primary--font-family",
+	"--now-modal_heading--font-style": "--now-display-type--header-primary--font-style",
+	"--now-modal_heading--font-weight": "--now-display-type--header-primary--font-weight",
+	"--now-modal_heading--text-transform": "--now-display-type--header-primary--text-transform",
+	"--now-modal_overlay--background-color": "--now-color--neutral-21",
+	"--now-modal_overlay--background-color-alpha": "$now-global-opacity--mid",
+	"--now-modal--background-color": "--now-window--background-color",
+	"--now-modal--border-color": "--now-window--border-color",
+	"--now-modal--border-radius": "--now-window--border-radius",
+	"--now-modal--border-width": "--now-window--border-width",
+	"--now-modal--font-family": "--now-window--font-family",
+	"--now-modal--font-style": "--now-window--font-style",
+	"--now-modal--font-weight": "--now-window--font-weight",
+	"--now-modal--text-transform": "--now-window--text-transform",
+	"--now-modal--scale-size": "1",
+	"--now-modal--scale-size-block": "1",
+	"--now-modal--scale-size-inline": "1"
+}

@@ -1,0 +1,16 @@
+{
+	"--now-template-message-empty-state_content--color": "--now-display-type--tertiary--color",
+	"--now-template-message-empty-state_content--font-family": "--now-display-type--tertiary--font-family",
+	"--now-template-message-empty-state_content--font-style": "--now-display-type--tertiary--font-style",
+	"--now-template-message-empty-state_content--font-weight": "--now-display-type--tertiary--font-weight",
+	"--now-template-message-empty-state_content--text-transform": "--now-display-type--tertiary--text-transform",
+	"--now-template-message-empty-state_heading--color": "--now-display-type--primary--color",
+	"--now-template-message-empty-state_heading--header--font-family": "--now-display-type--primary--font-family",
+	"--now-template-message-empty-state_heading--header--font-style": "--now-display-type--primary--font-style",
+	"--now-template-message-empty-state_heading--header--font-weight": "--now-display-type--primary--font-weight",
+	"--now-template-message-empty-state_heading--header--text-transform": "--now-display-type--primary--text-transform",
+	"--now-template-message-empty-state_heading--title--font-family": "--now-display-type--primary--font-family",
+	"--now-template-message-empty-state_heading--title--font-style": "--now-display-type--primary--font-style",
+	"--now-template-message-empty-state_heading--title--font-weight": "--now-display-type--primary--font-weight",
+	"--now-template-message-empty-state_heading--title--text-transform": "--now-display-type--primary--text-transform"
+}

@@ -1,0 +1,32 @@
+// ServiceNow Now Design System
+
+// Theme / Theme
+
+@import '@servicenow/sass-global/index';
+@import 'typography';
+@import 'generic/type';
+@import 'categories/index';
+@import 'colors/index';
+@import 'old';
+
+:root {
+	@include now-mx-theme-colors-alert;
+	@include now-mx-theme-colors-base;
+	@include now-mx-theme-colors-derived;
+	@include now-mx-theme-colors-grouped;
+	@include now-mx-theme-colors-framework;
+	@include now-mx-theme-generic-type;
+	@include now-mx-theme-category-actionable;
+	@include now-mx-theme-category-container;
+	@include now-mx-theme-category-display-type;
+	@include now-mx-theme-category-form-control;
+	@include now-mx-theme-category-identifier;
+	@include now-mx-theme-category-indicator;
+	@include now-mx-theme-category-loading;
+	@include now-mx-theme-category-menu;
+	@include now-mx-theme-category-messaging;
+	@include now-mx-theme-category-navigation;
+	@include now-mx-theme-category-view-control;
+	@include now-mx-theme-category-window;
+	@include now-mx-theme-colors-old;
+}

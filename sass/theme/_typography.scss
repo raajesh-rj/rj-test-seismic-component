@@ -1,0 +1,160 @@
+// ServiceNow Now Design System
+
+// Theme / Typography
+
+// Lato
+
+// 300
+@font-face {
+	font-style: normal;
+	font-weight: 300;
+	font-family: Lato;
+	src: url('type/LatoSNJ-Light.woff2') format('woff2');
+}
+
+// 400 / normal
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	font-family: Lato;
+	src: url('type/LatoSNJ-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: normal;
+	font-family: Lato;
+	src: url('type/LatoSNJ-RegularItalic.woff2') format('woff2');
+}
+
+// 600 / semibold
+@font-face {
+	font-style: normal;
+	font-weight: 600;
+	font-family: Lato;
+	src: url('type/LatoSNJ-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: 600;
+	font-family: Lato;
+	src: url('type/LatoSNJ-MediumItalic.woff2') format('woff2');
+}
+
+// 700 / bold
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	font-family: Lato;
+	src: url('type/LatoSNJ-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	font-family: Lato;
+	src: url('type/LatoSNJ-BoldItalic.woff2') format('woff2');
+}
+
+// Source Sans Pro
+
+// 300
+@font-face {
+	font-style: normal;
+	font-weight: 300;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-300.woff2') format('woff2');
+}
+
+// 400 / normal
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: normal;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-italic.woff2') format('woff2');
+}
+
+// 600 / semibold
+@font-face {
+	font-style: normal;
+	font-weight: 600;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: 600;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-600italic.woff2') format('woff2');
+}
+
+// 700 / bold
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	font-family: 'Source Sans Pro';
+	src: url('type/source-sans-pro-v21-latin-700italic.woff2') format('woff2');
+}
+
+// Open Sans
+
+// 400 / normal
+@font-face {
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: normal;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-italic.woff2') format('woff2');
+}
+
+// 600 / semibold
+@font-face {
+	font-style: normal;
+	font-weight: 600;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: 600;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-600italic.woff2') format('woff2');
+}
+
+// 700 / bold
+@font-face {
+	font-style: normal;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+	font-style: italic;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	src: url('type/open-sans-v18-latin-700italic.woff2') format('woff2');
+}

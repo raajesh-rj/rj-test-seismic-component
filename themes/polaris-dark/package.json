@@ -1,0 +1,14 @@
+{
+	"name": "@servicenow/theme-polaris-dark",
+	"version": "26.0.14-webux.1",
+	"description": "Polaris Dark theme for ServiceNow UIs",
+	"author": "Now Design System Engineering Team @ ServiceNow",
+	"repository": {
+		"type": "git",
+		"url": "https://code.devsnc.com/dev/design-system"
+	},
+	"bugs": "https://code.devsnc.com/dev/design-system/issues",
+	"scripts": {
+		"test": "echo \"No tests specified for this package.\""
+	}
+}

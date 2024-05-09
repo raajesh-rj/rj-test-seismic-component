@@ -1,0 +1,23 @@
+{
+	"--now-breadcrumbs_dropdown--background-color--active": "--now-color--secondary-3",
+	"--now-breadcrumbs_dropdown--background-color--hover": "--now-color--secondary-2",
+	"--now-breadcrumbs_dropdown--background-color-alpha--active": "--now-opacity--less",
+	"--now-breadcrumbs_dropdown--background-color-alpha--hover": "--now-opacity--least",
+	"--now-breadcrumbs_dropdown--color": "--now-breadcrumbs--color",
+	"--now-breadcrumbs_dropdown--color--active": "--now-breadcrumbs--color--hover",
+	"--now-breadcrumbs_dropdown--color--hover": "--now-breadcrumbs--color--hover",
+	"--now-breadcrumbs--background-color": "--now-color_background--primary",
+	"--now-breadcrumbs--background-color--current": "--now-breadcrumbs--background-color",
+	"--now-breadcrumbs--background-color--hover": "--now-breadcrumbs--background-color",
+	"--now-breadcrumbs--background-color-alpha": "0",
+	"--now-breadcrumbs--background-color-alpha--current": "--now-breadcrumbs--background-color-alpha",
+	"--now-breadcrumbs--background-color-alpha--hover": "--now-breadcrumbs--background-color-alpha",
+	"--now-breadcrumbs--color": "--now-color_text--secondary",
+	"--now-breadcrumbs--color--current": "--now-color_text--primary",
+	"--now-breadcrumbs--color--hover": "--now-color_text--primary",
+	"--now-breadcrumbs--font-family": "--now-actionable--font-family",
+	"--now-breadcrumbs--font-style": "--now-actionable--font-style",
+	"--now-breadcrumbs--font-weight": "--now-actionable--font-weight",
+	"--now-breadcrumbs--font-weight--current": "600",
+	"--now-breadcrumbs--text-transform": "--now-actionable--text-transform"
+}
